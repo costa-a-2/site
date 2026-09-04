@@ -30,7 +30,7 @@ Drop a photo of yourself at `src/assets/img/costa.jpg` for the byline mug (squar
 1. Drop a new file in `data/football/` named `2026-week-NN.json`
 2. Format: `{published, updatedAt (ISO, optional — drives the stamp), format, players:[{rank, player, pos, team, tier, tierName, ots, note}]}`
 3. The change column is computed automatically against the previous week — never enter it by hand
-4. Commit and push. Netlify builds and deploys.
+4. Commit and push. GitHub Actions builds the site and deploys it to GitHub Pages (`.github/workflows/pages.yml`).
 
 ## Structure
 
