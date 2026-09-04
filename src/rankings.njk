@@ -34,6 +34,25 @@ description: Weekly rest-of-season fantasy football rankings with week-over-week
 
 <div class="lead-grid" style="padding-top:20px">
   <div>{% include "partials/ranktable.njk" %}
+    {% if week.cusp and week.cusp.length %}
+    <div style="border-top:2px solid var(--ink);margin-top:26px;padding:18px 0 6px" id="cusp">
+      <span class="sec">On the Cusp</span>
+      <p class="summary" style="margin-top:8px">Ten more I'd have in the conversation, in no order.</p>
+      <div class="tbl-wrap"><table class="rank cusp" id="cuspTable" style="margin-top:10px">
+        <thead><tr><th>Player</th><th class="c-pos">Pos</th><th class="c-team">Tm</th><th class="c-risk">Risk</th></tr></thead>
+        <tbody>
+        {% for p in week.cusp %}
+          <tr data-pos="{{ p.pos }}">
+            <td class="c-player">{% if p.headshot %}<img class="hs" src="{{ p.headshot }}" alt="" loading="lazy">{% else %}<span class="hs"></span>{% endif %}{{ p.player }}</td>
+            <td class="c-pos">{{ p.pos }}</td>
+            <td class="c-team">{{ p.team }}</td>
+            <td class="c-risk">{% if p.risk %}<span class="risk-dot {{ p.risk | riskClass }}" title="{{ p.risk }}"></span><span class="risk-lbl">{{ p.risk }}</span>{% endif %}</td>
+          </tr>
+        {% endfor %}
+        </tbody>
+      </table></div>
+    </div>
+    {% endif %}
     {% if week.flags and week.flags.length %}
     <div style="border-top:2px solid var(--ink);margin-top:26px;padding:18px 0 6px">
       <span class="sec">The Flags</span>
@@ -62,5 +81,6 @@ description: Weekly rest-of-season fantasy football rankings with week-over-week
 <script>
 (function(){var b=document.getElementById('posFilters'),t=document.getElementById('rankTable'),s=document.getElementById('shown');if(!b||!t)return;
 b.addEventListener('click',function(e){var x=e.target.closest('button');if(!x)return;b.querySelectorAll('button').forEach(function(y){y.setAttribute('aria-pressed','false')});x.setAttribute('aria-pressed','true');
-var p=x.getAttribute('data-pos'),n=0;t.querySelectorAll('tbody tr').forEach(function(r){if(r.classList.contains('tier-head')){r.style.display=(p==='ALL')?'':'none';return}var h=(p==='ALL'||r.getAttribute('data-pos')===p);r.style.display=h?'':'none';if(h)n++});s.textContent=n});})();
+var p=x.getAttribute('data-pos'),n=0;t.querySelectorAll('tbody tr').forEach(function(r){if(r.classList.contains('tier-head')){r.style.display=(p==='ALL')?'':'none';return}var h=(p==='ALL'||r.getAttribute('data-pos')===p);r.style.display=h?'':'none';if(h)n++});s.textContent=n;
+var c=document.getElementById('cuspTable');if(c){c.querySelectorAll('tbody tr').forEach(function(r){r.style.display=(p==='ALL'||r.getAttribute('data-pos')===p)?'':'none'})}});})();
 </script>

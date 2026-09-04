@@ -1,15 +1,16 @@
 <div class="tbl-wrap">
 <table class="rank" id="rankTable">
   <thead><tr>
-    <th>#</th><th>Player</th><th class="c-pos">Pos</th><th class="c-team">Tm</th>
+    <th>#</th><th class="c-model">Model</th><th>Player</th><th class="c-pos">Pos</th><th class="c-team">Tm</th>
     <th class="c-spark">Trend</th><th style="text-align:right">Chg</th><th style="text-align:right">OTS</th><th class="c-risk">Risk</th>
   </tr></thead>
   <tbody>
   {% for block in week.players | byTier %}
-    <tr class="tier-head"><td colspan="8">{{ block.name }}</td></tr>
+    <tr class="tier-head"><td colspan="9">{{ block.name }}</td></tr>
     {% for p in block.players %}{% set m = p.change | movement(week.firstEdition) %}
-      <tr data-pos="{{ p.pos }}">
+      <tr data-pos="{{ p.pos }}" id="p-{{ p.player | slugify }}">
         <td class="c-rank">{{ p.rank }}</td>
+        <td class="c-model">{% if p.modelRank %}{{ p.modelRank }}{% else %}—{% endif %}</td>
         <td class="c-player">{% if p.headshot %}<img class="hs" src="{{ p.headshot }}" alt="" loading="lazy">{% else %}<span class="hs"></span>{% endif %}{{ p.player }}</td>
         <td class="c-pos">{{ p.pos }}</td>
         <td class="c-team">{{ p.team }}</td>
@@ -23,4 +24,4 @@
   </tbody>
 </table>
 </div>
-<div class="tbl-foot">Trend = rank over the last six weeks &middot; Chg = {% if week.firstEdition %}movement, starting next edition &mdash; this is the baseline{% else %}movement vs. {{ "preseason baseline" if week.week == 1 else "prior week" }}{% endif %} &middot; OTS = Opportunity Trend Score &middot; <a href="/methodology/" style="border-bottom:1px solid var(--rule)">How we build these</a></div>
+<div class="tbl-foot">Model = where the projection model had him before judgment &middot; Trend = rank over the last six weeks &middot; Chg ={% if week.firstEdition %}movement, starting next edition &mdash; this is the baseline{% else %}movement vs. {{ "preseason baseline" if week.week == 1 else "prior week" }}{% endif %} &middot; OTS = Opportunity Trend Score &middot; <a href="/methodology/" style="border-bottom:1px solid var(--rule)">How we build these</a></div>

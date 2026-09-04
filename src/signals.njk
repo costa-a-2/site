@@ -1,0 +1,59 @@
+---
+layout: layouts/base.njk
+permalink: /signals/
+title: What the Metrics Say
+description: Where the metrics and the market agree or disagree with the model, and the read on each gap.
+---
+{% set week = rankings.latestFootball %}
+{% if week %}
+<div class="dateline">
+  <span>{{ week.label }}</span><span>{{ week.format }} &middot; Signals</span><span>Updated {{ week.published | date("long") }}</span>
+</div>
+<div class="r-light"></div>
+{% endif %}
+
+<div style="padding:28px 0 20px">
+  <span class="sec">{% if week %}{{ week.label }} &middot; {% endif %}The Signals</span>
+  <h1 class="hed-xl" style="margin-top:10px">What the Metrics Say</h1>
+  <p class="standfirst" style="margin-top:10px;max-width:640px">Where a metric and the market agree or disagree with the model. The gap is draft position minus model rank &mdash; positive means the model is ahead of the market &mdash; and the blurb is the read.</p>
+</div>
+
+{% if metricsCaveat and metricsCaveat.html %}
+<div class="caveat">
+  <span class="sec">{{ metricsCaveat.title }}</span>
+  {{ metricsCaveat.html | safe }}
+</div>
+{% endif %}
+
+{% if week and week.signalGroups and week.signalGroups.length %}
+  {% for g in week.signalGroups %}
+  <section class="sig-group">
+    <div class="sig-head"><h2 class="hed-sm" style="margin:0">{{ g.label }}</h2><span class="kick">{{ g.items.length }} player{% if g.items.length != 1 %}s{% endif %}</span></div>
+    {% for s in g.items %}
+    <article class="sig-row" id="s-{{ s.player | slugify }}">
+      <div class="sig-who">
+        {% if s.headshot %}<img class="hs" src="{{ s.headshot }}" alt="" loading="lazy">{% else %}<span class="hs"></span>{% endif %}
+        <div style="min-width:0">
+          <div class="hed-sm" style="margin:0">{% if s.onPage %}<a href="/rankings/#p-{{ s.player | slugify }}" title="His row on the rankings">{{ s.player }}</a>{% else %}{{ s.player }}{% endif %}</div>
+          <div class="kick">{{ s.pos }} &middot; {{ s.team }}</div>
+        </div>
+      </div>
+      <div class="sig-nums">
+        <div><b>Model</b><span>{{ s.modelRank }}</span></div>
+        <div><b>Rank</b><span>{% if s.finalRank %}{{ s.finalRank }}{% else %}&mdash;{% endif %}</span></div>
+        <div><b>ADP</b><span>{{ s.adp | round }}</span></div>
+        <div><b>Gap</b><span>{% if s.gap > 0 %}+{% endif %}{{ s.gap }}</span></div>
+        <div><b>{% if s.metric %}{{ s.metric | upper }}{% else %}Metric{% endif %}</b><span>{% if s.metric %}{{ s.value }} &middot; {{ s.strength }}{% else %}none{% endif %}</span></div>
+      </div>
+      {% if s.note %}<p class="summary sig-blurb">{{ s.note }}</p>{% endif %}
+    </article>
+    {% endfor %}
+  </section>
+  {% endfor %}
+  <div class="tbl-foot">Model = where the projection model has him &middot; Rank = where he sits in the published rankings &middot; ADP = average draft position &middot; Gap = ADP &minus; model &middot; the metric is the position's &mdash; role clarity for backs, passing-game health for quarterbacks, scheme fit for receivers &mdash; or the opportunity trend when that one is quiet &middot; <a href="/methodology/" style="border-bottom:1px solid var(--rule)">What the metrics measure</a></div>
+{% else %}
+  <div style="border-top:2px solid var(--ink);padding:22px 0">
+    <span class="sec">Nothing to report</span>
+    <p class="summary" style="margin-top:8px;max-width:620px">No signals this edition &mdash; either the metrics are still quiet or the model and the market agree everywhere that matters. The list regenerates with every set of rankings.</p>
+  </div>
+{% endif %}

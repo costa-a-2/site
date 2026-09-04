@@ -4,13 +4,13 @@ standfirst: "A first-round pick starting Week 1 for the defending Super Bowl cha
 summary: "Seattle vacated 456 backfield touches and hired a run game coordinator to call plays. The market has not caught up."
 section: "The Flag Plant"
 kicker: "2026 · On the Record"
-date: 2026-09-08
+date: 2026-09-09
 readtime: "9 min"
 datelineCity: "SEATTLE"
 lede: "Every year since 2017 I have picked one rookie and committed to him in writing before the season starts. Not a sleeper list, not a tiered ranking with hedges built in. One name, published before any evidence exists, graded honestly when the year is over."
-image: "/assets/img/montgomery_color.jpg"
-imageAlt: "Photograph of a running back carrying the ball"
-caption: "David Montgomery, the 2019 flag plant. The habit is nine years old now."
+image: "/assets/img/price-hero.jpg"
+imageAlt: "Jadarian Price carrying the ball"
+caption: "Jadarian Price at the 2023 Sun Bowl. U.S. Army photo by Spc. David Poleski, public domain."
 ---
 
 This year it is Jadarian Price.
@@ -108,6 +108,14 @@ The difference is workload security. Edwards-Helaire walked into a healthy Kansa
 
 The committee argument requires somebody to form a committee with. For the first month, there is not one.
 
+## What the model says
+
+I should tell you where the numbers land before I tell you where I do, because they are not the same thing and this site is built on showing both.
+
+The projection model behind the [rankings](/rankings/) starts from Seattle's team totals, gives Price a conservative share of them — I set it lower than I believe, on purpose — and comes out with him as **RB17**, well inside the top 30 overall, before any judgment is applied. That is with no film, no gut, no Fleury argument. Just vacated volume and a share of it.
+
+The market has him RB26. The model has him RB17 on shares alone. Everything below is the case for why the model is still too low.
+
 ## The film
 
 *[Costa's film read goes here — the specific thing you see on tape that 113 carries cannot show, and why you believe it holds up at a larger workload.]*
@@ -116,6 +124,6 @@ The committee argument requires somebody to form a committee with. For the first
 
 Jadarian Price, RB26, and I think that number looks silly by November.
 
-I will grade this in January the same way I grade all of them. The Cook call looks smart in retrospect. Some of the others do not. That is the whole point of writing it down before the games are played — an opinion you cannot check is not worth reading.
+I will grade this in January the same way I grade all of them. [The full record is here](/flag-plant/) — nine years of calls, the ones that hit and the ones that did not. That is the whole point of writing it down before the games are played — an opinion you cannot check is not worth reading.
 
 If I am wrong, the archive will say so.
