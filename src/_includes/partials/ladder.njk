@@ -1,0 +1,12 @@
+<div class="ladder">
+  <div class="risers"><div class="col-h">Risers</div>
+    {% for p in week.risers | limit(n or 4) %}{% set m = p.change | movement %}
+    <div class="row"><b>{{ p.player }}</b><span class="is-up">{{ m.sym }} {{ m.abs }}</span></div>
+    {% else %}<div class="row" style="color:var(--muted)">No risers yet</div>{% endfor %}
+  </div>
+  <div class="fallers"><div class="col-h">Fallers</div>
+    {% for p in week.fallers | limit(n or 4) %}{% set m = p.change | movement %}
+    <div class="row"><b>{{ p.player }}</b><span class="is-down">{{ m.sym }} {{ m.abs }}</span></div>
+    {% else %}<div class="row" style="color:var(--muted)">No fallers yet</div>{% endfor %}
+  </div>
+</div>

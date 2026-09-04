@@ -1,0 +1,79 @@
+---
+layout: layouts/base.njk
+isHome: true
+---
+{% set wk = rankings.latestFootball %}
+{% set arts = collections.articles %}
+{% set lead = arts[0] %}
+
+<div class="dateline">
+  <span>{{ wk.label }} &middot; {{ wk.format }}</span>
+  <span>Rest of Season</span>
+  <span>Updated {{ wk.published | date("long") }}</span>
+</div>
+<div class="r-light"></div>
+
+<section class="lead-grid" style="padding-top:18px">
+  <article class="reveal">
+    <div class="plate-wrap">
+      {% if lead.data.image %}<img src="{{ lead.data.image }}" alt="{{ lead.data.imageAlt }}">{% endif %}
+      <div class="plate">
+        <span class="sec">{{ wk.label }} &middot; The Lead</span>
+        <h2 class="hed-xl"><a href="{{ lead.url }}">{{ lead.data.title }}</a></h2>
+      </div>
+    </div>
+    <div style="display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap;padding-top:10px">
+      <p class="standfirst" style="max-width:70%">{{ lead.data.standfirst }}</p>
+      <div class="meta" style="margin:0">By {{ site.author }} &middot; {{ lead.data.readtime }}</div>
+    </div>
+  </article>
+
+  <aside class="rail reveal">
+    <span class="sec">This Week &middot; Top {{ wk.count }}</span>
+    <table class="rank" style="font-size:14px;margin-top:10px">
+      {% for p in wk.players | limit(10) %}{% set m = p.change | movement(wk.firstEdition) %}
+      <tr>
+        <td class="c-rank" style="width:22px">{{ p.rank }}</td>
+        <td class="c-player">{% if p.headshot %}<img class="hs" src="{{ p.headshot }}" alt="" loading="lazy" style="width:22px;height:22px">{% endif %}{{ p.player }}</td>
+        <td class="c-pos" style="width:34px">{{ p.pos }}</td>
+        <td class="c-chg {{ m.cls }}">{{ m.sym }}{% if m.abs %} {{ m.abs }}{% endif %}</td>
+      </tr>
+      {% endfor %}
+    </table>
+    <a href="/rankings/" class="btn-ink" style="margin-top:8px">All {{ wk.count }} &rarr;</a>
+
+    <div style="margin-top:20px"><span class="sec">Biggest Movers</span></div>
+    <div style="margin-top:10px">{% set week = wk %}{% set n = 3 %}{% include "partials/ladder.njk" %}</div>
+
+    <div style="margin-top:20px"><span class="sec">The Newsletter</span></div>
+    <p class="summary">One email a week during the season, the morning the rankings publish.</p>
+    <div class="signup" style="margin-top:10px">
+      <form name="subscribe" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="subscribe">
+        <p style="display:none"><label>Skip: <input name="bot-field"></label></p>
+        <input type="email" name="email" placeholder="your@email.com" required aria-label="Email address">
+        <button type="submit">Join</button>
+      </form>
+    </div>
+  </aside>
+</section>
+
+<div class="r-hair" style="margin:26px 0 0"></div>
+<section class="grid-3 reveal">
+  {% for a in arts | limit(3) %}{% if not loop.first %}
+  <article class="card">
+    {% if a.data.image %}<a href="{{ a.url }}"><img class="cover" src="{{ a.data.image }}" alt="{{ a.data.imageAlt }}" loading="lazy"></a>{% endif %}
+    <span class="sec">{{ a.data.section }}</span>
+    <h3 class="hed-md"><a href="{{ a.url }}">{{ a.data.title }}</a></h3>
+    <p class="summary">{{ a.data.summary }}</p>
+    <div class="meta">{{ a.data.date | date("short") }} &middot; {{ a.data.readtime }}</div>
+  </article>
+  {% endif %}{% endfor %}
+  <article class="card">
+    <a href="/flag-plant/" class="block-ink"><div class="t">The<br>Flag Plant</div></a>
+    <span class="sec">2026 &middot; On the Record</span>
+    <h3 class="hed-md"><a href="/flag-plant/">Jadarian Price, RB26</a></h3>
+    <p class="summary">A first-round pick, starting for the champions, going in the sixth round. The call is made before a snap.</p>
+    <div class="meta">Annual &middot; Graded in January</div>
+  </article>
+</section>

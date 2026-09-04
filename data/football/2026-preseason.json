@@ -1,0 +1,312 @@
+{
+  "published": "2026-09-08",
+  "format": "Half-PPR",
+  "players": [
+    {
+      "rank": 1,
+      "player": "Ja'Marr Chase",
+      "pos": "WR",
+      "team": "CIN",
+      "tier": 1,
+      "tierName": "Tier I \u00b7 The Untouchables",
+      "ots": -11,
+      "ppg": 19.1,
+      "risk": "Low"
+    },
+    {
+      "rank": 2,
+      "player": "Bijan Robinson",
+      "pos": "RB",
+      "team": "ATL",
+      "tier": 1,
+      "tierName": "Tier I \u00b7 The Untouchables",
+      "ots": 44,
+      "ppg": 18.8
+    },
+    {
+      "rank": 3,
+      "player": "Justin Jefferson",
+      "pos": "WR",
+      "team": "MIN",
+      "tier": 1,
+      "tierName": "Tier I \u00b7 The Untouchables",
+      "ots": -20,
+      "ppg": 18.4,
+      "risk": "Medium",
+      "note": "SAMPLE \u2014 placeholder reason so the flag renders; replace before publishing."
+    },
+    {
+      "rank": 4,
+      "player": "Jahmyr Gibbs",
+      "pos": "RB",
+      "team": "DET",
+      "tier": 2,
+      "tierName": "Tier II \u00b7 Weekly Anchors",
+      "ots": 4,
+      "ppg": 16.8,
+      "risk": "High",
+      "note": "SAMPLE \u2014 placeholder reason so the flag renders; replace before publishing."
+    },
+    {
+      "rank": 5,
+      "player": "Puka Nacua",
+      "pos": "WR",
+      "team": "LAR",
+      "tier": 2,
+      "tierName": "Tier II \u00b7 Weekly Anchors",
+      "ots": -13,
+      "ppg": 16.4
+    },
+    {
+      "rank": 6,
+      "player": "CeeDee Lamb",
+      "pos": "WR",
+      "team": "DAL",
+      "tier": 2,
+      "tierName": "Tier II \u00b7 Weekly Anchors",
+      "ots": 35,
+      "ppg": 16.1
+    },
+    {
+      "rank": 7,
+      "player": "Malik Nabers",
+      "pos": "WR",
+      "team": "NYG",
+      "tier": 2,
+      "tierName": "Tier II \u00b7 Weekly Anchors",
+      "ots": 29,
+      "ppg": 15.8
+    },
+    {
+      "rank": 8,
+      "player": "Brock Bowers",
+      "pos": "TE",
+      "team": "LV",
+      "tier": 2,
+      "tierName": "Tier II \u00b7 Weekly Anchors",
+      "ots": 32,
+      "ppg": 16.8
+    },
+    {
+      "rank": 9,
+      "player": "Saquon Barkley",
+      "pos": "RB",
+      "team": "PHI",
+      "tier": 3,
+      "tierName": "Tier III \u00b7 The Weekly Bet",
+      "ots": 55,
+      "ppg": 13.8
+    },
+    {
+      "rank": 10,
+      "player": "Amon-Ra St. Brown",
+      "pos": "WR",
+      "team": "DET",
+      "tier": 3,
+      "tierName": "Tier III \u00b7 The Weekly Bet",
+      "ots": 20,
+      "ppg": 13.5
+    },
+    {
+      "rank": 11,
+      "player": "De'Von Achane",
+      "pos": "RB",
+      "team": "MIA",
+      "tier": 3,
+      "tierName": "Tier III \u00b7 The Weekly Bet",
+      "ots": -2,
+      "ppg": 13.1
+    },
+    {
+      "rank": 12,
+      "player": "Nico Collins",
+      "pos": "WR",
+      "team": "HOU",
+      "tier": 3,
+      "tierName": "Tier III \u00b7 The Weekly Bet",
+      "ots": -16,
+      "ppg": 14.2
+    },
+    {
+      "rank": 13,
+      "player": "Josh Allen",
+      "pos": "QB",
+      "team": "BUF",
+      "tier": 3,
+      "tierName": "Tier III \u00b7 The Weekly Bet",
+      "ots": 34,
+      "ppg": 13.8
+    },
+    {
+      "rank": 14,
+      "player": "Jalen Hurts",
+      "pos": "QB",
+      "team": "PHI",
+      "tier": 3,
+      "tierName": "Tier III \u00b7 The Weekly Bet",
+      "ots": -25,
+      "ppg": 13.5
+    },
+    {
+      "rank": 15,
+      "player": "Drake London",
+      "pos": "WR",
+      "team": "ATL",
+      "tier": 4,
+      "tierName": "Tier IV \u00b7 Volume Plays",
+      "ots": 21,
+      "ppg": 11.1
+    },
+    {
+      "rank": 16,
+      "player": "Ashton Jeanty",
+      "pos": "RB",
+      "team": "LV",
+      "tier": 4,
+      "tierName": "Tier IV \u00b7 Volume Plays",
+      "ots": 27,
+      "ppg": 12.1
+    },
+    {
+      "rank": 17,
+      "player": "Brian Thomas Jr.",
+      "pos": "WR",
+      "team": "JAX",
+      "tier": 4,
+      "tierName": "Tier IV \u00b7 Volume Plays",
+      "ots": 49,
+      "ppg": 11.8
+    },
+    {
+      "rank": 18,
+      "player": "Trey McBride",
+      "pos": "TE",
+      "team": "ARI",
+      "tier": 4,
+      "tierName": "Tier IV \u00b7 Volume Plays",
+      "ots": -28,
+      "ppg": 11.4
+    },
+    {
+      "rank": 19,
+      "player": "Lamar Jackson",
+      "pos": "QB",
+      "team": "BAL",
+      "tier": 4,
+      "tierName": "Tier IV \u00b7 Volume Plays",
+      "ots": 29,
+      "ppg": 11.1
+    },
+    {
+      "rank": 20,
+      "player": "Christian McCaffrey",
+      "pos": "RB",
+      "team": "SF",
+      "tier": 4,
+      "tierName": "Tier IV \u00b7 Volume Plays",
+      "ots": 6,
+      "ppg": 12.1
+    },
+    {
+      "rank": 21,
+      "player": "A.J. Brown",
+      "pos": "WR",
+      "team": "PHI",
+      "tier": 4,
+      "tierName": "Tier IV \u00b7 Volume Plays",
+      "ots": 1,
+      "ppg": 11.8
+    },
+    {
+      "rank": 22,
+      "player": "Jayden Daniels",
+      "pos": "QB",
+      "team": "WAS",
+      "tier": 4,
+      "tierName": "Tier IV \u00b7 Volume Plays",
+      "ots": 47,
+      "ppg": 11.4
+    },
+    {
+      "rank": 23,
+      "player": "Bucky Irving",
+      "pos": "RB",
+      "team": "TB",
+      "tier": 5,
+      "tierName": "Tier V \u00b7 Upside Swings",
+      "ots": -15,
+      "ppg": 9.4
+    },
+    {
+      "rank": 24,
+      "player": "Ladd McConkey",
+      "pos": "WR",
+      "team": "LAC",
+      "tier": 5,
+      "tierName": "Tier V \u00b7 Upside Swings",
+      "ots": 12,
+      "ppg": 10.4
+    },
+    {
+      "rank": 25,
+      "player": "George Kittle",
+      "pos": "TE",
+      "team": "SF",
+      "tier": 5,
+      "tierName": "Tier V \u00b7 Upside Swings",
+      "ots": -25,
+      "ppg": 10.1
+    },
+    {
+      "rank": 26,
+      "player": "Kyren Williams",
+      "pos": "RB",
+      "team": "LAR",
+      "tier": 5,
+      "tierName": "Tier V \u00b7 Upside Swings",
+      "ots": -26,
+      "ppg": 9.7
+    },
+    {
+      "rank": 27,
+      "player": "Tee Higgins",
+      "pos": "WR",
+      "team": "CIN",
+      "tier": 5,
+      "tierName": "Tier V \u00b7 Upside Swings",
+      "ots": -25,
+      "ppg": 9.4
+    },
+    {
+      "rank": 28,
+      "player": "Joe Burrow",
+      "pos": "QB",
+      "team": "CIN",
+      "tier": 5,
+      "tierName": "Tier V \u00b7 Upside Swings",
+      "ots": 55,
+      "ppg": 10.4
+    },
+    {
+      "rank": 29,
+      "player": "Chase Brown",
+      "pos": "RB",
+      "team": "CIN",
+      "tier": 5,
+      "tierName": "Tier V \u00b7 Upside Swings",
+      "ots": 41,
+      "ppg": 10.1
+    },
+    {
+      "rank": 30,
+      "player": "Garrett Wilson",
+      "pos": "WR",
+      "team": "NYJ",
+      "tier": 5,
+      "tierName": "Tier V \u00b7 Upside Swings",
+      "ots": -27,
+      "ppg": 9.7
+    }
+  ],
+  "updatedAt": "2026-09-16T06:14:00"
+}

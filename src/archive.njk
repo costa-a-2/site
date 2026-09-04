@@ -1,0 +1,56 @@
+---
+layout: layouts/base.njk
+permalink: /archive/
+title: Archive
+description: Every week of rest-of-season rankings, going back to the preseason baseline.
+---
+<div style="text-align:center;padding:32px 0 22px">
+  <h1 class="hed-xl">The Archive</h1>
+  <p class="standfirst" style="margin-top:12px;max-width:600px;margin-left:auto;margin-right:auto">
+    Every ranking we have published, back to the preseason baseline. Nothing is edited after the fact.
+  </p>
+</div>
+
+<div class="grid-2" style="gap:34px">
+  <section>
+    <div class="sec">Gridiron &middot; Football</div>
+    {% for wk in rankings.football | reverse %}
+    <div class="arch-row">
+      <div>
+        <div class="wk">{{ wk.label }}</div>
+        <div class="summary" style="margin-top:2px">{{ wk.count }} players &middot; {{ wk.tiers }} tiers &middot; {{ wk.format }}</div>
+      </div>
+      <div class="dt">{{ wk.published | date("short") }}</div>
+    </div>
+    {% else %}
+    <p class="summary">Preseason rankings publish before Week 1.</p>
+    {% endfor %}
+  </section>
+
+  <section>
+    <div class="sec">Hardwood &middot; Basketball</div>
+    {% for wk in rankings.basketball | reverse %}
+    <div class="arch-row">
+      <div>
+        <div class="wk">{{ wk.label }}</div>
+        <div class="summary" style="margin-top:2px">{{ wk.count }} players &middot; {{ wk.format }}</div>
+      </div>
+      <div class="dt">{{ wk.published | date("short") }}</div>
+    </div>
+    {% else %}
+    <p class="summary">Hardwood rankings begin with the NBA season in October.</p>
+    {% endfor %}
+  </section>
+</div>
+
+<div class="r-hair" style="margin:32px 0 20px"></div>
+<div class="sec">All Articles</div>
+{% for a in collections.articles %}
+<div class="arch-row">
+  <div>
+    <div class="wk"><a href="{{ a.url }}">{{ a.data.title }}</a></div>
+    <div class="summary" style="margin-top:2px">{{ a.data.summary }}</div>
+  </div>
+  <div class="dt">{{ a.data.date | date("short") }}</div>
+</div>
+{% endfor %}

@@ -1,0 +1,26 @@
+<div class="tbl-wrap">
+<table class="rank" id="rankTable">
+  <thead><tr>
+    <th>#</th><th>Player</th><th class="c-pos">Pos</th><th class="c-team">Tm</th>
+    <th class="c-spark">Trend</th><th style="text-align:right">Chg</th><th style="text-align:right">OTS</th><th class="c-risk">Risk</th>
+  </tr></thead>
+  <tbody>
+  {% for block in week.players | byTier %}
+    <tr class="tier-head"><td colspan="8">{{ block.name }}</td></tr>
+    {% for p in block.players %}{% set m = p.change | movement(week.firstEdition) %}
+      <tr data-pos="{{ p.pos }}">
+        <td class="c-rank">{{ p.rank }}</td>
+        <td class="c-player">{% if p.headshot %}<img class="hs" src="{{ p.headshot }}" alt="" loading="lazy">{% else %}<span class="hs"></span>{% endif %}{{ p.player }}</td>
+        <td class="c-pos">{{ p.pos }}</td>
+        <td class="c-team">{{ p.team }}</td>
+        <td class="c-spark">{{ p.history | sparkline | safe }}</td>
+        <td class="c-chg {{ m.cls }}">{{ m.sym }}{% if m.abs %} {{ m.abs }}{% endif %}</td>
+        <td class="c-ots">{% if p.ots is defined %}{% if p.ots > 0 %}+{{ p.ots }}{% elif p.ots < 0 %}&minus;{{ p.ots | abs }}{% else %}0{% endif %}{% else %}—{% endif %}</td>
+        <td class="c-risk">{% if p.risk %}<span class="risk-dot {{ p.risk | riskClass }}" title="{{ p.note or p.risk }}"></span><span class="risk-lbl">{{ p.risk }}</span>{% endif %}</td>
+      </tr>
+    {% endfor %}
+  {% endfor %}
+  </tbody>
+</table>
+</div>
+<div class="tbl-foot">Trend = rank over the last six weeks &middot; Chg = {% if week.firstEdition %}movement, starting next edition &mdash; this is the baseline{% else %}movement vs. {{ "preseason baseline" if week.week == 1 else "prior week" }}{% endif %} &middot; OTS = Opportunity Trend Score &middot; <a href="/methodology/" style="border-bottom:1px solid var(--rule)">How we build these</a></div>

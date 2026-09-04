@@ -1,0 +1,66 @@
+---
+layout: layouts/base.njk
+permalink: /rankings/
+title: Rest-of-Season Rankings
+description: Weekly rest-of-season fantasy football rankings with week-over-week movement and six-week trend lines.
+---
+{% set week = rankings.latestFootball %}
+<div class="dateline">
+  <span>{{ week.label }}</span><span>{{ week.format }} &middot; Rest of Season</span><span>Updated {{ week.published | date("long") }}</span>
+</div>
+<div class="r-light"></div>
+
+<div style="display:flex;justify-content:space-between;align-items:flex-start;gap:20px;padding:28px 0 20px;flex-wrap:wrap">
+  <div>
+    <span class="sec">{{ week.label }} &middot; {{ week.format }}</span>
+    <h1 class="hed-xl" style="margin-top:10px">Top {{ week.count }} Rest-of-Season Rankings</h1>
+    <p class="standfirst" style="margin-top:10px;max-width:620px">{% if week.firstEdition %}The baseline. Movement starts with the next edition.{% else %}Movement shown against the {{ "preseason baseline" if week.week == 1 else "prior week" }}.{% endif %} Tiers drawn at value cliffs, not even buckets.</p>
+  </div>
+  <div class="stamp" style="margin-top:6px">Updated<small>{% if week.updatedAt %}{{ week.updatedAt | time }}{% else %}{{ week.published | date("short") }}{% endif %}</small></div>
+</div>
+
+<div style="border-top:2px solid var(--ink);padding:22px 0 14px">
+  <span class="sec">The Tiers</span>
+  <div style="margin-top:22px">{% include "partials/cliffbar.njk" %}</div>
+</div>
+
+<div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;border-top:1px solid var(--ink);border-bottom:1px solid var(--rule);padding:11px 0">
+  <div class="filters" id="posFilters">
+    <button data-pos="ALL" aria-pressed="true">All</button><button data-pos="QB" aria-pressed="false">QB</button>
+    <button data-pos="RB" aria-pressed="false">RB</button><button data-pos="WR" aria-pressed="false">WR</button><button data-pos="TE" aria-pressed="false">TE</button>
+  </div>
+  <div class="kick"><span id="shown">{{ week.count }}</span> players &middot; {{ week.tiers }} tiers</div>
+</div>
+
+<div class="lead-grid" style="padding-top:20px">
+  <div>{% include "partials/ranktable.njk" %}
+    {% if week.flags and week.flags.length %}
+    <div style="border-top:2px solid var(--ink);margin-top:26px;padding:18px 0 6px">
+      <span class="sec">The Flags</span>
+      <p class="summary" style="margin-top:8px">Risk is a judgment call, not a model output: Low, Medium or High. Every flag comes with the reason.</p>
+      {% for p in week.flags %}
+      <div class="arch-row"><div><div class="wk"><span class="risk-dot {{ p.risk | riskClass }}"></span>{{ p.player }} <span class="risk-lbl">{{ p.risk }}</span></div><div class="summary" style="margin-top:2px">{{ p.note or "No note yet." }}</div></div><div class="dt">#{{ p.rank }}</div></div>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+  <aside class="rail">
+    <span class="sec">Biggest Movers</span>
+    <div style="margin-top:10px">{% set n = 5 %}{% include "partials/ladder.njk" %}</div>
+    {% for p in week.risers | limit(2) %}{% if p.note %}
+    <div style="margin-top:14px;padding-top:12px;border-top:1px solid var(--rule)"><div class="hed-sm">{{ p.player }} <span class="is-up">▲ {{ p.change }}</span></div><p class="summary">{{ p.note }}</p></div>
+    {% endif %}{% endfor %}
+    <div style="margin-top:22px"><span class="sec">The Metrics</span></div>
+    <div style="font-size:13.5px;line-height:1.9;margin-top:8px">
+      <div style="display:flex;justify-content:space-between;border-bottom:1px solid var(--faint)"><b>OTS</b><span style="color:var(--muted)">Opportunity trend</span></div>
+      <div style="display:flex;justify-content:space-between;border-bottom:1px solid var(--faint)"><b>RCS</b><span style="color:var(--muted)">Role clarity</span></div>
+      <div style="display:flex;justify-content:space-between;border-bottom:1px solid var(--faint)"><b>SFS</b><span style="color:var(--muted)">Scheme fit</span></div>
+      <div style="display:flex;justify-content:space-between"><b>PGHI</b><span style="color:var(--muted)">Passing health</span></div>
+    </div>
+  </aside>
+</div>
+<script>
+(function(){var b=document.getElementById('posFilters'),t=document.getElementById('rankTable'),s=document.getElementById('shown');if(!b||!t)return;
+b.addEventListener('click',function(e){var x=e.target.closest('button');if(!x)return;b.querySelectorAll('button').forEach(function(y){y.setAttribute('aria-pressed','false')});x.setAttribute('aria-pressed','true');
+var p=x.getAttribute('data-pos'),n=0;t.querySelectorAll('tbody tr').forEach(function(r){if(r.classList.contains('tier-head')){r.style.display=(p==='ALL')?'':'none';return}var h=(p==='ALL'||r.getAttribute('data-pos')===p);r.style.display=h?'':'none';if(h)n++});s.textContent=n});})();
+</script>

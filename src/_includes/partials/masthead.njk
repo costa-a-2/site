@@ -1,0 +1,34 @@
+<header>
+  {% set wk = rankings.latestFootball %}
+  <div class="ears">
+    <span>Vol. I · No. {{ (wk.week + 1) if wk else 1 }}</span>
+    <span>{% if wk and wk.published %}{{ wk.published | date("long") }}{% else %}September 2026{% endif %}</span>
+    <span>Gridiron &amp; Hardwood</span>
+  </div>
+
+  {% set sky = collections.articles | limit(3) %}
+  {% if sky and sky.length %}
+  <div class="skybox">
+    {% for a in sky %}
+    <a href="{{ a.url }}">
+      {% if a.data.image %}<img class="thumb" src="{{ a.data.image }}" alt="">{% endif %}
+      <div><div class="kick">{{ a.data.section }}</div><div class="t">{{ a.data.title }}</div></div>
+    </a>
+    {% endfor %}
+  </div>
+  {% else %}<div class="r-thick"></div>{% endif %}
+
+  <div class="nameplate">
+    {% if isHome %}<h1 class="name">The Weekly Rank<span class="tm">&trade;</span></h1>{% else %}<div class="name"><a href="/">The Weekly Rank<span class="tm">&trade;</span></a></div>{% endif %}
+    <div class="tag">Rest-of-season rankings, with the movement shown</div>
+  </div>
+
+  <nav class="sections">
+    <a href="/" {% if page.url == "/" %}aria-current="page"{% endif %}>Gridiron</a>
+    <a href="/rankings/" {% if page.url == "/rankings/" %}aria-current="page"{% endif %}>Rankings</a>
+    <a href="/flag-plant/" {% if page.url == "/flag-plant/" %}aria-current="page"{% endif %}>The Flag Plant</a>
+    <a href="/methodology/" {% if page.url == "/methodology/" %}aria-current="page"{% endif %}>Methodology</a>
+    <a href="/archive/" {% if page.url == "/archive/" %}aria-current="page"{% endif %}>Archive</a>
+  </nav>
+  <div class="r-double-b"></div>
+</header>

@@ -1,0 +1,19 @@
+{% set ts = week.tierSummary %}
+{% if ts and ts.length > 1 %}
+{% set maxP = 0 %}{% set minP = 999 %}{% set total = 0 %}
+{% for t in ts %}{% if t.avgPpg %}{% if t.avgPpg > maxP %}{% set maxP = t.avgPpg %}{% endif %}{% if t.avgPpg < minP %}{% set minP = t.avgPpg %}{% endif %}{% endif %}{% set total = total + t.count %}{% endfor %}
+<div class="cliff">
+  <div class="cliff-bars">
+    {% for t in ts %}
+    {% set h = 100 %}{% if t.avgPpg and maxP > minP %}{% set h = 18 + 82 * (t.avgPpg - minP) / (maxP - minP) %}{% endif %}
+    <div class="cliff-bar" style="flex:{{ t.count }};height:{{ h }}%" title="{{ t.name }} · {{ t.count }} players · {{ t.avgPpg }} PPG">
+      <span class="cliff-ppg">{{ t.avgPpg }}</span>
+    </div>
+    {% endfor %}
+  </div>
+  <div class="cliff-labels">
+    {% for t in ts %}<div style="flex:{{ t.count }}"><span class="cliff-t">{{ (t.name | replace("Tier ", "")).split(" ")[0] }}</span><span class="cliff-n">{{ t.count }}</span></div>{% endfor %}
+  </div>
+  <div class="cliff-foot">Width is tier size · height is average projected PPG · the drops between bars are the value cliffs</div>
+</div>
+{% endif %}
