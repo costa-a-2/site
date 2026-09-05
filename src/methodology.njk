@@ -39,9 +39,6 @@ description: How The Weekly Rank builds its rankings — what goes in, what the 
     <h3>PGHI — Passing Game Health Index</h3>
     <p>Quarterbacks. A composite of the passing environment — how often the offense throws relative to expectation, how the protection is trending, whether the weapons are on the field, and how fast the offense plays. It answers whether things are getting better or worse for the quarterback before his stat line reflects it. PGHI scales projected passing touchdowns.</p>
 
-    <h3>RVI — Role Volatility Index</h3>
-    <p>Basketball. Combines minutes variance, usage variance, active-game rate and lineup stability into a weekly score. A player averaging 32 minutes with wild night-to-night swings is a different asset from one steady at 32. Fantasy basketball is unusually exposed to this problem, and nobody tracks it as a weekly signal.</p>
-
     <h2>What stays private</h2>
     <p>The inputs above are public. Every one of them is built from play-by-play and roster data that anyone can download. What is not public is how they are weighted — the coefficients, the regression targets, how much each metric is trusted in September versus November. That is the work, and it stays on this side of the page.</p>
     <p>For the record, this is not an effort for secrecy. It is the difference between telling you what the model looks at and handing you the model. The first is what makes a ranking worth trusting. The second is what makes it worth copying.</p>
@@ -52,7 +49,7 @@ description: How The Weekly Rank builds its rankings — what goes in, what the 
 
     <h2>Tiers and formats</h2>
     <p>Tiers are drawn where the points-per-game cliffs actually are, not at even intervals. The gap between tiers is the useful information; the tier number is just a label.</p>
-    <p>Football rankings default to <strong>half-PPR redraft</strong>. Basketball defaults to <strong>nine-category roto</strong>. Superflex, dynasty and points-league variants are planned.</p>
+    <p>Rankings default to <strong>half-PPR redraft</strong>. Superflex, dynasty and points-league variants are planned.</p>
   </div>
 
   <aside class="rail">
@@ -61,8 +58,7 @@ description: How The Weekly Rank builds its rankings — what goes in, what the 
       <div style="padding:7px 0;border-bottom:1px solid var(--faint)"><b>OTS</b><br><span style="color:var(--muted)">All skill positions &middot; scales volume</span></div>
       <div style="padding:7px 0;border-bottom:1px solid var(--faint)"><b>RCS</b><br><span style="color:var(--muted)">Running backs &middot; scales rushing TDs</span></div>
       <div style="padding:7px 0;border-bottom:1px solid var(--faint)"><b>SFS</b><br><span style="color:var(--muted)">Receivers &middot; scales receiving yards</span></div>
-      <div style="padding:7px 0;border-bottom:1px solid var(--faint)"><b>PGHI</b><br><span style="color:var(--muted)">Quarterbacks &middot; scales passing TDs</span></div>
-      <div style="padding:7px 0"><b>RVI</b><br><span style="color:var(--muted)">Basketball &middot; role volatility</span></div>
+      <div style="padding:7px 0"><b>PGHI</b><br><span style="color:var(--muted)">Quarterbacks &middot; scales passing TDs</span></div>
     </div>
 
     <div class="sec" style="margin-top:24px">The Chain</div>
@@ -73,7 +69,6 @@ description: How The Weekly Rank builds its rankings — what goes in, what the 
     <div class="sec" style="margin-top:24px">Defaults</div>
     <div style="font-size:13.5px;line-height:1.9">
       <div style="display:flex;justify-content:space-between;border-bottom:1px solid var(--faint)"><span>Football</span><b>Half-PPR</b></div>
-      <div style="display:flex;justify-content:space-between;border-bottom:1px solid var(--faint)"><span>Basketball</span><b>9-Cat Roto</b></div>
       <div style="display:flex;justify-content:space-between;border-bottom:1px solid var(--faint)"><span>Horizon</span><b>Rest of season</b></div>
       <div style="display:flex;justify-content:space-between"><span>Data</span><b>nflverse</b></div>
     </div>

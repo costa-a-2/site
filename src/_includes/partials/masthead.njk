@@ -3,7 +3,7 @@
   <div class="ears">
     <span>Vol. I · No. {{ (wk.week + 1) if wk else 1 }}</span>
     <span>{% if wk and wk.published %}{{ wk.published | date("long") }}{% else %}September 2026{% endif %}</span>
-    <span>Gridiron &amp; Hardwood</span>
+    <span>Gridiron</span>
   </div>
 
   {% set sky = collections.articles | limit(3) %}

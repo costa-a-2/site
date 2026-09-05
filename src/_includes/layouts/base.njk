@@ -8,7 +8,7 @@
 {%- set ogPath = ogImage or (image | replace("/assets/img/", "/assets/img/og/") if image else site.defaultOg) -%}
 {%- set ogAbs = ogPath if ogPath.startsWith("http") else (site.url ~ ogPath) -%}
 {%- set isArticle = pageType == "article" or pageType == "person" -%}
-<title>{% if title %}{{ title }} | {{ site.name }}{% else %}{{ site.name }} | Fantasy Football &amp; Basketball Rankings{% endif %}</title>
+<title>{% if title %}{{ title }} | {{ site.name }}{% else %}{{ site.name }} | Rest-of-Season Fantasy Football Rankings{% endif %}</title>
 <meta name="description" content="{{ description or site.tagline }}">
 <link rel="canonical" href="{{ canonicalUrl }}">
 <meta name="robots" content="max-image-preview:large">

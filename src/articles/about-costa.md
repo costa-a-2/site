@@ -39,7 +39,7 @@ That is the gap this site exists to fill.
 
 ## What The Weekly Rank actually is
 
-Rest-of-season rankings for fantasy football and basketball, published weekly, with a change column showing exactly how far each player moved and why.
+Rest-of-season fantasy football rankings, published weekly, with a change column showing exactly how far each player moved and why.
 
 Three rules I am holding myself to:
 
@@ -51,7 +51,7 @@ Three rules I am holding myself to:
 
 ## The numbers, and the part the numbers miss
 
-I have built a set of metrics to explain movement. Opportunity trends across every skill position. Role clarity for running backs — not how many touches, but what kind, split across early downs, third downs, red zone, and two-minute. Scheme fit for receivers, which matters most right after a coordinator change. A passing environment index for quarterbacks. Role volatility for basketball, where a player averaging 32 minutes can still be unstartable.
+I have built a set of metrics to explain movement. Opportunity trends across every skill position. Role clarity for running backs — not how many touches, but what kind, split across early downs, third downs, red zone, and two-minute. Scheme fit for receivers, which matters most right after a coordinator change. A passing environment index for quarterbacks.
 
 There is a full [methodology page](/methodology/) if you want the mechanics.
 
@@ -79,7 +79,7 @@ If you have been reading [Matt Harmon](https://x.com/MattHarmon_BYB), [JJ Zachar
 
 ## What to expect
 
-Rankings every week during the season, football from September and basketball from October. Explanations for anything that moved more than a few spots. One rookie call a year that I will live with publicly. And an archive that does not get edited.
+Rankings every week during the season, starting in September. Explanations for anything that moved more than a few spots. One rookie call a year that I will live with publicly. And an archive that does not get edited.
 
 I would rather be wrong out loud than vague and safe.
 
