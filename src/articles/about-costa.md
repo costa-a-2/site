@@ -1,6 +1,6 @@
 ---
 title: "The TV Fell Off the Wall and I Won Anyway"
-standfirst: "How a broken wall mount, a Notre Dame running back, and twelve years of the same league turned into this site."
+standfirst: "How a broken wall mount, some rookie running backs, and twelve years of the same league turned into this site."
 summary: "Who I am, why this exists, and what you should expect from it."
 section: "About"
 kicker: "An Introduction"
@@ -11,31 +11,31 @@ imageAlt: "Dalvin Cook running with the ball"
 caption: "Dalvin Cook, 2022. Photo by All-Pro Reels, CC BY-SA 2.0."
 ---
 
-In 2014 I was sitting in a friend's living room for our first-ever draft when the television came off the wall mount. Not dramatically — it just gave up, tilted, and took my laptop connection with it on the way down. By the time anyone got me back online, autodraft had made about half my roster decisions.
+In 2014 I was sitting in my family's living room for my first-ever fantasy football draft when the television came off the wall mount, thudding to the floor. Not so dramatically — it just gave up, tilted, and took my laptop connection with it on the way down. By the time I got back online, I missed at least 3 rounds to autodraft.
 
 I won the league that year.
 
-I have thought about that a lot in the twelve seasons since, because it is a genuinely annoying story to tell. It undercuts everything I would like to believe about preparation. My friend Steve had spent weeks building what was, on paper, the best team in the league. I had a broken wall mount and a computer that picked for me, and I had Dez Bryant and Andrew Luck, and that turned out to be enough.
+I have thought about that a lot in the twelve seasons since, because it is a genuinely annoying story to tell. It undercuts everything I would like to believe about preparation. That season, my friend Steve had spent weeks building what was, on paper, the best team in the league. Every player not cuttable. Waiver picks, great draft and trades (many questionable). I had a broken wall mount and a computer that picked for me, and I had Jimmy Graham as my first pick. Dez Bryant and Andrew Luck. And that turned out to be enough.
 
 What I have decided it means is not that preparation is worthless. It is that most of what we call analysis in fantasy football is really just confidence, and the two are easy to confuse.
 
 ## Twelve Years, Same League
 
-That league still exists. Six of the original members are still in it. Everyone else has been there since 2017. I have been the commissioner the entire time, which mostly means I am the person who gets texted at 11pm on a Saturday about a waiver claim.
+This league I referenced still exists. Six of the original members are still in it. Everyone else has been there since 2017. Friends from high school started it, some friends of mine from college mixed in. We are not all experts, but strangely it is always competitive, people make great picks, and develop great teams. 
 
-I have won it three times — back to back in the first two seasons, and once more recently. I have also finished last, which I mention because a track record that only contains the good years is not a track record.
+I have been the commissioner the entire time, which mostly means I am the person who gets texted at 11 AM on a Sunday about helping the league vote to push a trade through.
+
+I have won it three times — back to back in the first two seasons, and once more recently in 2024. I have also finished as runner up, to missing the playoffs outright. Which I mention because a track record that only contains the good years is not a track record.
 
 ## What I Kept Noticing
 
 Somewhere around year six I started paying attention to something that bothered me and that nobody seemed to talk about.
 
-Every fantasy site publishes rankings. They update those rankings every week. And almost none of them show you what changed.
+Every fantasy site publishes rankings. They update those rankings every week for the specified week. What that does not show you is the way you build your team - who do you want for the rest of the season?
 
-A player sits at 14 one week and 22 the next, and the number simply gets overwritten. No explanation, no record, no acknowledgment that anything moved. If you were not watching closely you would never know. And because the old number disappears, nobody can ever be held to it.
+Baseball solved this. [Pitcher List](https://pitcherlist.com) has published rolling rankings with visible movement for years, and it works because the movement *is* the information. Football and basketball have not found a focused version of this (that I have found).
 
-Baseball solved this. [Pitcher List](https://pitcherlist.com) has published rolling rankings with visible movement for years, and it works because the movement *is* the information. Football and basketball never got a version of it.
-
-That is the gap this site exists to fill.
+That is the gap my site exists to fill.
 
 ## What The Weekly Rank Actually Is
 
@@ -63,7 +63,7 @@ The clearest example is a habit I have had since 2017.
 
 Every year I pick one rookie — usually a running back — and commit to him before the season starts. Not a sleeper list. One name.
 
-Cook. Montgomery. Gibson. Javonte Williams. Kenneth Walker. Gibbs. Bowers. Henderson.
+Cook. Montgomery. Gibson. Javonte Williams. Kenneth Walker. Gibbs. Henderson.
 
 That call has never come from a spreadsheet. It comes from watching someone and seeing something the consensus has not priced yet. Sometimes that is a read on a coaching change nobody has connected to the personnel. Sometimes it is just how a guy moves when the first read is not there.
 
@@ -73,7 +73,7 @@ It is the least defensible thing I do and the thing I am most confident about, w
 
 Costa Angelakis. Marketer by day — which is relevant only in that I understand audiences and distribution, and it explains why this site looks like something rather than nothing.
 
-I am not a former scout. I did not play. I have no insider access and I am not going to pretend otherwise. What I have is twelve years of doing this seriously, a habit of writing down my calls before I know how they turn out, and enough respect for the people who built this space to try to add to it rather than repackage it.
+I am not a former scout. I have no insider access and I am not going to pretend otherwise. What I have is twelve years of doing this seriously, a habit of writing down my calls before I know how they turn out, and enough respect for the people who built this space to try to add to it rather than repackage it.
 
 If you have been reading [Matt Harmon](https://x.com/MattHarmon_BYB), [JJ Zachariason](https://x.com/LateRoundQB), [Matthew Berry](https://x.com/MatthewBerryTMR), or the [Fantasy Footballers](https://x.com/TheFFBallers) for years like I have, you will recognize what I am trying to do here.
 
@@ -81,6 +81,6 @@ If you have been reading [Matt Harmon](https://x.com/MattHarmon_BYB), [JJ Zachar
 
 Rankings every week during the season, starting in September. Explanations for anything that moved more than a few spots. One rookie call a year that I will live with publicly. And an archive that does not get edited.
 
-I would rather be wrong out loud than vague and safe.
+I can't wait to participate in this space and hopefully help some of you win some leagues while looking at things in a new way.
 
 Find me at [@theweeklyrank](https://x.com/theweeklyrank).
