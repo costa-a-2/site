@@ -6,9 +6,9 @@ section: "Rankings"
 kicker: "2026 Preseason · How It Works"
 date: 2026-09-08
 readtime: "7 min"
-image: "/assets/img/rankings-hero.jpg"
-imageAlt: "Photograph of a running back at the line of scrimmage"
-caption: "The line of scrimmage, 2023 Sun Bowl. U.S. Army photo by Spc. David Poleski, public domain."
+image: "/assets/img/huddle.jpg"
+imageAlt: "An NFL offense in a huddle at Ford Field"
+caption: "The huddle. Photo by All-Pro Reels, CC BY-SA 2.0."
 ---
 
 Most rankings you'll read this week were made the same way: someone who watches a lot of football sat down with last year's numbers and a feel for the offseason, and ordered players until the list looked right. That's not a knock. It's how I did it for twelve years in my own league, and it works about as well as anything.

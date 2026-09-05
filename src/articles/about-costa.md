@@ -7,9 +7,9 @@ kicker: "An Introduction"
 pageType: "person"
 date: 2026-09-06
 readtime: "6 min"
-image: "/assets/img/cook_color.jpg"
-imageAlt: "Photograph of a running back celebrating"
-caption: "Dalvin Cook, 2017. The first flag I ever planted, and the reason this site has a section named after the habit."
+image: "/assets/img/cook-2022.jpg"
+imageAlt: "Dalvin Cook running with the ball"
+caption: "Dalvin Cook, 2022. Photo by All-Pro Reels, CC BY-SA 2.0."
 ---
 
 In 2014 I was sitting in a friend's living room for our first-ever draft when the television came off the wall mount. Not dramatically — it just gave up, tilted, and took my laptop connection with it on the way down. By the time anyone got me back online, autodraft had made about half my roster decisions.

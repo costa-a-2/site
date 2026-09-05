@@ -6,9 +6,9 @@ section: "The Flag Plant"
 kicker: "The Record · 2017–2025"
 date: 2026-09-07
 readtime: "8 min"
-image: "/assets/img/cook_color.jpg"
-imageAlt: "Photograph of Dalvin Cook celebrating"
-caption: "Dalvin Cook, 2017. The first one."
+image: "/assets/img/walker-parade.jpg"
+imageAlt: "Kenneth Walker III holding the Lombardi Trophy on a parade bus"
+caption: "Kenneth Walker III, the 2022 call, at the Super Bowl LX parade. Washington National Guard photo, public domain."
 ---
 
 The habit started with a running back I couldn't stop watching.
