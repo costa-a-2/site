@@ -1,6 +1,6 @@
 ---
 title: "How the 2026 Rankings Were Built"
-standfirst: "Last year's volume, this year's Vegas lines, a lot of decisions about who gets the ball, and then adding judgement. Here is the whole process, in order."
+standfirst: "Last year's volume, this year's Vegas lines, a lot of decisions about who gets the ball, and then adding judgment. Here is the whole process, in order."
 summary: "The preseason rankings start from what teams actually did, adjust for what Vegas expects, and end with judgment. Every step is on the page."
 section: "Rankings"
 kicker: "2026 Preseason · How It Works"
@@ -15,7 +15,7 @@ Most rankings you'll read this week were made the same way: someone who watches 
 
 This year I wanted to be able to show my work. Not because the numbers know better than a good eye, they don't, but because when a player moves nine spots in October, I want to be able to point at the reason. So the 2026 preseason rankings were built in a specific order, and every step of it is below. If you only read one section, read the last one, because that's where the rankings stopped being a spreadsheet.
 
-## STEP 1: WHAT HAPPENED LAST YEAR?
+## Step 1: What Happened Last Year?
 
 Everything starts with the team, not the player. Before I thought about a single running back, I pulled every offense's 2025 totals: how many times they ran, how many times they threw, how many yards and touchdowns came from each.
 
@@ -23,15 +23,15 @@ Those totals are the ceiling. An offense that ran the ball 450 times last year (
 
 One adjustment matters here: last year's numbers get pulled partway toward the league average before I use them. A team that threw for the most yards in the league in 2025 will probably throw for a lot in 2026, but probably not the most. The same goes in the other direction. The pull is stronger for touchdowns than for yards, because touchdowns swing wildly year to year and yards mostly don't.
 
-## STEP 2: WHY BET AGAINST VEGAS?
+## Step 2: Why Bet Against Vegas?
 
-Last year's totals tell you what an offense was. They don't tell you whether it's about to get better or worse. While we all have assumptions about what may happen.. the age old saying is "the house always wins". Who am I to bet against Vegas. So, for this portion I used the one number the betting market publishes for every team before the season: the win total.
+Last year's totals tell you what an offense was. They don't tell you whether it's about to get better or worse. While we all have assumptions about what may happen, the age-old saying is "the house always wins". Who am I to bet against Vegas? So, for this portion I used the one number the betting market publishes for every team before the season: the win total.
 
 The logic is simple. Teams that win more games score more, and teams that score more produce more fantasy points across the whole roster. So every team's projected touchdowns get nudged up or down based on how far its win total sits from the middle of the league. A team the books have at 11.5 wins gets a bump. A team at 4.5 gets a haircut. Yards move too, but only slightly. Good teams don't gain dramatically more yards than bad ones, they just finish drives.
 
-Now I will clarify, I don't treat Vegas as gospel. I disagreed some of the projections and changed them, and those changes are noted in the model. But as a starting point for "which offenses are the environment you want your players in," it beats any single person's guess, including mine.
+Now I will clarify, I don't treat Vegas as gospel. I disagreed with some of the projections and changed them, and those changes are noted in the model. But as a starting point for "which offenses are the environment you want your players in," it beats any single person's guess, including mine.
 
-## STEP 3: WHO GETS THE BALL?
+## Step 3: Who Gets the Ball?
 
 This is the part no formula can do, and it's where most of the preseason work went.
 
@@ -41,7 +41,7 @@ That's about 115 decisions, and they're the ones that actually shape the ranking
 
 Every player's share and the team total behind it sits in the model. When I say a player projects for 1,150 rushing yards, that number is a share times a total, and both are visible to me.
 
-## STEP 4: THE METRICS.
+## Step 4: The Metrics
 
 I built four of them. You'll see them referenced in the weekly write-ups, so here's what each one does in plain terms.
 
@@ -57,7 +57,7 @@ Here's the thing about the preseason, though: most of these are quiet right now.
 
 What I'll tell you about how they're weighted: each one adjusts a specific stat — carries, touchdowns, yards per target — and never the rank directly. What I won't tell you is the exact weight on each. The inputs are public. The weights are not.
 
-## STEP 5: THE BOARD
+## Step 5: The Board
 
 By the end of step four, every player has a projected stat line and a points-per-game number. That is not a ranking yet, for two reasons.
 
@@ -67,10 +67,14 @@ The second reason is that the model doesn't watch film, doesn't know a coach's t
 
 On the rankings page, you'll see both numbers: where the model had him and where I put him. When they match, I trusted the projection. When they don't, I overrode it, and the note says why. That column will be more interesting in November than it is now, but it's there from day one because the point of this site is that you can check.
 
-## WHAT HAPPENS NEXT
+## What Happens Next
 
-Next Wednesday the first real change column appears. Every player will have a number next to his name showing how far he moved from this list and a reason if it's more than a few spots. This preseason file never changes,it's the thing the rest of the season gets measured against.
+This is the baseline. Every player on the list has a dash in the change column right now, and that's on purpose — there's nothing to compare against yet.
 
-I'll be wrong about some of this. Probably the shares more than anything else. When I am, you'll see it here first, because the alternative — quietly fixing the number and pretending — is the thing this whole site exists to not do.
+When the Week 1 rankings publish, that changes. Every player gets a number next to his name showing how far he moved from this list, up or down, and if it's more than a few spots, a sentence on why. Maybe a share changed because a backfield split looked different than I expected. Maybe a metric started moving. Maybe I just saw something on Sunday that I couldn't unsee. Whatever it is, it'll be written down next to the move.
 
-The rankings are [here](/rankings/). The one rookie I'm staking the year on is [here](/flag-plant/).
+The preseason file itself never changes. It's the thing the rest of the season gets measured against, which means every call in it — good and bad — stays exactly where it is.
+
+I'll be wrong about some of this. Probably the shares more than anything else; those are the guesses with the least data behind them. When I am, you'll see it here first, because the alternative — quietly fixing the number and pretending it was always right — is the thing this whole site exists to not do.
+
+And honestly, that's the part I'm looking forward to most. Not being right. Being able to show you the whole trail.
