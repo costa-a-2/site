@@ -19,13 +19,13 @@ I have thought about that a lot in the twelve seasons since, because it is a gen
 
 What I have decided it means is not that preparation is worthless. It is that most of what we call analysis in fantasy football is really just confidence, and the two are easy to confuse.
 
-## Twelve years, same league
+## Twelve Years, Same League
 
 That league still exists. Six of the original members are still in it. Everyone else has been there since 2017. I have been the commissioner the entire time, which mostly means I am the person who gets texted at 11pm on a Saturday about a waiver claim.
 
 I have won it three times — back to back in the first two seasons, and once more recently. I have also finished last, which I mention because a track record that only contains the good years is not a track record.
 
-## What I kept noticing
+## What I Kept Noticing
 
 Somewhere around year six I started paying attention to something that bothered me and that nobody seemed to talk about.
 
@@ -37,7 +37,7 @@ Baseball solved this. [Pitcher List](https://pitcherlist.com) has published roll
 
 That is the gap this site exists to fill.
 
-## What The Weekly Rank actually is
+## What The Weekly Rank Actually Is
 
 Rest-of-season fantasy football rankings, published weekly, with a change column showing exactly how far each player moved and why.
 
@@ -49,7 +49,7 @@ Three rules I am holding myself to:
 
 **Movers get explanations.** A player who jumps nine spots gets a reason, in plain language, tied to something specific.
 
-## The numbers, and the part the numbers miss
+## The Numbers, and the Part the Numbers Miss
 
 I have built a set of metrics to explain movement. Opportunity trends across every skill position. Role clarity for running backs — not how many touches, but what kind, split across early downs, third downs, red zone, and two-minute. Scheme fit for receivers, which matters most right after a coordinator change. A passing environment index for quarterbacks.
 
@@ -69,7 +69,7 @@ That call has never come from a spreadsheet. It comes from watching someone and 
 
 It is the least defensible thing I do and the thing I am most confident about, which I recognize is a strange combination. I publish it before Week 1, on the record, and I grade it honestly when the season ends. [Here is the running list.](/flag-plant/)
 
-## Who is writing this
+## Who Is Writing This
 
 Costa Angelakis. Marketer by day — which is relevant only in that I understand audiences and distribution, and it explains why this site looks like something rather than nothing.
 
@@ -77,7 +77,7 @@ I am not a former scout. I did not play. I have no insider access and I am not g
 
 If you have been reading [Matt Harmon](https://x.com/MattHarmon_BYB), [JJ Zachariason](https://x.com/LateRoundQB), [Matthew Berry](https://x.com/MatthewBerryTMR), or the [Fantasy Footballers](https://x.com/TheFFBallers) for years like I have, you will recognize what I am trying to do here.
 
-## What to expect
+## What to Expect
 
 Rankings every week during the season, starting in September. Explanations for anything that moved more than a few spots. One rookie call a year that I will live with publicly. And an archive that does not get edited.
 

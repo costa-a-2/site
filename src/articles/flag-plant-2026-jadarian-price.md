@@ -19,7 +19,7 @@ He is the last pick of the first round, he is the Week 1 starter for the defendi
 
 That last sentence is the entire reason we are here.
 
-## What is actually open in Seattle
+## What Is Actually Open in Seattle
 
 Kenneth Walker III left in free agency. Zach Charbonnet tore his ACL in January, had reconstructive surgery in February, and opens the season on the PUP list — which by rule means a minimum of four games.
 
@@ -37,7 +37,7 @@ And this is not a small pie. **No team in the NFL gave its running backs more ca
 
 The goal-line detail is the one I keep coming back to. Charbonnet's twelve rushing touchdowns led the team and made him the first Seattle player since Marshawn Lynch in 2014 to reach double digits. That role currently has no incumbent.
 
-## The Walker comparison
+## The Walker Comparison
 
 This is the cleanest way I can make the argument.
 
@@ -49,7 +49,7 @@ Why? Because he split everything. He shared passing-game work with Charbonnet, a
 
 Price does not have to split. Not in September, and I do not think in November either.
 
-## So why is he cheap?
+## So Why Is He Cheap?
 
 Three reasons, and all three are legitimate. I want to name them properly rather than wave at them.
 
@@ -59,7 +59,7 @@ Three reasons, and all three are legitimate. I want to name them properly rather
 
 **Three: there is an Achilles tear in his history and he is 203 pounds.** Evaluators flagged both — durability concerns lingering from the injury, and a lighter frame that raises questions about a bell-cow workload. This is the objection nobody makes at all, and it is quietly doing a lot of work in his price.
 
-## The part nobody is talking about
+## The Part Nobody Is Talking About
 
 Klint Kubiak left Seattle to become head coach of the Las Vegas Raiders. The Seahawks replaced him with **Brian Fleury**.
 
@@ -79,7 +79,7 @@ There is continuity here too, which matters. Kubiak and Fleury share the same co
 
 **The honest risk: Fleury has never called plays.** Not in the NFL, not in college, not anywhere. That is a real unknown, and it is part of why a first-round back on the defending champion is available in the sixth round.
 
-## What the history says
+## What the History Says
 
 Since 2016, thirteen running backs have been taken in the first round. Twelve of them played as rookies.
 
@@ -108,7 +108,7 @@ The difference is workload security. Edwards-Helaire walked into a healthy Kansa
 
 The committee argument requires somebody to form a committee with. For the first month, there is not one.
 
-## What the model says
+## What the Model Says
 
 I should tell you where the numbers land before I tell you where I do, because they are not the same thing and this site is built on showing both.
 
@@ -116,11 +116,11 @@ The projection model behind the [rankings](/rankings/) starts from Seattle's tea
 
 The market has him RB26. The model has him RB17 on shares alone. Everything below is the case for why the model is still too low.
 
-## The film
+## The Film
 
 *[Costa's film read goes here — the specific thing you see on tape that 113 carries cannot show, and why you believe it holds up at a larger workload.]*
 
-## The call
+## The Call
 
 Jadarian Price, RB26, and I think that number looks silly by November.
 

@@ -19,13 +19,13 @@ That was 2017. I was three seasons into running the same league, and I'd noticed
 
 So I started saying one name. I've done it every year since, with one gap, and I've never gone back and softened a call after the fact. What follows is the whole record, including the ones I'd rather not talk about.
 
-## The rule
+## The Rule
 
 One rookie. Called before Week 1. Usually a running back, because that's the position where a rookie can walk into a full workload and where my eye is best. The call comes from film first — something I see in how a player moves that I don't think the consensus has priced — and then from situation. It does not come from a spreadsheet, and this is the one place on this site where it isn't supposed to.
 
 Graded in January. Hit, push, or miss. No partial credit for "well, if he'd stayed healthy."
 
-## The record
+## The Record
 
 ### 2017 — Dalvin Cook, Minnesota
 
@@ -35,7 +35,7 @@ Graded in January. Hit, push, or miss. No partial credit for "well, if he'd stay
 
 **Grade:** Cook, *incomplete* — the read was right and the season ended before it could prove anything, which is the risk with every one of these. Fournette, *hit*. <!-- COSTA: confirm grades -->
 
-### 2018 — No call
+### 2018 — No Call
 
 <!-- COSTA: why no call in 2018? Barkley was the obvious one — did you sit it out because it wasn't a call, or did life get in the way? One honest sentence. If you did make a call that year and it's not in your notes, say so and I'll add it. -->
 
@@ -81,7 +81,7 @@ Graded in January. Hit, push, or miss. No partial credit for "well, if he'd stay
 
 **Grade:** *Push.* Same lesson as Javonte, four years later: I got the player right and the share wrong. Nine rushing touchdowns as a rookie in a committee is a real season. It isn't the season I called.
 
-## What the record says
+## What the Record Says
 
 Nine calls over nine years, counting Fournette. By my grading: five hits, three pushes, one incomplete. <!-- COSTA: adjust if your grades differ -->
 
@@ -89,6 +89,6 @@ The hits have something in common, and it isn't the film. Gibson, Walker, Gibbs 
 
 That's worth saying plainly, because it's the whole shape of this year's call. Seattle vacated 456 touches. The depth behind the rookie is an undrafted back with 25 career carries. The mistake I've made three times is the one this situation makes hardest to make.
 
-## The rest of the story
+## The Rest of the Story
 
 The 2026 call is [Jadarian Price](/flag-plant/). It's on the record now, before Week 1, the same as the other nine. I'll grade it in January the same way — hit, push, or miss — and it'll go on this page either way.
