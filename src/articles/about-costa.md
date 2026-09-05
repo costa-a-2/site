@@ -4,7 +4,6 @@ standfirst: "How a broken wall mount, a Notre Dame running back, and twelve year
 summary: "Who I am, why this exists, and what you should expect from it."
 section: "About"
 kicker: "An Introduction"
-pageType: "person"
 date: 2026-09-06
 readtime: "6 min"
 image: "/assets/img/cook-2022.jpg"

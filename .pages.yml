@@ -1,0 +1,82 @@
+# Pages CMS (app.pagescms.org) — articles only.
+# Rankings data (data/), site data (src/_data), includes and .njk templates are deliberately not
+# exposed: the change column is computed from the data files and a hand edit would break it.
+media:
+  input: src/assets/img
+  output: /assets/img
+  categories: [image]
+  # note: the schema has no folder exclusion — og/ (generated 1200×630 crops) will show in the
+  # browser; leave it alone. scripts/og_images.py regenerates it.
+
+content:
+  - name: articles
+    label: Articles
+    description: One Markdown file per article. Save commits to main; the site rebuilds in about 90 seconds.
+    type: collection
+    path: src/articles
+    format: yaml-frontmatter
+    filename: "{primary}.md"
+    exclude: [articles.json, articles.11tydata.js]
+    view:
+      fields: [title, section, date, readtime]
+      primary: title
+      sort: [date, title]
+      default:
+        sort: date
+        order: desc
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: standfirst
+        label: Standfirst
+        description: The italic line under the headline.
+        type: text
+      - name: summary
+        label: Summary
+        description: One sentence for cards, the archive and the meta description.
+        type: text
+      - name: section
+        label: Section
+        type: select
+        options:
+          values: [Rankings, The Flag Plant, Signals, About]
+      - name: kicker
+        label: Kicker
+        description: The small line above the headline (e.g. "2026 · On the Record").
+        type: string
+      - name: date
+        label: Date
+        type: date
+        required: true
+        options:
+          format: yyyy-MM-dd
+      - name: readtime
+        label: Read time
+        type: string
+        default: "5 min"
+      - name: image
+        label: Hero image
+        description: 1600px wide, 3:2. Public-domain or CC-licensed; credit it in the caption.
+        type: image
+        options:
+          extensions: [jpg, jpeg, png, webp]
+      - name: imageAlt
+        label: Image alt text
+        type: string
+      - name: caption
+        label: Caption
+        description: Includes the photo credit.
+        type: string
+      - name: datelineCity
+        label: Dateline city
+        description: Optional, e.g. SEATTLE. Shown before the lede.
+        type: string
+      - name: lede
+        label: Lede
+        description: Optional. The drop-cap opening paragraph that follows the dateline.
+        type: text
+      - name: body
+        label: Body
+        type: rich-text
