@@ -27,6 +27,24 @@ pageType: home
       <p class="standfirst" style="max-width:70%">{{ lead.data.standfirst }}</p>
       <div class="meta" style="margin:0">By {{ site.author }} &middot; {{ lead.data.readtime }}</div>
     </div>
+
+    {# By the Numbers — every figure is computed from this edition's data file, never typed #}
+    {% set nHigh = 0 %}{% set nMed = 0 %}{% set nQB = 0 %}{% set nRB = 0 %}{% set nWR = 0 %}{% set nTE = 0 %}
+    {% for p in wk.players %}
+      {% if p.risk == "High" %}{% set nHigh = nHigh + 1 %}{% elif p.risk == "Medium" %}{% set nMed = nMed + 1 %}{% endif %}
+      {% if p.pos == "QB" %}{% set nQB = nQB + 1 %}{% elif p.pos == "RB" %}{% set nRB = nRB + 1 %}{% elif p.pos == "WR" %}{% set nWR = nWR + 1 %}{% elif p.pos == "TE" %}{% set nTE = nTE + 1 %}{% endif %}
+    {% endfor %}
+    <div class="bynum">
+      <div class="bynum-head"><span class="sec">By the Numbers</span><span class="kick">{{ wk.label }} edition</span></div>
+      <div class="bynum-grid">
+        <div><b>{{ wk.count }}</b><span>Players ranked</span></div>
+        <div><b>{{ wk.tiers }}</b><span>Tiers, drawn at value cliffs</span></div>
+        <div><b>{{ nRB }}&thinsp;/&thinsp;{{ nWR }}</b><span>Backs / receivers on the board</span></div>
+        <div><b>{{ nQB }}&thinsp;/&thinsp;{{ nTE }}</b><span>Quarterbacks / tight ends</span></div>
+        <div><b>{{ nHigh }}</b><span>High-risk flags</span></div>
+        <div><b>{{ wk.cusp.length if wk.cusp else 0 }}</b><span>On the cusp</span></div>
+      </div>
+    </div>
   </article>
 
   <aside class="rail reveal">
