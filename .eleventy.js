@@ -62,16 +62,23 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("where", (arr, key, val) =>
     (arr || []).filter((x) => x[key] === val));
 
-  // Group ranked players into tier blocks, preserving order
+  // Group ranked players into tier blocks, preserving order. Each block carries its cliff: the
+  // drop in value over replacement from this tier's last player to the next tier's first
+  // (null on the final tier, or when either side has no VORP).
   eleventyConfig.addFilter("byTier", (players) => {
     const out = [];
     let cur = null;
     (players || []).forEach((p) => {
       if (!cur || cur.tier !== p.tier) {
-        cur = { tier: p.tier, name: p.tierName || `Tier ${p.tier}`, players: [] };
+        cur = { tier: p.tier, name: p.tierName || `Tier ${p.tier}`, players: [], cliff: null };
         out.push(cur);
       }
       cur.players.push(p);
+    });
+    out.forEach((b, i) => {
+      const next = out[i + 1]; if (!next) return;
+      const last = b.players[b.players.length - 1].vorp, first = next.players[0].vorp;
+      if (typeof last === "number" && typeof first === "number") b.cliff = +(last - first).toFixed(1);
     });
     return out;
   });

@@ -7,6 +7,35 @@ function loadJSON(p, fallback) {
 }
 const HEADSHOTS = loadJSON(path.join(DATA_DIR, "headshots.json"), {});
 
+// Badges after the player name — two-word archetypes computed from the projected shares in each
+// player's `stats`, never typed (same rule as the change column). Thresholds live here and are
+// referenced from metrics/WEIGHTS.md.
+const BADGES = {
+  RB: { bellCow: 0.60, leadBack: 0.45, passDownTargetShare: 0.12 },   // carryShare; targetShare for the add-on
+  WR: { alpha: 0.26, volume: 0.18 },                                   // targetShare
+  TE: { alpha: 0.26, featured: 0.18 },                                 // targetShare
+  QB: { dualThreatRushYds: 500 }                                       // projected rushing yards
+};
+function badgesFor(p) {
+  const s = p.stats || {}, out = [];
+  const carry = +s.carryShare || 0, tgt = +s.targetShare || 0;
+  if (p.pos === "RB") {
+    if (carry >= BADGES.RB.bellCow) out.push("Bell cow");
+    else if (carry >= BADGES.RB.leadBack) out.push("Lead back");
+    else out.push("Committee");
+    if (tgt >= BADGES.RB.passDownTargetShare) out.push("Pass-down role");
+  } else if (p.pos === "WR") {
+    if (tgt >= BADGES.WR.alpha) out.push("Alpha target");
+    else if (tgt >= BADGES.WR.volume) out.push("Volume WR2");
+  } else if (p.pos === "TE") {
+    if (tgt >= BADGES.TE.alpha) out.push("Alpha target");
+    else if (tgt >= BADGES.TE.featured) out.push("Featured TE");
+  } else if (p.pos === "QB") {
+    if ((+s.rushYds || 0) > BADGES.QB.dualThreatRushYds) out.push("Dual threat");
+  }
+  return out;
+}
+
 function loadSport(sport) {
   const dir = path.join(DATA_DIR, sport);
   if (!fs.existsSync(dir)) return [];
@@ -69,7 +98,7 @@ function withMovement(weeks) {
       const before = prevMap.has(p.player) ? prevMap.get(p.player) : null;
       const history = window.map(w => { const f = w.players.find(x => x.player === p.player); return f ? f.rank : null; });
       return { ...p, prevRank: before, change: before === null ? null : before - p.rank, history,
-               headshot: p.headshot || HEADSHOTS[keyOf(p.player)] || null };
+               headshot: p.headshot || HEADSHOTS[keyOf(p.player)] || null, badges: badgesFor(p) };
     });
     const signalGroups = groupSignals(wk, players);
     const movers = players.filter(p => typeof p.change === "number" && p.change !== 0)
