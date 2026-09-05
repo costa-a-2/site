@@ -1,0 +1,37 @@
+{#-
+  Structured data, one include, switched by front-matter `pageType`:
+    home     → WebSite + Organization
+    article  → Article (author Person Costa Angelakis, publisher the site)
+    person   → Person (the About page)
+    rankings → ItemList of the top 25 (name + position + row anchor)
+  Expects canonicalUrl and ogAbs from base.njk's head.
+-#}
+{%- set orgId = site.url ~ "/#organization" -%}
+{%- set personId = site.url ~ "/#costa" -%}
+{%- set logoAbs = site.url ~ "/assets/img/logo.png" -%}
+{%- set aboutUrl = site.url ~ (site.authorUrl or "/articles/about-costa/") -%}
+{%- if pageType == "home" %}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+ {"@type":"WebSite","@id":{{ (site.url ~ "/#website") | dump | safe }},"url":{{ (site.url ~ "/") | dump | safe }},"name":{{ site.name | dump | safe }},"description":{{ site.tagline | dump | safe }},"publisher":{"@id":{{ orgId | dump | safe }}}},
+ {"@type":"Organization","@id":{{ orgId | dump | safe }},"name":{{ site.name | dump | safe }},"url":{{ (site.url ~ "/") | dump | safe }},"logo":{"@type":"ImageObject","url":{{ logoAbs | dump | safe }}},"founder":{"@type":"Person","@id":{{ personId | dump | safe }},"name":{{ site.author | dump | safe }},"url":{{ aboutUrl | dump | safe }}}{% if site.x %},"sameAs":[{{ site.x | dump | safe }}]{% endif %}}
+]}
+</script>
+{%- elif pageType == "article" %}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":{{ canonicalUrl | dump | safe }}},"headline":{{ title | dump | safe }},"description":{{ (description or standfirst or summary or "") | dump | safe }},"image":[{{ ogAbs | dump | safe }}],"datePublished":{{ (date | date) | dump | safe }},"dateModified":{{ ((updated or date) | date) | dump | safe }},"author":{"@type":"Person","@id":{{ personId | dump | safe }},"name":{{ site.author | dump | safe }},"url":{{ aboutUrl | dump | safe }}},"publisher":{"@type":"Organization","@id":{{ orgId | dump | safe }},"name":{{ site.name | dump | safe }},"logo":{"@type":"ImageObject","url":{{ logoAbs | dump | safe }}}}{% if section %},"articleSection":{{ section | dump | safe }}{% endif %}}
+</script>
+{%- elif pageType == "person" %}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","@id":{{ personId | dump | safe }},"name":{{ site.author | dump | safe }},"url":{{ canonicalUrl | dump | safe }},"jobTitle":"Editor","description":{{ (description or standfirst or summary or "") | dump | safe }},"image":{{ (site.url ~ (site.authorMug or "/assets/img/costa.jpg")) | dump | safe }},"worksFor":{"@type":"Organization","@id":{{ orgId | dump | safe }},"name":{{ site.name | dump | safe }},"url":{{ (site.url ~ "/") | dump | safe }}}{% if site.x %},"sameAs":[{{ site.x | dump | safe }}]{% endif %}}
+</script>
+{%- elif pageType == "rankings" %}
+{%- set wk = week if week else rankings.latestFootball -%}
+{%- if wk and wk.players and wk.players.length %}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ItemList","name":{{ wk.seoTitle | dump | safe }},"description":{{ wk.seoDescription | dump | safe }},"url":{{ canonicalUrl | dump | safe }},"itemListOrder":"https://schema.org/ItemListOrderAscending","numberOfItems":{{ wk.players.length if wk.players.length < 25 else 25 }},"itemListElement":[
+{%- for p in wk.players | limit(25) %}{"@type":"ListItem","position":{{ p.rank }},"name":{{ (p.player ~ " (" ~ p.pos ~ ")") | dump | safe }},"url":{{ (canonicalUrl ~ "#p-" ~ (p.player | slugify)) | dump | safe }}}{% if not loop.last %},{% endif %}{% endfor -%}
+]}
+</script>
+{%- endif %}
+{%- endif %}

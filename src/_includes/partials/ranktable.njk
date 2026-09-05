@@ -2,11 +2,11 @@
 <table class="rank" id="rankTable">
   <thead><tr>
     <th>#</th><th class="c-model">Model</th><th>Player</th><th class="c-pos">Pos</th><th class="c-team">Tm</th>
-    <th class="c-spark">Trend</th><th style="text-align:right">Chg</th><th style="text-align:right">OTS</th><th class="c-risk">Risk</th>
+    <th class="c-spark">Trend</th><th style="text-align:right">Chg</th>{% if week.hasOts %}<th style="text-align:right">OTS</th>{% endif %}<th class="c-risk">Risk</th>
   </tr></thead>
   <tbody>
   {% for block in week.players | byTier %}
-    <tr class="tier-head"><td colspan="9">{{ block.name }}</td></tr>
+    <tr class="tier-head"><td colspan="{{ 9 if week.hasOts else 8 }}">{{ block.name }}</td></tr>
     {% for p in block.players %}{% set m = p.change | movement(week.firstEdition) %}
       <tr data-pos="{{ p.pos }}" id="p-{{ p.player | slugify }}">
         <td class="c-rank">{{ p.rank }}</td>
@@ -16,7 +16,7 @@
         <td class="c-team">{{ p.team }}</td>
         <td class="c-spark">{{ p.history | sparkline | safe }}</td>
         <td class="c-chg {{ m.cls }}">{{ m.sym }}{% if m.abs %} {{ m.abs }}{% endif %}</td>
-        <td class="c-ots">{% if p.ots is defined %}{% if p.ots > 0 %}+{{ p.ots }}{% elif p.ots < 0 %}&minus;{{ p.ots | abs }}{% else %}0{% endif %}{% else %}—{% endif %}</td>
+        {% if week.hasOts %}<td class="c-ots">{% if p.ots is defined %}{% if p.ots > 0 %}+{{ p.ots }}{% elif p.ots < 0 %}&minus;{{ p.ots | abs }}{% else %}0{% endif %}{% else %}—{% endif %}</td>{% endif %}
         <td class="c-risk">{% if p.risk %}<span class="risk-dot {{ p.risk | riskClass }}" title="{{ p.note or p.risk }}"></span><span class="risk-lbl">{{ p.risk }}</span>{% endif %}</td>
       </tr>
     {% endfor %}
@@ -24,4 +24,4 @@
   </tbody>
 </table>
 </div>
-<div class="tbl-foot">Model = where the projection model had him before judgment &middot; Trend = rank over the last six weeks &middot; Chg ={% if week.firstEdition %}movement, starting next edition &mdash; this is the baseline{% else %}movement vs. {{ "preseason baseline" if week.week == 1 else "prior week" }}{% endif %} &middot; OTS = Opportunity Trend Score &middot; <a href="/methodology/" style="border-bottom:1px solid var(--rule)">How we build these</a></div>
+<div class="tbl-foot">Model = where the projection model had him before judgment &middot; Trend = rank over the last six weeks &middot; Chg ={% if week.firstEdition %}movement, starting next edition &mdash; this is the baseline{% else %}movement vs. {{ "preseason baseline" if week.week == 1 else "prior week" }}{% endif %}{% if week.hasOts %} &middot; OTS = Opportunity Trend Score{% endif %} &middot; <a href="/methodology/" style="border-bottom:1px solid var(--rule)">How we build these</a></div>

@@ -3,6 +3,9 @@
   "tagline": "Rest-of-season rankings, with the movement shown",
   "url": "https://theweeklyrank.com",
   "handle": "@theweeklyrank",
+  "x": "https://x.com/theweeklyrank",
   "founded": "2026",
-  "author": "Costa Angelakis"
+  "author": "Costa Angelakis",
+  "authorUrl": "/articles/about-costa/",
+  "defaultOg": "/assets/img/og/default.png"
 }

@@ -3,14 +3,32 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{%- set canonicalUrl = canonical or (site.url ~ page.url) -%}
+{#- og image: the page's own (front matter `ogImage`), else the article hero's 1200×630 crop in og/, else the default card -#}
+{%- set ogPath = ogImage or (image | replace("/assets/img/", "/assets/img/og/") if image else site.defaultOg) -%}
+{%- set ogAbs = ogPath if ogPath.startsWith("http") else (site.url ~ ogPath) -%}
+{%- set isArticle = pageType == "article" or pageType == "person" -%}
 <title>{% if title %}{{ title }} | {{ site.name }}{% else %}{{ site.name }} | Fantasy Football &amp; Basketball Rankings{% endif %}</title>
 <meta name="description" content="{{ description or site.tagline }}">
+<link rel="canonical" href="{{ canonicalUrl }}">
+<meta name="robots" content="max-image-preview:large">
+<meta property="og:site_name" content="{{ site.name }}">
 <meta property="og:title" content="{{ title or site.name }}">
 <meta property="og:description" content="{{ description or site.tagline }}">
-<meta property="og:type" content="website">
-<meta property="og:image" content="{{ site.url }}/assets/img/logo.png">
+<meta property="og:type" content="{{ 'article' if isArticle else 'website' }}">
+<meta property="og:url" content="{{ canonicalUrl }}">
+<meta property="og:image" content="{{ ogAbs }}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+{%- if isArticle %}
+<meta property="article:published_time" content="{{ date | date }}">
+<meta property="article:modified_time" content="{{ (updated or date) | date }}">
+<meta property="article:author" content="{{ site.author }}">
+{%- endif %}
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="{{ site.handle }}">
+<meta name="twitter:image" content="{{ ogAbs }}">
+{% include "partials/jsonld.njk" %}
 <meta name="google-site-verification" content="WPOlFCI6sF8cpgcCfV1iP4hAUvO5cZxBL8nwkxjQTfw">
 <link rel="icon" href="/assets/img/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">

@@ -15,9 +15,15 @@ function loadSport(sport) {
     const slug = file.replace(/\.json$/, "");
     const isPre = /preseason/.test(slug);
     const weekNum = isPre ? 0 : parseInt((slug.match(/week-(\d+)/) || [])[1] || "0", 10);
+    const season = parseInt(slug.slice(0, 4), 10) || null;
+    const pathPart = isPre ? "preseason" : `week-${String(weekNum).padStart(2, "0")}`;
     return {
-      slug, sport, week: weekNum, isPreseason: isPre,
+      slug, sport, week: weekNum, isPreseason: isPre, season,
       label: isPre ? "Preseason" : `Week ${weekNum}`,
+      // the edition's permanent page; /rankings/ always shows the latest one
+      url: `/rankings/${season}/${pathPart}/`,
+      seoTitle: isPre ? `${season} Preseason Fantasy Football Rankings — Rest of Season`
+                      : `Week ${weekNum} Fantasy Football Rest-of-Season Rankings (${season})`,
       published: raw.published || null,
       updatedAt: raw.updatedAt || null,
       format: raw.format || (sport === "football" ? "Half-PPR" : "9-Cat Roto"),
@@ -80,7 +86,18 @@ function withMovement(weeks) {
     // firstEdition: no earlier file exists, so every change is null. Templates show "—" rather than
     // "NEW" (NEW means "not in the prior edition", which needs a prior edition to mean anything).
     const cusp = (wk.cusp || []).filter(c => c && c.player).map(c => ({ ...c, headshot: c.headshot || HEADSHOTS[keyOf(c.player)] || null }));
-    return { ...wk, players, tierSummary, cusp, firstEdition: prev === null || wk.firstEditionFlag,
+    // fell off the board: on the previous edition, not on this one (empty on the first edition)
+    const onBoard = new Set(players.map(p => p.player));
+    const fellOff = prev ? prev.players.filter(p => !onBoard.has(p.player))
+      .map(p => ({ player: p.player, pos: p.pos, team: p.team, prevRank: p.rank, headshot: p.headshot || HEADSHOTS[keyOf(p.player)] || null }))
+      .sort((a, b) => a.prevRank - b.prevRank) : [];
+    // OTS is 0 for everyone preseason; the column hides until a real trend exists (Week 3+)
+    const hasOts = players.some(p => typeof p.ots === "number" && p.ots !== 0);
+    const seoDescription = wk.isPreseason
+      ? `Half-PPR ${wk.season} preseason fantasy football rankings: the top ${players.length} players for the rest of the season, tiered at value cliffs, with movement from last week shown once the season starts.`
+      : `Half-PPR rest-of-season fantasy football rankings for Week ${wk.week}, ${wk.season}: the top ${players.length} players, tiered at value cliffs, with movement from last week shown.`;
+    return { ...wk, players, tierSummary, cusp, fellOff, hasOts, seoDescription, prevLabel: prev ? prev.label : null,
+      isLatest: i === weeks.length - 1, firstEdition: prev === null || wk.firstEditionFlag,
       risers: movers.filter(p => p.change > 0).slice(0, 5),
       fallers: movers.filter(p => p.change < 0).slice(0, 5),
       // The Flags: Medium/High players WITH a note, in rank order — the note is the reason, so a flag

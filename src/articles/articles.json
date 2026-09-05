@@ -1,5 +1,6 @@
 {
   "layout": "layouts/article.njk",
   "tags": "articles",
-  "readtime": "5 min"
+  "readtime": "5 min",
+  "pageType": "article"
 }

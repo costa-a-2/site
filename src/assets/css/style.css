@@ -60,6 +60,15 @@ h1,h2,h3,h4{font-family:var(--head);line-height:1.12}
 .plate{position:absolute;left:0;bottom:0;background:var(--paper);padding:16px 22px 12px 0;max-width:72%}
 .plate .hed-xl{margin-top:10px}
 @media (max-width:860px){.plate{position:static;max-width:none;padding:12px 0 0}.plate-wrap img{height:52vw}}
+/* lead column fills to the rail's height; By the Numbers box pins to its bottom */
+.lead-grid>article{display:flex;flex-direction:column}
+.bynum{margin-top:auto;padding-top:18px}
+.bynum-head{display:flex;justify-content:space-between;align-items:center;border-top:2px solid var(--ink);padding-top:10px}
+.bynum-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:10px;border-top:1px solid var(--rule);border-left:1px solid var(--rule)}
+.bynum-grid>div{padding:10px 12px;border-right:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.bynum-grid b{display:block;font-family:var(--head);font-weight:700;font-size:24px;line-height:1.05;color:var(--ink)}
+.bynum-grid span{display:block;font-family:var(--display);font-size:8.5px;letter-spacing:1.6px;text-transform:uppercase;color:var(--muted);margin-top:4px}
+@media (max-width:560px){.bynum-grid{grid-template-columns:repeat(2,1fr)}}
 
 /* ── byline ── */
 .byline{display:flex;align-items:center;gap:11px;margin:12px 0}
@@ -193,3 +202,11 @@ footer.site{border-top:3px solid var(--ink);margin-top:36px;padding:14px 0 44px;
 .sig-row .sig-nums b{font-family:var(--display);font-weight:700;font-size:8.5px;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted)}
 .sig-row .sig-blurb{grid-column:1 / -1;margin:0;max-width:720px}
 @media (max-width:640px){.sig-row{grid-template-columns:1fr}.sig-row .sig-nums{flex-wrap:wrap;gap:12px}}
+
+/* ── per-edition rankings pages, stamp byline, archive links, fell-off table ── */
+.edition-note{font-family:var(--display);font-size:9.5px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);padding:9px 2px;border-bottom:1px solid var(--rule)}
+.edition-note a{color:var(--ink);border-bottom:1px solid var(--rule)}
+.reviewed{font-family:var(--display);font-size:8px;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);margin-top:10px}
+.arch-row .wk a{color:inherit;text-decoration:none;border-bottom:1px solid var(--rule)}
+.arch-row .wk a:hover{border-bottom-color:var(--ink)}
+.arch-row .wk .risk-lbl{margin-left:8px}

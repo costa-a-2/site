@@ -1,0 +1,17 @@
+---
+layout: layouts/base.njk
+pageType: rankings
+pagination:
+  data: rankings.football
+  size: 1
+  alias: week
+  addAllPagesToCollections: true
+permalink: "{{ week.url }}"
+eleventyComputed:
+  title: "{{ week.seoTitle }}"
+  description: "{{ week.seoDescription }}"
+  updatedAt: "{{ week.updatedAt }}"
+---
+{# one permanent page per edition: /rankings/<season>/preseason/ and /rankings/<season>/week-NN/ #}
+{% set isLatest = week.isLatest %}
+{% include "partials/rankings-page.njk" %}

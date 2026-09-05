@@ -2,7 +2,7 @@
 layout: layouts/base.njk
 permalink: /archive/
 title: Archive
-description: Every week of rest-of-season rankings, going back to the preseason baseline.
+description: Every week of rest-of-season rankings, going back to the preseason baseline, each at its own permanent page.
 ---
 <div style="text-align:center;padding:32px 0 22px">
   <h1 class="hed-xl">The Archive</h1>
@@ -11,13 +11,15 @@ description: Every week of rest-of-season rankings, going back to the preseason 
   </p>
 </div>
 
-<div class="grid-2" style="gap:34px">
+{# the Hardwood column only exists once there is a basketball edition; until then football takes the width #}
+{% set hasHardwood = rankings.basketball and rankings.basketball.length %}
+<div class="grid-2" style="gap:34px{% if not hasHardwood %};grid-template-columns:1fr{% endif %}">
   <section>
     <div class="sec">Gridiron &middot; Football</div>
     {% for wk in rankings.football | reverse %}
     <div class="arch-row">
       <div>
-        <div class="wk">{{ wk.label }}</div>
+        <div class="wk"><a href="{{ wk.url }}">{{ wk.label }}{% if wk.isLatest %} <span class="risk-lbl">Latest</span>{% endif %}</a></div>
         <div class="summary" style="margin-top:2px">{{ wk.count }} players &middot; {{ wk.tiers }} tiers &middot; {{ wk.format }}</div>
       </div>
       <div class="dt">{{ wk.published | date("short") }}</div>
@@ -27,6 +29,7 @@ description: Every week of rest-of-season rankings, going back to the preseason 
     {% endfor %}
   </section>
 
+  {% if hasHardwood %}
   <section>
     <div class="sec">Hardwood &middot; Basketball</div>
     {% for wk in rankings.basketball | reverse %}
@@ -37,10 +40,9 @@ description: Every week of rest-of-season rankings, going back to the preseason 
       </div>
       <div class="dt">{{ wk.published | date("short") }}</div>
     </div>
-    {% else %}
-    <p class="summary">Hardwood rankings begin with the NBA season in October.</p>
     {% endfor %}
   </section>
+  {% endif %}
 </div>
 
 <div class="r-hair" style="margin:32px 0 20px"></div>

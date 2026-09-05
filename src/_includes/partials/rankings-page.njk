@@ -1,0 +1,108 @@
+{#
+  The rankings page body. /rankings/ (latest) and every /rankings/<season>/<edition>/ page render
+  this same partial — set `week` (an entry of rankings.football) and `isLatest` before including.
+#}
+<div class="dateline">
+  <span>{{ week.label }}</span><span>{{ week.format }} &middot; Rest of Season</span><span>Updated {{ week.published | date("long") }}</span>
+</div>
+<div class="r-light"></div>
+{% if not isLatest %}
+<p class="edition-note">This is the {{ week.label }} edition &middot; latest is <a href="/rankings/">{{ rankings.latestFootball.label }}</a></p>
+{% endif %}
+
+<div style="display:flex;justify-content:space-between;align-items:flex-start;gap:20px;padding:28px 0 20px;flex-wrap:wrap">
+  <div>
+    <span class="sec">{{ week.label }} &middot; {{ week.format }} &middot; Top {{ week.count }}</span>
+    <h1 class="hed-xl" style="margin-top:10px">{{ week.seoTitle }}</h1>
+    <p class="standfirst" style="margin-top:10px;max-width:620px">{% if week.firstEdition %}The baseline. Movement starts with the next edition.{% else %}Movement shown against the {{ "preseason baseline" if week.week == 1 else "prior week" }}.{% endif %} Tiers drawn at value cliffs, not even buckets.</p>
+  </div>
+  <div style="margin-top:6px;text-align:center">
+    <div class="stamp">Updated<small>{% if week.updatedAt %}{{ week.updatedAt | time }}{% else %}{{ week.published | date("short") }}{% endif %}</small></div>
+    <div class="reviewed">Reviewed by {{ site.author }}</div>
+  </div>
+</div>
+
+<div style="border-top:2px solid var(--ink);padding:22px 0 14px">
+  <span class="sec">The Tiers</span>
+  <div style="margin-top:22px">{% include "partials/cliffbar.njk" %}</div>
+</div>
+
+<div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;border-top:1px solid var(--ink);border-bottom:1px solid var(--rule);padding:11px 0">
+  <div class="filters" id="posFilters">
+    <button data-pos="ALL" aria-pressed="true">All</button><button data-pos="QB" aria-pressed="false">QB</button>
+    <button data-pos="RB" aria-pressed="false">RB</button><button data-pos="WR" aria-pressed="false">WR</button><button data-pos="TE" aria-pressed="false">TE</button>
+  </div>
+  <div class="kick"><span id="shown">{{ week.count }}</span> players &middot; {{ week.tiers }} tiers</div>
+</div>
+
+<div class="lead-grid" style="padding-top:20px">
+  <div>{% include "partials/ranktable.njk" %}
+    {% if week.cusp and week.cusp.length %}
+    <div style="border-top:2px solid var(--ink);margin-top:26px;padding:18px 0 6px" id="cusp">
+      <span class="sec">On the Cusp</span>
+      <p class="summary" style="margin-top:8px">Ten more I'd have in the conversation, in no order.</p>
+      <div class="tbl-wrap"><table class="rank cusp" id="cuspTable" style="margin-top:10px">
+        <thead><tr><th>Player</th><th class="c-pos">Pos</th><th class="c-team">Tm</th><th class="c-risk">Risk</th></tr></thead>
+        <tbody>
+        {% for p in week.cusp %}
+          <tr data-pos="{{ p.pos }}">
+            <td class="c-player">{% if p.headshot %}<img class="hs" src="{{ p.headshot }}" alt="" loading="lazy">{% else %}<span class="hs"></span>{% endif %}{{ p.player }}</td>
+            <td class="c-pos">{{ p.pos }}</td>
+            <td class="c-team">{{ p.team }}</td>
+            <td class="c-risk">{% if p.risk %}<span class="risk-dot {{ p.risk | riskClass }}" title="{{ p.risk }}"></span><span class="risk-lbl">{{ p.risk }}</span>{% endif %}</td>
+          </tr>
+        {% endfor %}
+        </tbody>
+      </table></div>
+    </div>
+    {% endif %}
+    {% if week.flags and week.flags.length %}
+    <div style="border-top:2px solid var(--ink);margin-top:26px;padding:18px 0 6px">
+      <span class="sec">The Flags</span>
+      <p class="summary" style="margin-top:8px">Risk is a judgment call, not a model output: Low, Medium or High. Every flag comes with the reason.</p>
+      {% for p in week.flags %}
+      <div class="arch-row"><div><div class="wk"><span class="risk-dot {{ p.risk | riskClass }}"></span>{{ p.player }} <span class="risk-lbl">{{ p.risk }}</span></div><div class="summary" style="margin-top:2px">{{ p.note or "No note yet." }}</div></div><div class="dt">#{{ p.rank }}</div></div>
+      {% endfor %}
+    </div>
+    {% endif %}
+    {% if week.fellOff and week.fellOff.length %}
+    <div style="border-top:2px solid var(--ink);margin-top:26px;padding:18px 0 6px" id="fell-off">
+      <span class="sec">Fell Off the Board</span>
+      <p class="summary" style="margin-top:8px">On the {{ week.prevLabel }} board, not on this one. The number is where he was.</p>
+      <div class="tbl-wrap"><table class="rank cusp" id="fellOffTable" style="margin-top:10px">
+        <thead><tr><th>Player</th><th class="c-pos">Pos</th><th class="c-team">Tm</th><th style="text-align:right">Was</th></tr></thead>
+        <tbody>
+        {% for p in week.fellOff %}
+          <tr data-pos="{{ p.pos }}">
+            <td class="c-player">{% if p.headshot %}<img class="hs" src="{{ p.headshot }}" alt="" loading="lazy">{% else %}<span class="hs"></span>{% endif %}{{ p.player }}</td>
+            <td class="c-pos">{{ p.pos }}</td>
+            <td class="c-team">{{ p.team }}</td>
+            <td class="c-chg is-flat">#{{ p.prevRank }}</td>
+          </tr>
+        {% endfor %}
+        </tbody>
+      </table></div>
+    </div>
+    {% endif %}
+  </div>
+  <aside class="rail">
+    <span class="sec">Biggest Movers</span>
+    <div style="margin-top:10px">{% set n = 5 %}{% include "partials/ladder.njk" %}</div>
+    {% for p in week.risers | limit(2) %}{% if p.note %}
+    <div style="margin-top:14px;padding-top:12px;border-top:1px solid var(--rule)"><div class="hed-sm">{{ p.player }} <span class="is-up">▲ {{ p.change }}</span></div><p class="summary">{{ p.note }}</p></div>
+    {% endif %}{% endfor %}
+    <div style="margin-top:22px"><span class="sec">The Metrics</span></div>
+    <div style="font-size:13.5px;line-height:1.9;margin-top:8px">
+      <div style="display:flex;justify-content:space-between;border-bottom:1px solid var(--faint)"><b>OTS</b><span style="color:var(--muted)">Opportunity trend</span></div>
+      <div style="display:flex;justify-content:space-between;border-bottom:1px solid var(--faint)"><b>RCS</b><span style="color:var(--muted)">Role clarity</span></div>
+      <div style="display:flex;justify-content:space-between;border-bottom:1px solid var(--faint)"><b>SFS</b><span style="color:var(--muted)">Scheme fit</span></div>
+      <div style="display:flex;justify-content:space-between"><b>PGHI</b><span style="color:var(--muted)">Passing health</span></div>
+    </div>
+  </aside>
+</div>
+<script>
+(function(){var b=document.getElementById('posFilters'),t=document.getElementById('rankTable'),s=document.getElementById('shown');if(!b||!t)return;
+b.addEventListener('click',function(e){var x=e.target.closest('button');if(!x)return;b.querySelectorAll('button').forEach(function(y){y.setAttribute('aria-pressed','false')});x.setAttribute('aria-pressed','true');
+var p=x.getAttribute('data-pos'),n=0;t.querySelectorAll('tbody tr').forEach(function(r){if(r.classList.contains('tier-head')){r.style.display=(p==='ALL')?'':'none';return}var h=(p==='ALL'||r.getAttribute('data-pos')===p);r.style.display=h?'':'none';if(h)n++});s.textContent=n;
+['cuspTable','fellOffTable'].forEach(function(id){var c=document.getElementById(id);if(c){c.querySelectorAll('tbody tr').forEach(function(r){r.style.display=(p==='ALL'||r.getAttribute('data-pos')===p)?'':'none'})}})});})();
+</script>

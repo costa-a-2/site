@@ -8,7 +8,10 @@ eleventyExcludeFromCollections: true
   {%- if p.url and p.url != false and p.url != "/robots.txt" and p.url != "/sitemap.xml" %}
   <url>
     <loc>{{ site.url }}{{ p.url }}</loc>
-    {%- if p.date %}
+    {#- rankings pages carry the data file's updatedAt; everything else uses the page date #}
+    {%- if p.data.updatedAt %}
+    <lastmod>{{ p.data.updatedAt }}</lastmod>
+    {%- elif p.date %}
     <lastmod>{{ p.date.toISOString() }}</lastmod>
     {%- endif %}
   </url>
