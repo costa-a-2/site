@@ -137,7 +137,32 @@ function withMovement(weeks) {
   });
 }
 
-const football = withMovement(loadSport("football"));
+// ── receipts: data/football/receipts/2026-week-NN.json → each week's graded calls and the season tally ──
+const GRADES = ["hit", "push", "miss"];
+function loadReceipts(sport) {
+  const dir = path.join(DATA_DIR, sport, "receipts");
+  if (!fs.existsSync(dir)) return [];
+  const weeks = fs.readdirSync(dir).filter(f => /^\d{4}-week-\d{2}\.json$/.test(f)).sort().map(f => {
+    const raw = loadJSON(path.join(dir, f), {});
+    const week = typeof raw.week === "number" ? raw.week : parseInt(f.match(/week-(\d+)/)[1], 10);
+    const calls = (Array.isArray(raw.calls) ? raw.calls : []).filter(c => c && c.player).map(c => ({
+      player: String(c.player), call: String(c.call || ""), result: String(c.result || ""),
+      grade: GRADES.includes(String(c.grade || "").toLowerCase()) ? String(c.grade).toLowerCase() : "push"
+    }));
+    return { week, season: parseInt(f.slice(0, 4), 10), label: `Week ${week}`, calls };
+  });
+  const tally = { hit: 0, push: 0, miss: 0, calls: 0 };
+  return weeks.map(w => {
+    w.calls.forEach(c => { tally[c.grade] += 1; tally.calls += 1; });
+    return { ...w, tally: { ...tally }, line: `Season: ${tally.hit} hit · ${tally.push} push · ${tally.miss} miss` };
+  });
+}
+function withReceipts(weeks, receipts) {
+  return weeks.map(wk => ({ ...wk, receipts: receipts.find(r => r.week === wk.week && r.season === wk.season) || null }));
+}
+
+const receipts = loadReceipts("football");
+const football = withReceipts(withMovement(loadSport("football")), receipts);
 const basketball = withMovement(loadSport("basketball"));
 
 // ── player pages: the union of every player who appeared in any football edition ──────────────
@@ -191,4 +216,5 @@ const players = buildPlayers(football);
 module.exports = { football, basketball,
   latestFootball: football[football.length - 1] || null,
   latestBasketball: basketball[basketball.length - 1] || null,
-  players, playerNames: players.map(p => p.player) };
+  players, playerNames: players.map(p => p.player),
+  receipts, receiptsTally: receipts.length ? receipts[receipts.length - 1].tally : { hit: 0, push: 0, miss: 0, calls: 0 } };

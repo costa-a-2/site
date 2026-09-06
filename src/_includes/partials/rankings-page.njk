@@ -95,6 +95,7 @@
     {% for p in week.risers | limit(2) %}{% if p.note %}
     <div style="margin-top:14px;padding-top:12px;border-top:1px solid var(--rule)"><div class="hed-sm">{{ p.player }} <span class="is-up">▲ {{ p.change }}</span></div><p class="summary">{{ p.note }}</p></div>
     {% endif %}{% endfor %}
+    {% include "partials/receipts.njk" %}
     <div style="margin-top:22px"><span class="sec">The Metrics</span></div>
     <div style="font-size:13.5px;line-height:1.9;margin-top:8px">
       <div style="display:flex;justify-content:space-between;border-bottom:1px solid var(--faint)"><b>OTS</b><span style="color:var(--muted)">Opportunity trend</span></div>

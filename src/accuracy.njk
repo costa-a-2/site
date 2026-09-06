@@ -1,0 +1,39 @@
+---
+layout: layouts/base.njk
+permalink: /accuracy/
+title: Accuracy
+description: Every call the board made, graded Hit, Push or Miss the following week, with the running season tally. Nothing is edited after the fact.
+---
+<div style="text-align:center;padding:32px 0 22px">
+  <div class="kick" style="margin-bottom:10px">The Receipts</div>
+  <h1 class="hed-xl">Accuracy</h1>
+  <p class="standfirst" style="margin-top:12px;max-width:620px;margin-left:auto;margin-right:auto">
+    What the board said, what happened, and a grade. Graded the Monday after; the tally runs all season; nothing here is edited once it publishes.
+  </p>
+</div>
+
+{% if rankings.receipts and rankings.receipts.length %}
+<div class="dateline"><span>Season {{ rankings.receipts[0].season }}</span><span>{{ rankings.receiptsTally.calls }} calls graded</span><span>{{ rankings.receiptsTally.hit }} hit &middot; {{ rankings.receiptsTally.push }} push &middot; {{ rankings.receiptsTally.miss }} miss</span></div>
+<div class="r-light"></div>
+{% for w in rankings.receipts %}
+<div class="box">
+  <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap"><span class="sec">{{ w.label }}</span><span class="kick">{{ w.line }}</span></div>
+  <div class="classified receipt">
+    {% for c in w.calls %}
+    <div class="row" style="align-items:flex-start">
+      <div><b>{% if c.player in rankings.playerNames %}<a href="/players/{{ c.player | slugify }}/">{{ c.player }}</a>{% else %}{{ c.player }}{% endif %}</b> &middot; {{ c.call }}{% if c.result %}<div class="summary" style="margin-top:2px">{{ c.result }}</div>{% endif %}</div>
+      <span class="g {{ c.grade }}">{{ c.grade }}</span>
+    </div>
+    {% else %}
+    <div class="row" style="color:var(--muted)">No calls graded this week.</div>
+    {% endfor %}
+  </div>
+</div>
+{% endfor %}
+<div class="tbl-foot">Hit = the board's read was right on the number; Push = right direction, short of the number; Miss = wrong. The grades come from the box score, not from a rewrite.</div>
+{% else %}
+<div style="border-top:2px solid var(--ink);padding:22px 0">
+  <span class="sec">Nothing graded yet</span>
+  <p class="summary" style="margin-top:8px;max-width:620px">Receipts start after Week 1. The preseason board is the first set of calls; the Monday after the opening Sunday, each one gets a grade here.</p>
+</div>
+{% endif %}

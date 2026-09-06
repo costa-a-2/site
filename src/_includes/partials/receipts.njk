@@ -1,0 +1,13 @@
+{#
+  The Receipts box for a rail: last week's calls graded Hit / Push / Miss, with the season tally.
+  Expects `week` (an entry of rankings.football). Renders nothing when that week has no receipts file.
+#}
+{% if week and week.receipts and week.receipts.calls.length %}
+<div style="margin-top:20px"><span class="sec">The Receipts</span><span class="kick" style="margin-left:10px">{{ week.receipts.label }}</span></div>
+<div class="classified receipt" style="margin-top:10px">
+  {% for c in week.receipts.calls %}
+  <div class="row"><b>{% if c.player in rankings.playerNames %}<a href="/players/{{ c.player | slugify }}/">{{ c.player }}</a>{% else %}{{ c.player }}{% endif %}: {{ c.call }}</b><span class="g {{ c.grade }}">{{ c.grade }}</span></div>
+  {% endfor %}
+  <div class="row" style="font-size:12px;color:var(--muted)">{{ week.receipts.line }} &middot; <a href="/accuracy/" style="border-bottom:1px solid var(--rule)">every call</a></div>
+</div>
+{% endif %}

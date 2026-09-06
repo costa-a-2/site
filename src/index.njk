@@ -61,6 +61,8 @@ pageType: home
     </table>
     <a href="/rankings/" class="btn-ink" style="margin-top:8px">All {{ wk.count }} &rarr;</a>
 
+    {% set week = wk %}{% include "partials/receipts.njk" %}
+
     <div style="margin-top:20px"><span class="sec">Biggest Movers</span></div>
     <div style="margin-top:10px">{% set week = wk %}{% set n = 3 %}{% include "partials/ladder.njk" %}</div>
 
