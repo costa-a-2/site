@@ -4,7 +4,7 @@ standfirst: "Every year since 2017 I've picked one rookie before the season and 
 summary: "The origin of the annual rookie call, the full record from Dalvin Cook to TreVeyon Henderson, and what the hits and misses have in common."
 section: "The Flag Plant"
 kicker: "The Record · 2017–2025"
-date: 2026-09-07
+date: 2026-09-05
 readtime: "8 min"
 image: "/assets/img/walker-parade.jpg"
 imageAlt: "Kenneth Walker III holding the Lombardi Trophy on a parade bus"
@@ -13,7 +13,9 @@ caption: "Kenneth Walker III, the 2022 call, at the Super Bowl LX parade. Washin
 
 The habit started with a running back I couldn't stop watching.
 
-Ahead of the 2017 season, doing research into players for draft day, I stumbled upon the rookies of that class (and there were quite a few). That's how I found Dalvin Cook, and I decided to watch his college highlights. You can and should [watch them here](https://youtu.be/hz_TN_sC0Ww).
+Ahead of the 2017 season, doing research into players for draft day, I stumbled upon the rookies of that class (and there were quite a few). That's how I found Dalvin Cook, and I decided to watch his college highlights. You can and should watch them too.
+
+<figure class="video"><iframe src="https://www.youtube-nocookie.com/embed/hz_TN_sC0Ww" title="Dalvin Cook highlights" loading="lazy" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen></iframe><figcaption>Dalvin Cook, Florida State highlights.</figcaption></figure>
 
 I was immediately blown away. I could see how this player would be a surefire star in the league. He was elusive. Fast. Acceleration and long speed. Made people miss, but still had power. I was enamored and ready to draft him at all costs. And I did, almost every season he was on the Vikings. It was a mixed bag of results with some major injuries, but ultimately he was one of the best running backs in the NFL for that stretch.
 

@@ -4,18 +4,18 @@ standfirst: "A first-round pick starting Week 1 for the defending Super Bowl cha
 summary: "Seattle vacated 456 backfield touches and hired a run game coordinator to call plays. The market has not caught up."
 section: "The Flag Plant"
 kicker: "2026 · On the Record"
-date: 2026-09-09
+date: 2026-09-06
 readtime: "9 min"
 datelineCity: "SEATTLE"
-lede: "Every year since 2017 I have picked one rookie and committed to him before the season starts. Not a sleeper list, not a tiered ranking with hedges built in. One name, before any evidence exists, graded honestly when the year is over."
+lede: "Every year since 2017 I have picked one rookie running back and committed to him before the season starts. Not a sleeper list, not a tiered ranking with hedges built in. One name, before any evidence exists, graded honestly when the year is over."
 image: "/assets/img/price-hero.jpg"
 imageAlt: "Jadarian Price carrying the ball"
 caption: "Jadarian Price at the 2023 Sun Bowl. U.S. Army photo by Spc. David Poleski, public domain."
 ---
 
-This year it is Jadarian Price.
+This year it is Jadarian Price, and I have been looking forward to writing this one all summer.
 
-He is the last pick of the first round, he is the Week 1 starter for the defending Super Bowl champions, and he is being drafted as the 26th running back off the board.
+He is the last pick of the first round, he is the Week 1 starter for the defending Super Bowl champions, and he is being drafted as the 26th running back off the board. Read that again. That is the entire reason we are here.
 
 ## What Is Actually Open in Seattle
 
@@ -29,15 +29,15 @@ Here is what those two accounted for last season:
 | Zach Charbonnet | 184 | 20 | 204 | 12 |
 | **Combined** | **405** | **51** | **456** | **17** |
 
-Two hundred and fifty-two touches gone permanently. Another two hundred and four unavailable for at least the first quarter of the season.
+Two hundred and fifty-two touches gone for good. Another two hundred and four unavailable for at least the first quarter of the season.
 
-And this is not a small pie. **No team in the NFL gave its running backs more carries than Seattle last season, and no team gave its running backs more red zone carries either.** The volume is already there. It has been there. It just needs somebody to take it.
+And this is not a small pie. **No team in the NFL gave its running backs more carries than Seattle last season, and no team gave its running backs more red zone carries either.** The volume is already there. It has been there for years. It just needs somebody to take it.
 
 The goal-line detail is the one I keep coming back to. Charbonnet's twelve rushing touchdowns led the team and made him the first Seattle player since Marshawn Lynch in 2014 to reach double digits. That role currently has no incumbent to start the season.
 
 ## The Walker Comparison
 
-This is the cleanest way I can make the argument. He is after all, a former flag plant of mine himself so it is fitting.
+This is the cleanest way I can make the argument. He is, after all, a former flag plant of mine, so it feels fitting.
 
 Kenneth Walker ran for 1,027 yards in this exact offense last season. He played all seventeen games. He finished **RB22 in total half-PPR points and RB29 in points per game**, averaging 10.4.
 
@@ -49,7 +49,7 @@ Price does not have to split to start. Not in September, and I do not think in N
 
 ## So Why Is He Cheap?
 
-Three reasons, and all three are legitimate.
+Three reasons, and all three are fair. I would rather name them than wave at them.
 
 **One: Charbonnet comes back.** PUP means four games minimum, so realistically Week 5 or later, coming off a reconstructed knee. This is the objection everybody makes.
 
@@ -63,7 +63,7 @@ Klint Kubiak left Seattle to become head coach of the Las Vegas Raiders. The Sea
 
 Fleury spent seven seasons in San Francisco. His most recent title there was tight ends coach and **run game coordinator**. He has been in Kyle Shanahan's orbit since Cleveland in 2014.
 
-Read that again in the context of the table above.
+Now read that again next to the table above.
 
 A team that just vacated 456 backfield touches handed play-calling to a run game specialist from the Shanahan tree.
 
@@ -71,11 +71,11 @@ That system has been manufacturing usable fantasy running backs for two decades,
 
 Every scouting report on Price says the same things. Outstanding vision beyond the line of scrimmage. Big-time acceleration and long speed. Low center of gravity, good knee bend, patient with clean footwork. Specializes in creating chunk plays.
 
-That is not a coincidence you have to squint at. That is a team drafting for a scheme and then hiring the coach who runs it.
+You do not have to squint to see it. That is a team drafting for a scheme and then hiring the coach who runs it.
 
 There is continuity here too, which matters. Kubiak and Fleury share the same coaching lineage, so Seattle did not change offensive philosophy. They changed the person calling it. The fit that justified spending pick 32 on Price in April is intact.
 
-**The honest risk: Fleury has never called plays.** Not in the NFL, not in college, not anywhere. That is a real unknown, and it is part of why a first-round back on the defending champion is available in the sixth round.
+**The honest risk: Fleury has never called plays.** Not in the NFL, not in college, not anywhere. That is a real unknown, and it is part of why a first-round back on the defending champion is available in the fifth round.
 
 ## What the History Says
 
@@ -102,30 +102,32 @@ Since 2016, fourteen running backs have been taken in the first round. Thirteen 
 
 Five of thirteen finished as top-12 backs per game. Eleven of thirteen finished top-24. The two who didn't, Penny and Michel, were both 2018 picks who walked into backfields they had to share, and one of them was hurt. That's the whole bear case in one row of a table: the workload, not the talent.
 
-Which brings me to the comp I have to acknowledge, because somebody will raise it if I do not: Clyde Edwards-Helaire was also the 32nd pick, and he is the RB23 near the bottom of that list.
+Which brings me to the comp I have to acknowledge, because somebody in my replies will if I do not: Clyde Edwards-Helaire was also the 32nd pick, and he is the RB23 near the bottom of that list.
 
-The difference is workload security. Edwards-Helaire walked into a healthy Kansas City backfield and immediately started sharing. Price walks into a backfield where the two men who took 456 touches last year are gone and hurt, and the depth behind him is George Holani — an undrafted free agent with **25 carries across two NFL seasons** — and journeyman Emanuel Wilson.
+The difference is workload security. Edwards-Helaire walked into a healthy Kansas City backfield and immediately started sharing. Price walks into a backfield where the two men who took 456 touches last year are gone and hurt, and the depth behind him is George Holani, an undrafted free agent with **25 carries across two NFL seasons**, and journeyman Emanuel Wilson.
 
 The committee argument requires somebody to form a committee with. For the first month, there is not one.
 
 ## What the Model Says
 
-I should tell you where the numbers land before I tell you where I do, because they are not the same thing and this site is built on showing both.
+I should tell you where the numbers land before I tell you where I do. They are not the same thing, and this site is built on showing both.
 
-The projection model behind the [rankings](/rankings/) starts from Seattle's team totals, gives Price a conservative share of them (I set it lower than I believe, on purpose) and comes out with him as **RB17**, well inside the top 30 overall, before any judgment is applied. That is with no film, no gut, no Fleury argument. Just vacated volume and a share of it.
+The projection model behind the [rankings](/rankings/) starts from Seattle's team totals, gives Price a conservative share of them (I set it lower than I believe, on purpose) and comes out with him as **RB17, 39th overall**, before any judgment is applied. That is with no film, no gut, no Fleury argument. Just vacated volume and a share of it.
 
-The market has him RB26. The model has him RB17 on shares alone. Everything below is the case for why the model is still too low.
+The market has him RB26. The model has him RB17 on shares alone. Everything below is the case for why even the model is too low.
 
 ## The Film
 
-As I have described before, it all starts with Film. And this was also where I started with Price. Like Dalvin, I quickly knew this was my guy this year. 
+As I have described before, it all starts with film, and that is where I started with Price too. Like Dalvin, I knew pretty quickly this was my guy this year.
 
-What I saw: the speed. He has such an ability for breakaway chunk plays, and has the long speed to finish them off. He is elusive, and strong. He can break tackles and his ability to move east-west, change gears and finish a play are some of the same things I saw in guys like Dalvin and Gibbs that make me see Price in a similar light. 
+What I saw: the speed. He has a real knack for breakaway chunk plays, and the long speed to finish them off. He is elusive and strong. He can break tackles, and the way he moves east-west, changes gears and finishes a play is a lot of what I saw in Dalvin and Gibbs. That is why I see Price in a similar light.
 
-Check out his highlights here: https://youtu.be/fCB0ZqNXpRo?si=59ZPnK0qY4WjKjzn
+See for yourself. These are his college highlights, and the traits above are all in the first minute.
+
+<figure class="video"><iframe src="https://www.youtube-nocookie.com/embed/fCB0ZqNXpRo" title="Jadarian Price highlights" loading="lazy" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen></iframe><figcaption>Jadarian Price, Notre Dame highlights.</figcaption></figure>
 
 ## The Call
 
-Jadarian Price, RB26, and I think that number looks silly by November.
+Jadarian Price. RB26 today, and I think that number looks silly by November.
 
-I will grade this in January the same way I grade all of them. [The full record is here](/flag-plant/): seven calls over nine years, the ones that hit and the ones that did not. That is the whole point of writing it down before the games are played. An opinion you cannot check is not worth reading.
+I will grade this in January the same way I grade all of them, and I cannot wait to see how it goes. [The full record is here](/flag-plant/): seven calls over nine years, the ones that hit and the ones that did not. That is the whole point of writing it down before the games are played. An opinion you cannot check is not worth reading.

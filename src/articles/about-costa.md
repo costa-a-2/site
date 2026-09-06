@@ -4,7 +4,7 @@ standfirst: "How a broken wall mount, some rookie running backs, and twelve year
 summary: "Who I am, why this exists, and what you should expect from it."
 section: "About"
 kicker: "An Introduction"
-date: 2026-09-06
+date: 2026-09-05
 readtime: "6 min"
 image: "/assets/img/cook-2022.jpg"
 imageAlt: "Dalvin Cook running with the ball"

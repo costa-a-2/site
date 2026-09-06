@@ -224,3 +224,9 @@ table.rank .c-ppg{text-align:right;width:52px;color:var(--muted);font-variant-nu
 tr.tier-head td .gap{float:right;font-weight:400;letter-spacing:1px;color:var(--muted)}
 @media (max-width:860px){.week-strip{grid-template-columns:1fr 1fr}.week-strip>div:nth-child(3){border-left:none;padding-left:0}}
 @media (max-width:560px){.badge{display:none}}
+
+/* ── embedded video (YouTube, in articles) ── */
+figure.video{position:relative;width:100%;padding-top:56.25%;margin:22px 0 6px;border:1px solid var(--ink);background:var(--faint)}
+figure.video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+figure.video figcaption{position:absolute;left:0;right:0;top:100%;padding-top:5px}
+figure.video+p,figure.video+h2,figure.video+h3{margin-top:34px}

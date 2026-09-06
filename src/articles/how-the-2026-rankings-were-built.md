@@ -4,7 +4,7 @@ standfirst: "Last year's volume, this year's Vegas lines, a lot of decisions abo
 summary: "The preseason rankings start from what teams actually did, adjust for what Vegas expects, and end with judgment. Every step is on the page."
 section: "Rankings"
 kicker: "2026 Preseason · How It Works"
-date: 2026-09-08
+date: 2026-09-05
 readtime: "7 min"
 image: "/assets/img/huddle.jpg"
 imageAlt: "An NFL offense in a huddle at Ford Field"
