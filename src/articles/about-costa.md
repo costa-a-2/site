@@ -11,29 +11,29 @@ imageAlt: "Dalvin Cook running with the ball"
 caption: "Dalvin Cook, 2022. Photo by All-Pro Reels, CC BY-SA 2.0."
 ---
 
-In 2014 I was sitting in my family's living room for my first-ever fantasy football draft when the television came off the wall mount, thudding to the floor. Not so dramatically — it just gave up, tilted, and took my laptop connection with it on the way down. By the time I got back online, I missed at least 3 rounds to autodraft.
+In 2014 I was sitting in my family's living room for my first-ever fantasy football draft when the television came off the wall mount. Not dramatically — it just gave up, tilted, and took my laptop connection with it on the way down. By the time I got back online, I had missed at least three rounds to autodraft.
 
 I won the league that year.
 
-I have thought about that a lot in the twelve seasons since, because it is a genuinely annoying story to tell. It undercuts everything I would like to believe about preparation. That season, my friend Steve had spent weeks building what was, on paper, the best team in the league. Every player not cuttable. Waiver picks, great draft and trades (many questionable). I had a broken wall mount and a computer that picked for me, and I had Jimmy Graham as my first pick. Dez Bryant and Andrew Luck. And that turned out to be enough.
+I have thought about that a lot in the twelve seasons since, because it is a genuinely annoying story to tell. It undercuts everything I would like to believe about preparation. That season, my friend Steve had spent weeks building what was, on paper, the best team in the league. Not a cuttable player on it. Waiver picks, great draft and trades (many questionable). I had a broken wall mount and a computer that picked for me, and I had Jimmy Graham as my first pick. Dez Bryant and Andrew Luck. And that turned out to be enough.
 
 What I have decided it means is not that preparation is worthless. It is that most of what we call analysis in fantasy football is really just confidence, and the two are easy to confuse.
 
 ## Twelve Years, Same League
 
-This league I referenced still exists. Six of the original members are still in it. Everyone else has been there since 2017. Friends from high school started it, some friends of mine from college mixed in. We are not all experts, but strangely it is always competitive, people make great picks, and develop great teams. 
+That league still exists. Six of the original members are still in it. Everyone else has been there since 2017. Friends from high school started it, some friends of mine from college mixed in. We are not all experts, but strangely it is always competitive, people make great picks and develop great teams.
 
 I have been the commissioner the entire time, which mostly means I am the person who gets texted at 11 AM on a Sunday about helping the league vote to push a trade through.
 
-I have won it three times — back to back in the first two seasons, and once more recently in 2024. I have also finished as runner up, to missing the playoffs outright. Which I mention because a track record that only contains the good years is not a track record.
+I have won it three times — back to back in the first two seasons, and once more recently in 2024. I have also finished as runner-up, and I have missed the playoffs outright, which I mention because a track record that only contains the good years is not a track record.
 
 ## What I Kept Noticing
 
 Somewhere around year six I started paying attention to something that bothered me and that nobody seemed to talk about.
 
-Every fantasy site publishes rankings. They update those rankings every week for the specified week. What that does not show you is the way you build your team - who do you want for the rest of the season?
+Every fantasy site publishes rankings, and most update them every week. What I wanted was the part in between: how far a player moved since last week, and why. When a guy goes from 14 to 22, that move is the information — it tells you something changed in his role, his offense, or the way I am reading him. So every ranking here is rest of season, every player carries his change from the week before, and last week's file stays exactly where it was so you can go back and check.
 
-Baseball solved this. [Pitcher List](https://pitcherlist.com) has published rolling rankings with visible movement for years, and it works because the movement *is* the information. Football and basketball have not found a focused version of this (that I have found).
+Baseball has had this for a while. [Pitcher List](https://pitcherlist.com) has published rolling rankings with visible movement for years, and it works because the movement *is* the information. Football has never had a focused version of it, at least not one I have found.
 
 That is the gap my site exists to fill.
 
@@ -81,6 +81,6 @@ If you have been reading [Matt Harmon](https://x.com/MattHarmon_BYB), [JJ Zachar
 
 Rankings every week during the season, starting in September. Explanations for anything that moved more than a few spots. One rookie call a year that I will live with publicly. And an archive that does not get edited.
 
-I can't wait to participate in this space and hopefully help some of you win some leagues while looking at things in a new way.
+I can't wait to participate in this space and hopefully help some of you win your leagues while looking at things in a new way.
 
 Find me at [@theweeklyrank](https://x.com/theweeklyrank).

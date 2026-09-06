@@ -21,7 +21,7 @@ So I started saying one name. I've done it every year since, with one gap, and I
 
 ## The Rule
 
-One rookie. Called before Week 1. Usually a running back, because that's the position where a rookie can walk into a full workload and where my eye is best. The call comes from film first — something I see in how a player moves that I don't think the consensus has priced — and then from situation. It does not come from a spreadsheet, and this is the one place on this site where it isn't supposed to.
+One rookie running back. Called before Week 1. Running backs, because that's the position where a rookie can walk into a full workload and where my eye is best. The call comes from film first — something I see in how a player moves that I don't think the consensus has priced — and then from situation. It does not come from a spreadsheet, and this is the one place on this site where it isn't supposed to.
 
 Graded in January. Hit, push, or miss. No partial credit for "well, if he'd stayed healthy."
 
@@ -69,11 +69,9 @@ Graded in January. Hit, push, or miss. No partial credit for "well, if he'd stay
 
 **Grade:** *Hit.* The easiest one to defend in hindsight, which is exactly why it's worth remembering that in August 2023 the consensus had him well behind Bijan Robinson and worried about the Montgomery split. The split happened. It didn't matter.
 
-### 2024 — Brock Bowers, Las Vegas
+### 2024 — No Call
 
-**What happened:** The first year I planted a flag on a tight end. 112 catches — a rookie record at any position — for 1,194 yards and 5 touchdowns, on a bad team with a rotating quarterback. The TE1 in half-PPR points; only George Kittle, in two fewer games, scored more per game.
-
-**Grade:** *Hit.* I broke my own "usually a running back" rule because the film didn't look like any tight end I'd watched. If there's a call on this list I'd point to as the reason to trust the eye over the position, it's this one.
+I liked Brock Bowers a lot that year and traded for him everywhere I could, but he was a tight end and the flag plant has always been a running back. No call.
 
 ### 2025 — TreVeyon Henderson, New England
 
@@ -83,12 +81,12 @@ Graded in January. Hit, push, or miss. No partial credit for "well, if he'd stay
 
 ## What the Record Says
 
-Nine calls over nine years, counting Fournette. By my grading: five hits, three pushes, one incomplete. <!-- COSTA: adjust if your grades differ -->
+Eight calls over nine years, counting Fournette and the year I sat out. By my grading: four hits, three pushes, one incomplete. <!-- COSTA: adjust if your grades differ -->
 
-The hits have something in common, and it isn't the film. Gibson, Walker, Gibbs and Bowers all walked into situations where the volume was either already open or about to be. The pushes — Montgomery, Javonte, Henderson — were all good reads on the player in backfields that stayed shared or offenses that couldn't score. The film has been right more often than not. The share has been the miss.
+The hits have something in common, and it isn't the film. Gibson, Walker and Gibbs all walked into situations where the volume was either already open or about to be. The pushes — Montgomery, Javonte, Henderson — were all good reads on the player in backfields that stayed shared or offenses that couldn't score. The film has been right more often than not. The share has been the miss.
 
 That's worth saying plainly, because it's the whole shape of this year's call. Seattle vacated 456 touches. The depth behind the rookie is an undrafted back with 25 career carries. The mistake I've made three times is the one this situation makes hardest to make.
 
 ## The Rest of the Story
 
-The 2026 call is [Jadarian Price](/flag-plant/). It's on the record now, before Week 1, the same as the other nine. I'll grade it in January the same way — hit, push, or miss — and it'll go on this page either way.
+The 2026 call is [Jadarian Price](/flag-plant/). It's on the record now, before Week 1, the same as the other eight. I'll grade it in January the same way — hit, push, or miss — and it'll go on this page either way.
