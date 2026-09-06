@@ -33,7 +33,7 @@ Graded in January. Hit, push, or miss. No partial credit for "well, if he'd stay
 
 **What happened:** Cook opened as the starter, ran for 354 yards in four games, and tore his ACL in Week 4. Fournette played thirteen games, ran for 1,040 yards and 9 touchdowns, caught 36 passes, and was the sixth-best back in half-PPR points per game.
 
-**Grade:** Cook, *incomplete* — the read was right and the season ended before it could prove anything, which is the risk with every one of these. Fournette, *hit*. <!-- COSTA: confirm grades -->
+**Grade:** Cook, *incomplete* — the read was right and the season ended before it could prove anything, which is the risk with every one of these. Fournette, *hit*.
 
 ### 2018 — No Call
 
@@ -47,19 +47,19 @@ Graded in January. Hit, push, or miss. No partial credit for "well, if he'd stay
 
 ### 2020 — Antonio Gibson, Washington
 
-**What happened:** A college receiver converted to running back, going in the double-digit rounds. 795 rushing yards and 11 touchdowns in 14 games, plus 36 catches. The 15th-best back in half-PPR points per game, RB12 in total, as a rookie who'd been a wideout eight months earlier.
+**What happened:** A college receiver converted to running back, going in the double-digit rounds. 795 rushing yards and 11 touchdowns in 14 games, plus 36 catches. The 16th-best back in half-PPR points per game, RB12 in total, as a rookie who'd been a wideout eight months earlier.
 
 **Grade:** *Hit.* This is the one that made me trust the process. Nobody had him. The film said the ball-carrier instincts were already there; the situation said Washington had nobody else. Both were right.
 
 ### 2021 — Javonte Williams, Denver
 
-**What happened:** 903 rushing yards, 4 rushing touchdowns, 43 catches for 316 yards and 3 more scores. Every bit as good as I thought on tape — and stuck in a near-even split with Melvin Gordon all season. Finished RB17 in half-PPR points, 26th per game.
+**What happened:** 903 rushing yards, 4 rushing touchdowns, 43 catches for 316 yards and 3 more scores. Every bit as good as I thought on tape — and stuck in a near-even split with Melvin Gordon all season. Finished RB17 in half-PPR points, 27th per game.
 
 **Grade:** *Push.* The talent evaluation was correct. The workload call was not. I underweighted how much Denver would keep leaning on Gordon, and the split capped a back who should have been top-10.
 
 ### 2022 — Kenneth Walker III, Seattle
 
-**What happened:** Opened the year behind Rashaad Penny, took over in Week 5 after Penny's injury, and ran for 1,050 yards and 9 touchdowns in 15 games — the 14th-best back in half-PPR points per game. Second in Offensive Rookie of the Year voting.
+**What happened:** Opened the year behind Rashaad Penny, took over in Week 5 after Penny's injury, and ran for 1,050 yards and 9 touchdowns in 15 games — the 15th-best back in half-PPR points per game. Second in Offensive Rookie of the Year voting.
 
 **Grade:** *Hit.* The first month was ugly and there were texts. Then the job opened and he was exactly who the film said he was. This one taught me to hold the call through a slow start — which is relevant to this year.
 
@@ -81,7 +81,7 @@ I liked Brock Bowers a lot that year and traded for him everywhere I could, but 
 
 ## What the Record Says
 
-Eight calls over nine years, counting Fournette and the year I sat out. By my grading: four hits, three pushes, one incomplete. <!-- COSTA: adjust if your grades differ -->
+Eight calls over nine years, counting Fournette and the year I sat out. By my grading: four hits, three pushes, one incomplete.
 
 The hits have something in common, and it isn't the film. Gibson, Walker and Gibbs all walked into situations where the volume was either already open or about to be. The pushes — Montgomery, Javonte, Henderson — were all good reads on the player in backfields that stayed shared or offenses that couldn't score. The film has been right more often than not. The share has been the miss.
 

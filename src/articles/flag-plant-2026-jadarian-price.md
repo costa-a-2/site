@@ -81,28 +81,30 @@ There is continuity here too, which matters. Kubiak and Fleury share the same co
 
 ## What the History Says
 
-Since 2016, thirteen running backs have been taken in the first round. Twelve of them played as rookies.
+Since 2016, fourteen running backs have been taken in the first round. Thirteen of them played as rookies.
 
 | Year | Player | Pick | PPG rank |
 |---|---|---|---|
-| 2016 | Ezekiel Elliott | 4 | RB2 |
-| 2017 | Leonard Fournette | 4 | RB8 |
-| 2017 | Christian McCaffrey | 8 | RB15 |
-| 2018 | Saquon Barkley | 2 | RB1 |
-| 2019 | Josh Jacobs | 24 | RB14 |
-| 2020 | Clyde Edwards-Helaire | 32 | RB22 |
-| 2021 | Najee Harris | 24 | RB4 |
+| 2016 | Ezekiel Elliott | 4 | RB3 |
+| 2017 | Leonard Fournette | 4 | RB6 |
+| 2017 | Christian McCaffrey | 8 | RB13 |
+| 2018 | Saquon Barkley | 2 | RB2 |
+| 2018 | Rashaad Penny | 27 | RB75 |
+| 2018 | Sony Michel | 31 | RB31 |
+| 2019 | Josh Jacobs | 24 | RB13 |
+| 2020 | Clyde Edwards-Helaire | 32 | RB23 |
+| 2021 | Najee Harris | 24 | RB9 |
 | 2021 | Travis Etienne | 25 | *missed season* |
-| 2023 | Bijan Robinson | 8 | top-12 |
-| 2023 | Jahmyr Gibbs | 12 | top-12 |
-| 2025 | Ashton Jeanty | 6 | RB16 |
-| 2025 | Omarion Hampton | 22 | RB14 |
+| 2023 | Bijan Robinson | 8 | RB17 |
+| 2023 | Jahmyr Gibbs | 12 | RB11 |
+| 2025 | Ashton Jeanty | 6 | RB17 |
+| 2025 | Omarion Hampton | 22 | RB15 |
 
-*Ranks are points-per-game, not total points.*
+*Half-PPR points per game among all running backs, minimum six games. Data: nflverse.*
 
-Six of twelve finished as top-12 backs per game — a coin flip. But eleven of twelve finished top-24, and the only miss was an injury. **Nobody in this group finished worse than RB22.**
+Five of thirteen finished as top-12 backs per game. Eleven of thirteen finished top-24. The two who didn't — Penny and Michel — were both 2018 picks who walked into backfields they had to share, and one of them was hurt. That's the whole bear case in one row of a table: the workload, not the talent.
 
-Which brings me to the comp I have to acknowledge, because somebody will raise it if I do not: Clyde Edwards-Helaire was also the 32nd pick, and he is the RB22 at the bottom of that list.
+Which brings me to the comp I have to acknowledge, because somebody will raise it if I do not: Clyde Edwards-Helaire was also the 32nd pick, and he is the RB23 near the bottom of that list.
 
 The difference is workload security. Edwards-Helaire walked into a healthy Kansas City backfield and immediately started sharing. Price walks into a backfield where the two men who took 456 touches last year are gone and hurt, and the depth behind him is George Holani — an undrafted free agent with **25 carries across two NFL seasons** — and journeyman Emanuel Wilson.
 
