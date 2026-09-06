@@ -1,0 +1,126 @@
+---
+layout: layouts/base.njk
+pageType: player
+pagination:
+  data: rankings.players
+  size: 1
+  alias: player
+  addAllPagesToCollections: true
+permalink: "/players/{{ player.player | slugify }}/"
+eleventyComputed:
+  title: "{{ player.player }} Fantasy Outlook, Rest of Season {{ player.season }}"
+  description: "{{ player.player }} ({{ player.pos }}, {{ player.team }}): rest-of-season half-PPR rank, model rank, projected line and the note behind every edition."
+  updatedAt: "{{ rankings.latestFootball.updatedAt }}"
+---
+{% set p = player %}
+{% set latest = rankings.latestFootball %}
+{% set posName = { "QB": "Quarterback", "RB": "Running back", "WR": "Wide receiver", "TE": "Tight end" }[p.pos] or p.pos %}
+<div class="dateline"><span>Player</span><span>{{ posName }} &middot; {{ p.team }}</span><span>Updated {{ latest.published | date("long") }}</span></div>
+<div class="r-light"></div>
+
+<div class="pp-head">
+  <div>
+    <span class="sec">Player &middot; {{ p.pos }} &middot; {{ p.team }}{% if not p.onLatest %} &middot; last ranked {{ p.latestLabel }}{% endif %}</span>
+    <div style="margin-top:14px">
+      {% if p.headshot %}<img class="hs-lg" src="{{ p.headshot }}" alt="">{% else %}<span class="hs-lg"></span>{% endif %}
+      <h1 class="hed-xl">{{ p.player }}</h1>
+      <p class="standfirst" style="margin-top:6px">{% if p.note %}{{ p.note }}{% else %}Where the model has him, where the board put him, and every edition in between.{% endif %}</p>
+      <div style="margin-top:8px">
+        {% for b in p.badges %}<span class="badge{% if loop.first %} ink{% endif %}">{{ b }}</span>{% endfor %}
+        {% if p.tier %}<span class="badge">Tier {{ p.tier }} &middot; {{ p.tierName }}</span>{% endif %}
+        {% if p.risk %}<span class="badge">Risk &middot; {{ p.risk }}</span>{% endif %}
+      </div>
+    </div>
+  </div>
+  <div class="pp-num">
+    <div><b>#{{ p.rank }}</b><span>Board rank</span></div>
+    <div><b>{% if p.modelRank %}#{{ p.modelRank }}{% else %}&mdash;{% endif %}</b><span>Model rank</span></div>
+    <div><b>{% if p.posRank %}{{ p.pos }}{{ p.posRank }}{% else %}&mdash;{% endif %}</b><span>Position</span></div>
+    <div><b>{% if p.adp %}{{ p.adp | round }}{% else %}&mdash;{% endif %}</b><span>ADP</span></div>
+    <div><b>{% if p.ppg !== null %}{{ p.ppg.toFixed(1) }}{% else %}&mdash;{% endif %}</b><span>Proj. PPG</span></div>
+    <div><b>{% if p.vorp !== null %}{% if p.vorp > 0 %}+{% endif %}{{ p.vorp.toFixed(1) }}{% else %}&mdash;{% endif %}</b><span>Over replacement</span></div>
+    <div class="{% if p.vsMarket > 0 %}up{% elif p.vsMarket < 0 %}down{% endif %}"><b>{% if p.vsMarket !== null %}{% if p.vsMarket > 0 %}+{% endif %}{{ p.vsMarket }}{% else %}&mdash;{% endif %}</b><span>vs. market</span></div>
+    <div><b>{% if p.games %}{{ p.games }}{% else %}&mdash;{% endif %}</b><span>Games projected</span></div>
+  </div>
+</div>
+<div class="r-hair"></div>
+
+<div class="lead-grid" style="padding-top:22px">
+  <div>
+    <span class="sec">Rank, Every Edition</span>
+    {{ p.editions | bigspark | safe }}
+    <div class="tbl-wrap"><table class="hist">
+      <thead><tr><th>Date</th><th>Edition</th><th>Model</th><th>Board</th><th>Chg</th><th>The note that week</th></tr></thead>
+      <tbody>
+      {% for e in p.editions %}{% set m = e.change | movement(e.change === null) %}
+        <tr><td>{{ e.published | date("short") }}</td><td><b><a href="{{ e.url }}">{{ e.label }}</a></b></td><td>{% if e.modelRank %}{{ e.modelRank }}{% else %}&mdash;{% endif %}</td><td><b>{{ e.rank }}</b></td><td class="{{ m.cls }}">{{ m.sym }}{% if m.abs %} {{ m.abs }}{% endif %}</td><td class="note">{% if e.note %}{{ e.note }}{% else %}&mdash;{% endif %}</td></tr>
+      {% endfor %}
+      </tbody>
+    </table></div>
+    <div class="tbl-foot">Every edition stays. Nothing here is edited after it publishes; the change column is computed from the prior file.</div>
+
+    {% if p.stats %}{% set s = p.stats %}
+    <div class="box"><span class="sec">The Projected Line</span><p class="summary">Share &times; team total &times; games. The share is the judgment; the total is the ceiling.</p>
+      <div class="line">
+        {% if p.pos == "QB" %}
+        <div><b>{{ s.passAtt | round }}</b><span>Pass att</span></div><div><b>{{ s.passYds | round }}</b><span>Pass yds</span></div><div><b>{{ s.passTD.toFixed(1) }}</b><span>Pass TD</span></div><div><b>{{ s.int.toFixed(1) }}</b><span>INT</span></div><div><b>{{ s.rushYds | round }}</b><span>Rush yds</span></div><div><b>{{ s.rushTD.toFixed(1) }}</b><span>Rush TD</span></div>
+        {% else %}
+        <div><b>{{ s.carries | round }}</b><span>Carries</span></div><div><b>{{ s.rushYds | round }}</b><span>Rush yds</span></div><div><b>{{ s.rushTD.toFixed(1) }}</b><span>Rush TD</span></div><div><b>{{ s.targets | round }}</b><span>Targets</span></div><div><b>{{ s.recYds | round }}</b><span>Rec yds</span></div><div><b>{{ s.recTD.toFixed(1) }}</b><span>Rec TD</span></div>
+        {% endif %}
+      </div>
+      <div class="share-grid">
+        {% if p.pos == "QB" %}
+        <div><div class="share-lbl"><span>Pass attempt share</span><b>{{ (s.passAttShare * 100) | round }}% of {{ s.teamPassAtt | round }}</b></div><div class="share-bar"><i style="width:{{ (s.passAttShare * 100) | round }}%"></i></div></div>
+        <div><div class="share-lbl"><span>Carry share</span><b>{{ (s.carryShare * 100) | round }}% of {{ s.teamRushAtt | round }}</b></div><div class="share-bar"><i style="width:{{ (s.carryShare * 100) | round }}%"></i></div></div>
+        {% else %}
+        <div><div class="share-lbl"><span>Carry share</span><b>{{ (s.carryShare * 100) | round }}% of {{ s.teamRushAtt | round }}</b></div><div class="share-bar"><i style="width:{{ (s.carryShare * 100) | round }}%"></i></div></div>
+        <div><div class="share-lbl"><span>Target share</span><b>{{ (s.targetShare * 100) | round }}% of {{ s.teamTargets | round }}</b></div><div class="share-bar"><i style="width:{{ (s.targetShare * 100) | round }}%"></i></div></div>
+        {% endif %}
+      </div>
+    </div>
+    {% endif %}
+
+    {% if p.signal %}{% set sg = p.signal %}
+    <div class="box"><span class="sec">Signals</span>
+      <div class="classified" style="margin-top:10px">
+        <div class="row"><b>{{ sg.groupLabel or sg.group }}</b><span class="m">Model {{ sg.modelRank }} &middot; ADP {{ sg.adp | round }} &middot; gap {% if sg.gap > 0 %}+{% endif %}{{ sg.gap }}{% if sg.metric %} &middot; {{ sg.metric | upper }} {{ sg.value }} ({{ sg.strength }}){% endif %}</span></div>
+        {% if sg.note %}<p class="summary" style="margin-top:8px">{{ sg.note }}</p>{% endif %}
+      </div>
+      <div class="tbl-foot"><a href="/signals/" style="border-bottom:1px solid var(--rule)">All of this week's signals</a></div>
+    </div>
+    {% endif %}
+  </div>
+
+  <aside class="rail">
+    <span class="sec">Written About</span>
+    <div style="margin-top:10px">
+      {% for a in p.mentions %}
+      <div class="arch-row"><div><div class="wk"><a href="{{ a.url }}">{{ a.title }}</a></div>{% if a.summary %}<div class="summary" style="margin-top:2px">{{ a.summary }}</div>{% endif %}</div><div class="dt">{{ a.date | date("short") }}</div></div>
+      {% else %}
+      <p class="summary">Not in an article yet.</p>
+      {% endfor %}
+    </div>
+
+    <div style="margin-top:22px"><span class="sec">{% if p.pos == "RB" %}The Backfield{% elif p.pos == "QB" %}The Quarterbacks{% else %}The Receiver Room{% endif %}</span></div>
+    <table class="rank" style="font-size:14px;margin-top:8px">
+      <tr><td class="c-rank">{{ p.rank }}</td><td class="c-player"><b>{{ p.player }}</b></td><td class="c-pos">{% if p.share !== null %}{{ (p.share * 100) | round }}%{% else %}&mdash;{% endif %}</td></tr>
+      {% for q in p.room %}
+      <tr><td class="c-rank">{% if q.rank %}{{ q.rank }}{% else %}&mdash;{% endif %}</td><td class="c-player">{% if q.player in rankings.playerNames %}<a href="/players/{{ q.player | slugify }}/">{{ q.player }}</a>{% else %}{{ q.player }}{% endif %}</td><td class="c-pos">{% if q.share !== null %}{{ (q.share * 100) | round }}%{% else %}{% if q.onSite %}&mdash;{% else %}cusp{% endif %}{% endif %}</td></tr>
+      {% else %}
+      <tr><td class="c-rank">&mdash;</td><td class="c-player" style="color:var(--muted)">Nobody else from {{ p.team }} at {{ p.pos }} is on the board</td><td class="c-pos"></td></tr>
+      {% endfor %}
+    </table>
+    {% if p.shareTotal %}<div class="tbl-foot">{{ p.shareUnit | capitalize }} share of {{ p.team }}'s {{ p.shareTotal | round }} projected {{ p.shareUnit }}</div>{% endif %}
+
+    <div style="margin-top:22px"><span class="sec">The Newsletter</span></div>
+    <p class="summary">One email a week during the season, the morning the rankings publish.</p>
+    <div class="signup" style="margin-top:10px">
+      <form name="subscribe" action="https://formspree.io/f/myeydvbq" method="POST">
+        <input type="hidden" name="_subject" value="Weekly Rank signup">
+        <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <input type="email" name="email" placeholder="your@email.com" required aria-label="Email address">
+        <button type="submit">Join</button>
+      </form>
+    </div>
+  </aside>
+</div>

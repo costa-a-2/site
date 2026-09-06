@@ -11,7 +11,7 @@
       <tr data-pos="{{ p.pos }}" id="p-{{ p.player | slugify }}">
         <td class="c-rank">{{ p.rank }}</td>
         <td class="c-model">{% if p.modelRank %}{{ p.modelRank }}{% else %}—{% endif %}</td>
-        <td class="c-player">{% if p.headshot %}<img class="hs" src="{{ p.headshot }}" alt="" loading="lazy">{% else %}<span class="hs"></span>{% endif %}{{ p.player }}{% for b in p.badges %}<span class="badge">{{ b }}</span>{% endfor %}</td>
+        <td class="c-player">{% if p.headshot %}<img class="hs" src="{{ p.headshot }}" alt="" loading="lazy">{% else %}<span class="hs"></span>{% endif %}<a href="/players/{{ p.player | slugify }}/">{{ p.player }}</a>{% for b in p.badges %}<span class="badge">{{ b }}</span>{% endfor %}</td>
         <td class="c-pos">{{ p.pos }}</td>
         <td class="c-team">{{ p.team }}</td>
         <td class="c-ppg">{% if p.ppg is defined and p.ppg !== null %}{{ p.ppg.toFixed(1) }}{% else %}—{% endif %}</td>

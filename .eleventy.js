@@ -51,6 +51,19 @@ module.exports = function (eleventyConfig) {
     return `<svg class="spark" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" aria-hidden="true">${lines}${dot}</svg>`;
   });
 
+  // The player page's "Rank, Every Edition": a full-width labeled sparkline. Lower rank sits higher.
+  eleventyConfig.addFilter("bigspark", (editions, w = 600, h = 120) => {
+    const eds = (editions || []).filter(e => typeof e.rank === "number");
+    if (!eds.length) return "";
+    const ranks = eds.map(e => e.rank), lo = Math.min(...ranks), hi = Math.max(...ranks), span = Math.max(1, hi - lo), n = ranks.length;
+    const x = i => n === 1 ? w / 2 : 20 + i * (w - 40) / (n - 1), y = r => 15 + ((r - lo) / span) * (h - 30);
+    const pts = ranks.map((r, i) => `${x(i).toFixed(0)},${y(r).toFixed(0)}`).join(" ");
+    const dots = ranks.map((r, i) => `<circle cx="${x(i).toFixed(0)}" cy="${y(r).toFixed(0)}" r="3" fill="currentColor"/>`).join("");
+    const nums = ranks.map((r, i) => `<text x="${x(i).toFixed(0)}" y="${(y(r) - 8).toFixed(0)}" font-size="12" font-family="Playfair Display, serif" font-weight="700" text-anchor="middle" fill="currentColor">#${r}</text>`).join("");
+    const labels = eds.map((e, i) => `<text x="${x(i).toFixed(0)}" y="${h - 2}" font-size="9" font-family="Cinzel, serif" letter-spacing="1.5" text-anchor="middle" fill="#6b6355">${(e.isPreseason ? "PRE" : e.label.replace(/^Week /, "WK ")).toUpperCase()}</text>`).join("");
+    return `<svg class="bigspark" viewBox="0 0 ${w} ${h}" role="img" aria-label="Rank by edition">${n > 1 ? `<polyline points="${pts}" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>` : ""}${dots}${nums}${labels}</svg>`;
+  });
+
   eleventyConfig.addFilter("time", (iso) => {
     if (!iso) return "";
     const d = new Date(iso); if (isNaN(d)) return "";

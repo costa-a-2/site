@@ -34,7 +34,7 @@ description: Where the metrics and the market agree or disagree with the model, 
       <div class="sig-who">
         {% if s.headshot %}<img class="hs" src="{{ s.headshot }}" alt="" loading="lazy">{% else %}<span class="hs"></span>{% endif %}
         <div style="min-width:0">
-          <div class="hed-sm" style="margin:0">{% if s.onPage %}<a href="/rankings/#p-{{ s.player | slugify }}" title="His row on the rankings">{{ s.player }}</a>{% else %}{{ s.player }}{% endif %}</div>
+          <div class="hed-sm" style="margin:0">{% if s.player in rankings.playerNames %}<a href="/players/{{ s.player | slugify }}/" title="His page">{{ s.player }}</a>{% elif s.onPage %}<a href="/rankings/#p-{{ s.player | slugify }}" title="His row on the rankings">{{ s.player }}</a>{% else %}{{ s.player }}{% endif %}</div>
           <div class="kick">{{ s.pos }} &middot; {{ s.team }}</div>
         </div>
       </div>

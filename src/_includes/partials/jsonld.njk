@@ -25,6 +25,18 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Person","@id":{{ personId | dump | safe }},"name":{{ site.author | dump | safe }},"url":{{ canonicalUrl | dump | safe }},"jobTitle":"Editor","description":{{ (description or standfirst or summary or "") | dump | safe }},"image":{{ (site.url ~ (site.authorMug or "/assets/img/costa.jpg")) | dump | safe }},"worksFor":{"@type":"Organization","@id":{{ orgId | dump | safe }},"name":{{ site.name | dump | safe }},"url":{{ (site.url ~ "/") | dump | safe }}}{% if site.x %},"sameAs":[{{ site.x | dump | safe }}]{% endif %}}
 </script>
+{%- elif pageType == "player" and player %}
+{%- set posName = { "QB": "Quarterback", "RB": "Running back", "WR": "Wide receiver", "TE": "Tight end" }[player.pos] or player.pos -%}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+ {"@type":"Person","@id":{{ (canonicalUrl ~ "#person") | dump | safe }},"name":{{ player.player | dump | safe }},"url":{{ canonicalUrl | dump | safe }},{% if player.headshot %}"image":{{ player.headshot | dump | safe }},{% endif %}"jobTitle":{{ (posName ~ ", " ~ player.team) | dump | safe }},"description":{{ (title ~ ": rest-of-season half-PPR rank #" ~ player.rank ~ ", model rank " ~ (player.modelRank or "—") ~ ".") | dump | safe }},"memberOf":{"@type":"SportsTeam","name":{{ player.team | dump | safe }},"sport":"American football"},"knowsAbout":"American football","subjectOf":[{% for a in player.mentions %}{"@type":"Article","headline":{{ a.title | dump | safe }},"url":{{ (site.url ~ a.url) | dump | safe }}}{% if not loop.last %},{% endif %}{% endfor %}]},
+ {"@type":"BreadcrumbList","itemListElement":[
+  {"@type":"ListItem","position":1,"name":"Home","item":{{ (site.url ~ "/") | dump | safe }}},
+  {"@type":"ListItem","position":2,"name":"Players","item":{{ (site.url ~ "/players/") | dump | safe }}},
+  {"@type":"ListItem","position":3,"name":{{ player.player | dump | safe }},"item":{{ canonicalUrl | dump | safe }}}
+ ]}
+]}
+</script>
 {%- elif pageType == "rankings" %}
 {%- set wk = week if week else rankings.latestFootball -%}
 {%- if wk and wk.players and wk.players.length %}

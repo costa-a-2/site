@@ -1,0 +1,30 @@
+---
+layout: layouts/base.njk
+permalink: /players/
+title: Players
+description: Every player who has appeared in a Weekly Rank edition, by position, each with his rest-of-season page.
+---
+<div style="text-align:center;padding:32px 0 22px">
+  <div class="kick" style="margin-bottom:10px">Every Edition, Every Player</div>
+  <h1 class="hed-xl">Players</h1>
+  <p class="standfirst" style="margin-top:12px;max-width:600px;margin-left:auto;margin-right:auto">
+    Anyone who has been on a board gets a page: where the model has him, where the board put him, and the note behind every edition.
+  </p>
+</div>
+
+{% set groups = [["QB", "Quarterbacks"], ["RB", "Running Backs"], ["WR", "Wide Receivers"], ["TE", "Tight Ends"]] %}
+<div class="players-index">
+{% for g in groups %}
+  {% set list = rankings.players | where("pos", g[0]) %}
+  {% if list.length %}
+  <section>
+    <div class="sec">{{ g[1] }} &middot; {{ list.length }}</div>
+    <ul>
+      {% for p in list %}
+      <li><a href="/players/{{ p.player | slugify }}/">{{ p.player }}</a> <span class="m">{{ p.team }}{% if p.onLatest %} &middot; #{{ p.rank }}{% else %} &middot; last {{ p.latestLabel }}{% endif %}</span></li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+{% endfor %}
+</div>

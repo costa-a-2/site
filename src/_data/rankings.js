@@ -139,6 +139,56 @@ function withMovement(weeks) {
 
 const football = withMovement(loadSport("football"));
 const basketball = withMovement(loadSport("basketball"));
+
+// ── player pages: the union of every player who appeared in any football edition ──────────────
+const ARTICLES_DIR = path.join(__dirname, "..", "articles");
+function articleIndex() {
+  if (!fs.existsSync(ARTICLES_DIR)) return [];
+  return fs.readdirSync(ARTICLES_DIR).filter(f => f.endsWith(".md")).map(f => {
+    const raw = fs.readFileSync(path.join(ARTICLES_DIR, f), "utf8");
+    const m = raw.match(/^---\n([\s\S]*?)\n---\n?([\s\S]*)$/);
+    const fm = m ? m[1] : "", body = m ? m[2] : raw;
+    const get = k => { const r = fm.match(new RegExp(`^${k}:\\s*"?(.*?)"?\\s*$`, "m")); return r ? r[1] : ""; };
+    return { url: `/articles/${f.replace(/\.md$/, "")}/`, title: get("title"), summary: get("summary"), date: get("date"), body };
+  });
+}
+const SHARE_KEY = { RB: ["carryShare", "teamRushAtt", "carries"], WR: ["targetShare", "teamTargets", "targets"], TE: ["targetShare", "teamTargets", "targets"], QB: ["passAttShare", "teamPassAtt", "attempts"] };
+function buildPlayers(weeks) {
+  const articles = articleIndex();
+  const latest = weeks[weeks.length - 1];
+  const byName = new Map();
+  weeks.forEach(wk => wk.players.forEach(p => {
+    const e = byName.get(p.player) || { player: p.player, editions: [] };
+    e.editions.push({ slug: wk.slug, label: wk.label, url: wk.url, published: wk.published, isPreseason: wk.isPreseason,
+                      modelRank: p.modelRank ?? null, rank: p.rank, change: wk.firstEdition ? null : p.change, note: p.note || "" });
+    e.last = p; e.lastWeek = wk;                                   // the most recent edition he appeared in
+    byName.set(p.player, e);
+  }));
+  return [...byName.values()].map(e => {
+    const p = e.last, wk = e.lastWeek, s = p.stats || {};
+    const [shareKey, totalKey, unit] = SHARE_KEY[p.pos] || [null, null, ""];
+    const room = (wk.players.filter(q => q.team === p.team && q.pos === p.pos && q.player !== p.player)
+      .map(q => ({ player: q.player, rank: q.rank, share: q.stats ? q.stats[shareKey] : null, onSite: true })))
+      .concat((wk.cusp || []).filter(c => c.team === p.team && c.pos === p.pos).map(c => ({ player: c.player, rank: null, share: null, onSite: false })))
+      .sort((a, b) => (b.share || 0) - (a.share || 0));
+    const sgRaw = (wk.signals || []).find(sg => sg.player === p.player) || null;
+    const sgGroup = sgRaw ? (wk.signalGroups || []).find(g => g.id === sgRaw.group) : null;
+    const signal = sgRaw ? { ...sgRaw, groupLabel: sgGroup ? sgGroup.label : sgRaw.group } : null;
+    const mentions = articles.filter(a => a.body.includes(p.player)).sort((a, b) => (a.date < b.date ? 1 : -1))
+      .map(({ url, title, summary, date }) => ({ url, title, summary, date }));
+    return {
+      player: p.player, pos: p.pos, team: p.team, season: latest.season, onLatest: wk === latest, latestLabel: wk.label, latestUrl: wk.url,
+      rank: p.rank, modelRank: p.modelRank ?? null, posRank: p.posRank ?? null, adp: p.adp ?? null, ppg: p.ppg ?? null, vorp: p.vorp ?? null,
+      vsMarket: (typeof p.adp === "number" && typeof p.rank === "number") ? Math.round(p.adp - p.rank) : null,
+      games: s.games ?? null, tier: p.tier ?? null, tierName: p.tierName || "", risk: p.risk || "", note: p.note || "", badges: p.badges || [],
+      headshot: p.headshot || null, stats: p.stats || null, share: shareKey ? s[shareKey] : null, shareTotal: totalKey ? s[totalKey] : null, shareUnit: unit,
+      bandIfHealthy: p.bandIfHealthy || "", signal, editions: e.editions, mentions, room
+    };
+  }).sort((a, b) => a.player.localeCompare(b.player));
+}
+const players = buildPlayers(football);
+
 module.exports = { football, basketball,
   latestFootball: football[football.length - 1] || null,
-  latestBasketball: basketball[basketball.length - 1] || null };
+  latestBasketball: basketball[basketball.length - 1] || null,
+  players, playerNames: players.map(p => p.player) };

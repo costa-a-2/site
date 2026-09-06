@@ -53,7 +53,7 @@ pageType: home
       {% for p in wk.players | limit(10) %}{% set m = p.change | movement(wk.firstEdition) %}
       <tr>
         <td class="c-rank" style="width:22px">{{ p.rank }}</td>
-        <td class="c-player">{% if p.headshot %}<img class="hs" src="{{ p.headshot }}" alt="" loading="lazy" style="width:22px;height:22px">{% endif %}{{ p.player }}</td>
+        <td class="c-player">{% if p.headshot %}<img class="hs" src="{{ p.headshot }}" alt="" loading="lazy" style="width:22px;height:22px">{% endif %}<a href="/players/{{ p.player | slugify }}/">{{ p.player }}</a></td>
         <td class="c-pos" style="width:34px">{{ p.pos }}</td>
         <td class="c-chg {{ m.cls }}">{{ m.sym }}{% if m.abs %} {{ m.abs }}{% endif %}</td>
       </tr>

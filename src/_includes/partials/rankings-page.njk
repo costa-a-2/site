@@ -46,7 +46,7 @@
         <tbody>
         {% for p in week.cusp %}
           <tr data-pos="{{ p.pos }}">
-            <td class="c-player">{% if p.headshot %}<img class="hs" src="{{ p.headshot }}" alt="" loading="lazy">{% else %}<span class="hs"></span>{% endif %}{{ p.player }}</td>
+            <td class="c-player">{% if p.headshot %}<img class="hs" src="{{ p.headshot }}" alt="" loading="lazy">{% else %}<span class="hs"></span>{% endif %}{% if p.player in rankings.playerNames %}<a href="/players/{{ p.player | slugify }}/">{{ p.player }}</a>{% else %}{{ p.player }}{% endif %}</td>
             <td class="c-pos">{{ p.pos }}</td>
             <td class="c-team">{{ p.team }}</td>
             <td class="c-risk">{% if p.risk %}<span class="risk-dot {{ p.risk | riskClass }}" title="{{ p.risk }}"></span><span class="risk-lbl">{{ p.risk }}</span>{% endif %}</td>
@@ -61,7 +61,7 @@
       <span class="sec">The Flags</span>
       <p class="summary" style="margin-top:8px">Risk is a judgment call, not a model output: Low, Medium or High. Every flag comes with the reason.</p>
       {% for p in week.flags %}
-      <div class="arch-row"><div><div class="wk"><span class="risk-dot {{ p.risk | riskClass }}"></span>{{ p.player }} <span class="risk-lbl">{{ p.risk }}</span></div><div class="summary" style="margin-top:2px">{{ p.note or "No note yet." }}</div></div><div class="dt">#{{ p.rank }}</div></div>
+      <div class="arch-row"><div><div class="wk"><span class="risk-dot {{ p.risk | riskClass }}"></span><a href="/players/{{ p.player | slugify }}/">{{ p.player }}</a> <span class="risk-lbl">{{ p.risk }}</span></div><div class="summary" style="margin-top:2px">{{ p.note or "No note yet." }}</div></div><div class="dt">#{{ p.rank }}</div></div>
       {% endfor %}
     </div>
     {% endif %}
@@ -74,7 +74,7 @@
         <tbody>
         {% for p in week.fellOff %}
           <tr data-pos="{{ p.pos }}">
-            <td class="c-player">{% if p.headshot %}<img class="hs" src="{{ p.headshot }}" alt="" loading="lazy">{% else %}<span class="hs"></span>{% endif %}{{ p.player }}</td>
+            <td class="c-player">{% if p.headshot %}<img class="hs" src="{{ p.headshot }}" alt="" loading="lazy">{% else %}<span class="hs"></span>{% endif %}<a href="/players/{{ p.player | slugify }}/">{{ p.player }}</a></td>
             <td class="c-pos">{{ p.pos }}</td>
             <td class="c-team">{{ p.team }}</td>
             <td class="c-chg is-flat">#{{ p.prevRank }}</td>
