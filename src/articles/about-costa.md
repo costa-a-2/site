@@ -11,7 +11,7 @@ imageAlt: "Dalvin Cook running with the ball"
 caption: "Dalvin Cook, 2022. Photo by All-Pro Reels, CC BY-SA 2.0."
 ---
 
-In 2014 I was sitting in my family's living room for my first-ever fantasy football draft when the television came off the wall mount. Not dramatically — it just gave up, tilted, and took my laptop connection with it on the way down. By the time I got back online, I had missed at least three rounds to autodraft.
+In 2014 I was sitting in my family's living room for my first-ever fantasy football draft when the television came off the wall mount. Not dramatically. It just gave up, tilted, and took my laptop connection with it on the way down. By the time I got back online, I had missed at least three rounds to autodraft.
 
 I won the league that year.
 
@@ -25,13 +25,13 @@ That league still exists. Six of the original members are still in it. Everyone 
 
 I have been the commissioner the entire time, which mostly means I am the person who gets texted at 11 AM on a Sunday about helping the league vote to push a trade through.
 
-I have won it three times — back to back in the first two seasons, and once more recently in 2024. I have also finished as runner-up, and I have missed the playoffs outright, which I mention because a track record that only contains the good years is not a track record.
+I have won it three times: back to back in the first two seasons, and once more recently in 2024. I have also finished as runner-up, and I have missed the playoffs outright, which I mention because a track record that only contains the good years is not a track record.
 
 ## What I Kept Noticing
 
 Somewhere around year six I started paying attention to something that bothered me and that nobody seemed to talk about.
 
-Every fantasy site publishes rankings, and most update them every week. What I wanted was the part in between: how far a player moved since last week, and why. When a guy goes from 14 to 22, that move is the information — it tells you something changed in his role, his offense, or the way I am reading him. So every ranking here is rest of season, every player carries his change from the week before, and last week's file stays exactly where it was so you can go back and check.
+Every fantasy site publishes rankings, and most update them every week. What I wanted was the part in between: how far a player moved since last week, and why. When a guy goes from 14 to 22, that move is the information. It tells you something changed in his role, his offense, or the way I am reading him. So every ranking here is rest of season, every player carries his change from the week before, and last week's file stays exactly where it was so you can go back and check.
 
 Baseball has had this for a while. [Pitcher List](https://pitcherlist.com) has published rolling rankings with visible movement for years, and it works because the movement *is* the information. Football has never had a focused version of it, at least not one I have found.
 
@@ -51,17 +51,17 @@ Three rules I am holding myself to:
 
 ## The Numbers, and the Part the Numbers Miss
 
-I have built a set of metrics to explain movement. Opportunity trends across every skill position. Role clarity for running backs — not how many touches, but what kind, split across early downs, third downs, red zone, and two-minute. Scheme fit for receivers, which matters most right after a coordinator change. A passing environment index for quarterbacks.
+I have built a set of metrics to explain movement. Opportunity trends across every skill position. Role clarity for running backs: not how many touches, but what kind, split across early downs, third downs, red zone, and two-minute. Scheme fit for receivers, which matters most right after a coordinator change. A passing environment index for quarterbacks.
 
 There is a full [methodology page](/methodology/) if you want the mechanics.
 
-But I want to be clear about something, because it would be easy to oversell this. The metrics are built from public data — the same play-by-play anyone can download. What I keep private is how they are weighted. And they do not touch the rank directly; each one moves a specific stat, so that when a player climbs nine spots I can point to the number that moved and the reason it moved. Where my own judgment disagrees with the model, that adjustment is separate, visible, and comes with a written reason. You will always be able to see which one won.
+But I want to be clear about something, because it would be easy to oversell this. The metrics are built from public data, the same play-by-play anyone can download. What I keep private is how they are weighted. And they do not touch the rank directly; each one moves a specific stat, so that when a player climbs nine spots I can point to the number that moved and the reason it moved. Where my own judgment disagrees with the model, that adjustment is separate, visible, and comes with a written reason. You will always be able to see which one won.
 
 The clearest example is a habit I have had since 2017.
 
 ## The Flag Plant
 
-Every year I pick one rookie — usually a running back — and commit to him before the season starts. Not a sleeper list. One name.
+Every year I pick one rookie running back and commit to him before the season starts. Not a sleeper list. One name.
 
 Cook. Montgomery. Gibson. Javonte Williams. Kenneth Walker. Gibbs. Henderson.
 
@@ -71,7 +71,7 @@ It is the least defensible thing I do and the thing I am most confident about, w
 
 ## Who Is Writing This
 
-Costa Angelakis. Marketer by day — which is relevant only in that I understand audiences and distribution, and it explains why this site looks like something rather than nothing.
+Costa Angelakis. Marketer by day, which is relevant only in that I understand audiences and distribution, and it explains why this site looks like something rather than nothing.
 
 I am not a former scout. I have no insider access and I am not going to pretend otherwise. What I have is twelve years of doing this seriously, a habit of writing down my calls before I know how they turn out, and enough respect for the people who built this space to try to add to it rather than repackage it.
 

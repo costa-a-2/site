@@ -17,11 +17,11 @@ Ahead of the 2017 season, doing research into players for draft day, I stumbled 
 
 I was immediately blown away. I could see how this player would be a surefire star in the league. He was elusive. Fast. Acceleration and long speed. Made people miss, but still had power. I was enamored and ready to draft him at all costs. And I did, almost every season he was on the Vikings. It was a mixed bag of results with some major injuries, but ultimately he was one of the best running backs in the NFL for that stretch.
 
-That was the 2017 season. After that, I was motivated to have that same find every season. So I started watching all rookie running back tape after the draft. I've done it every year since, and I've never gone back and softened a call after the fact. I won't force a pick, so there are a couple of years with no call. The point is also to find a player and see a trait in him that isn't consensus. I loved Leonard Fournette's tape out of college too, but everyone agreed on that one — he was the fourth overall pick, expected to be a star.
+That was the 2017 season. After that, I was motivated to have that same find every season. So I started watching all rookie running back tape after the draft. I've done it every year since, and I've never gone back and softened a call after the fact. I won't force a pick, so there are a couple of years with no call. The point is also to find a player and see a trait in him that isn't consensus. I loved Leonard Fournette's tape out of college too, but everyone agreed on that one. He was the fourth overall pick, expected to be a star.
 
 ## The Rule
 
-One rookie. Called before Week 1. Usually a running back, because that's where my eye is best. The call comes from film first — something I see in how a player moves that I don't think the consensus has priced — and then from situation. It does not come from a spreadsheet, and this is the one place on this site where it isn't supposed to.
+One rookie. Called before Week 1. Usually a running back, because that's where my eye is best. The call comes from film first, something I see in how a player moves that I don't think the consensus has priced, and then from situation. It does not come from a spreadsheet, and this is the one place on this site where it isn't supposed to.
 
 Graded in January. Hit, push, or miss. No partial credit for "well, if he'd stayed healthy." There are cases where a player does develop into what I saw, just later, which is its own kind of rewarding. A rookie's situation isn't always perfect from the start.
 
@@ -39,9 +39,9 @@ That's obvious, and a lot of players have many of these traits. For the players 
 
 **What happened:** Cook opened as the starter, ran for 354 yards in four games, and tore his ACL in Week 4. 
 
-**Grade:** Cook, *incomplete* — the read was right and the season ended before it could prove anything, which is the risk with every one of these.
+**Grade:** Cook, *incomplete*. The read was right and the season ended before it could prove anything, which is the risk with every one of these.
 
-**Since then:** This is the one that stings least, because the read was right by a mile. Two years later he was the RB5. The year after that, RB3 in total and the RB1 in points per game — 22.6 a week. Four top-15 seasons in a row before the wheels came off. Incomplete as a rookie call. Not incomplete as a read.
+**Since then:** This is the one that stings least, because the read was right by a mile. Two years later he was the RB5. The year after that, RB3 in total and the RB1 in points per game, at 22.6 a week. Four top-15 seasons in a row before the wheels came off. Incomplete as a rookie call. Not incomplete as a read.
 
 ### 2018 — No Call
 
@@ -53,7 +53,7 @@ Saquon was obviously a generational talent from the start, and I loved his tape.
 
 **Grade:** *Push.* He was exactly the player I thought he was in an offense that couldn't use him. The volume was there; the points weren't. I've thought about this one a lot, because it's the year I learned the environment matters as much as the back.
 
-**Since then:** One year later, RB4 — 15.9 a game in the same Bears uniform, once the offense got out of its own way. Then five straight top-24 seasons, two of them top-13, including the Detroit years. The player I saw showed up. He just needed a better room.
+**Since then:** One year later, RB4: 15.9 a game in the same Bears uniform, once the offense got out of its own way. Then five straight top-24 seasons, two of them top-13, including the Detroit years. The player I saw showed up. He just needed a better room.
 
 ### 2020 — Antonio Gibson, Washington
 
@@ -65,7 +65,7 @@ Saquon was obviously a generational talent from the start, and I loved his tape.
 
 ### 2021 — Javonte Williams, Denver
 
-**What happened:** 903 rushing yards, 4 rushing touchdowns, 43 catches for 316 yards and 3 more scores. Every bit as good as I thought on tape — and stuck in a near-even split with Melvin Gordon all season. Finished RB17 in half-PPR points, 27th per game.
+**What happened:** 903 rushing yards, 4 rushing touchdowns, 43 catches for 316 yards and 3 more scores. Every bit as good as I thought on tape, and stuck in a near-even split with Melvin Gordon all season. Finished RB17 in half-PPR points, 27th per game.
 
 **Grade:** *Push.* The talent evaluation was correct. The workload call was not. I underweighted how much Denver would keep leaning on Gordon, and the split capped a back who should have been top-10.
 
@@ -73,9 +73,9 @@ Saquon was obviously a generational talent from the start, and I loved his tape.
 
 ### 2022 — Kenneth Walker III, Seattle
 
-**What happened:** Opened the year behind Rashaad Penny, took over in Week 5 after Penny's injury, and ran for 1,050 yards and 9 touchdowns in 15 games — the 15th-best back in half-PPR points per game. Second in Offensive Rookie of the Year voting.
+**What happened:** Opened the year behind Rashaad Penny, took over in Week 5 after Penny's injury, and ran for 1,050 yards and 9 touchdowns in 15 games, the 15th-best back in half-PPR points per game. Second in Offensive Rookie of the Year voting.
 
-**Grade:** *Hit.* The first month was ugly and there were texts. Then the job opened and he was exactly who the film said he was. This one taught me to hold the call through a slow start — which is relevant to this year.
+**Grade:** *Hit.* The first month was ugly and there were texts. Then the job opened and he was exactly who the film said he was. This one taught me to hold the call through a slow start, which is relevant to this year.
 
 **Since then:** Three more top-24 seasons and never a top-12. The film was right that he'd be a starter; the ceiling turned out to be a timeshare, first with Charbonnet and then with an offense that spread the work. Solid. Not the star. A hit that I'd grade a little lower with hindsight.
 
@@ -89,7 +89,7 @@ Saquon was obviously a generational talent from the start, and I loved his tape.
 
 ### 2024 — No Call
 
-A sparse running back class overall, led by Jonathon Brooks, who I did like — but not at the level of the rest of the players on this page.
+A sparse running back class overall, led by Jonathon Brooks, who I did like, but not at the level of the rest of the players on this page.
 
 ### 2025 — TreVeyon Henderson, New England
 
@@ -103,7 +103,7 @@ A sparse running back class overall, led by Jonathon Brooks, who I did like — 
 
 Seven calls over nine years, with two years I sat out. By my grading: three hits, three pushes, one incomplete.
 
-The hits have something in common, and it isn't the film. Gibson, Walker and Gibbs all walked into situations where the volume was either already open or about to be. The pushes — Montgomery, Javonte, Henderson — were all good reads on the player in backfields that stayed shared or offenses that couldn't score. The film has been right more often than not. The share has been the miss.
+The hits have something in common, and it isn't the film. Gibson, Walker and Gibbs all walked into situations where the volume was either already open or about to be. The pushes (Montgomery, Javonte, Henderson) were all good reads on the player in backfields that stayed shared or offenses that couldn't score. The film has been right more often than not. The share has been the miss.
 
 The other pattern only shows up if you keep watching after the grade. Cook became the RB1 in points per game. Montgomery was the RB4 a year later. Javonte finally had his RB11 season last year, five years after the call, on his third team. Three of the seven have peaked as top-4 backs, and two more as top-11. So the honest version of the record isn't three hits and three pushes. It's that the eye has been right on the player almost every time, and wrong on the year about half the time. That's the part I'm trying to fix with the share.
 
@@ -111,4 +111,4 @@ That's worth saying plainly, because it's the whole shape of this year's call. S
 
 ## The Rest of the Story
 
-The 2026 call is [Jadarian Price](/flag-plant/). It's on the record now, before Week 1, the same as the other seven. I'll grade it in January the same way — hit, push, or miss — and it'll go on this page either way.
+The 2026 call is [Jadarian Price](/flag-plant/). It's on the record now, before Week 1, the same as the other seven. I'll grade it in January the same way, hit, push, or miss, and it'll go on this page either way.

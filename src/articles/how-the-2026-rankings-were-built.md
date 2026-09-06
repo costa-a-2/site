@@ -47,7 +47,7 @@ I built four of them. You'll see them referenced in the weekly write-ups, so her
 
 **Opportunity Trend** tracks whether a player's share of his team's touches is growing or shrinking over the last month. It's the one that catches a role change before the box score does.
 
-**Role Clarity** is for running backs only. It measures not how much a back is used, but *where* — early downs, third downs, the red zone, the two-minute drill. A back who owns all four is a different asset from one who only sees early downs, even if their carry counts match.
+**Role Clarity** is for running backs only. It measures not how much a back is used, but *where*: early downs, third downs, the red zone, the two-minute drill. A back who owns all four is a different asset from one who only sees early downs, even if their carry counts match.
 
 **Scheme Fit** compares a receiver's profile to the offense he's in. It matters most right after a trade or a coordinator change, which is exactly when everyone's guessing.
 
@@ -55,7 +55,7 @@ I built four of them. You'll see them referenced in the weekly write-ups, so her
 
 Here's the thing about the preseason, though: most of these are quiet right now. Opportunity Trend needs a month of 2026 games before it means anything. Scheme Fit is switched off until I'm happier with it. Role Clarity and Passing Game Health are running on last year's data at half strength. So the preseason baseline is really a test of steps one through three. The metrics start pulling their weight from Week 3, and I'll say so when they do.
 
-What I'll tell you about how they're weighted: each one adjusts a specific stat — carries, touchdowns, yards per target — and never the rank directly. What I won't tell you is the exact weight on each. The inputs are public. The weights are not.
+What I'll tell you about how they're weighted: each one adjusts a specific stat (carries, touchdowns, yards per target) and never the rank directly. What I won't tell you is the exact weight on each. The inputs are public. The weights are not.
 
 ## Step 5: The Board
 
@@ -63,17 +63,17 @@ By the end of step four, every player has a projected stat line and a points-per
 
 The first is that points per game across positions is misleading. Quarterbacks score the most, so a raw list would be twenty quarterbacks and then everyone else. The fix is the same one experienced drafters use by instinct: measure each player against the best option you could get for free at his position. A running back who scores four points a game more than the last starting-caliber back is worth more than a quarterback who scores four more than the twelfth quarterback. The model does that math, and it's why the top of the board looks like a draft board and not a scoring leaderboard.
 
-The second reason is that the model doesn't watch film, doesn't know a coach's tendencies, and doesn't know that a player looked different in August. I do (sometimes). So the final step is a board I moved by hand. Every player started where the model put him. I dragged the ones I disagreed with, drew the tier lines where I felt the cliffs were, and started writing a note on everyone I moved more than a few spots. Not all of those notes are in yet — the biggest moves have them, the rest land over the first week. Where the note is missing, you'll see a dash, not a guess.
+The second reason is that the model doesn't watch film, doesn't know a coach's tendencies, and doesn't know that a player looked different in August. I do (sometimes). So the final step is a board I moved by hand. Every player started where the model put him. I dragged the ones I disagreed with, drew the tier lines where I felt the cliffs were, and started writing a note on everyone I moved more than a few spots. Not all of those notes are in yet. The biggest moves have them, the rest land over the first week. Where the note is missing, you'll see a dash, not a guess.
 
 On the rankings page, you'll see both numbers: where the model had him and where I put him. When they match, I trusted the projection. When they don't, I overrode it, and the note says why. That column will be more interesting in November than it is now, but it's there from day one because the point of this site is that you can check.
 
 ## What Happens Next
 
-This is the baseline. Every player on the list has a dash in the change column right now, and that's on purpose — there's nothing to compare against yet.
+This is the baseline. Every player on the list has a dash in the change column right now, and that's on purpose. There's nothing to compare against yet.
 
 When the Week 1 rankings publish, that changes. Every player gets a number next to his name showing how far he moved from this list, up or down, and if it's more than a few spots, a sentence on why. Maybe a share changed because a backfield split looked different than I expected. Maybe a metric started moving. Maybe I just saw something on Sunday that I couldn't unsee. Whatever it is, it'll be written down next to the move.
 
-The preseason file itself never changes. It's the thing the rest of the season gets measured against, which means every call in it — good and bad — stays exactly where it is.
+The preseason file itself never changes. It's the thing the rest of the season gets measured against, which means every call in it, good and bad, stays exactly where it is.
 
 I'll be wrong about some of this. Probably the shares more than anything else; those are the guesses with the least data behind them. When I am, you'll see it here first, because the alternative — quietly fixing the number and pretending it was always right — is the thing this whole site exists to not do.
 

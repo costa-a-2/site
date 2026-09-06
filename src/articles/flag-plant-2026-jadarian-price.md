@@ -21,7 +21,7 @@ That last sentence is the entire reason we are here.
 
 ## What Is Actually Open in Seattle
 
-Kenneth Walker III left in free agency. Zach Charbonnet tore his ACL in January, had reconstructive surgery in February, and opens the season on the PUP list — which by rule means a minimum of four games.
+Kenneth Walker III left in free agency. Zach Charbonnet tore his ACL in January, had reconstructive surgery in February, and opens the season on the PUP list, which by rule means a minimum of four games.
 
 Here is what those two accounted for last season:
 
@@ -57,7 +57,7 @@ Three reasons, and all three are legitimate. I want to name them properly rather
 
 **Two: Price has only 113 college carries.** He split the Notre Dame backfield with Jeremiyah Love, who went third overall to Arizona. Nobody has seen Price carry a real workload, at any level, ever. This is the objection almost nobody makes and it is by far the strongest.
 
-**Three: there is an Achilles tear in his history and he is 203 pounds.** Evaluators flagged both — durability concerns lingering from the injury, and a lighter frame that raises questions about a bell-cow workload. This is the objection nobody makes at all, and it is quietly doing a lot of work in his price.
+**Three: there is an Achilles tear in his history and he is 203 pounds.** Evaluators flagged both: durability concerns lingering from the injury, and a lighter frame that raises questions about a bell-cow workload. This is the objection nobody makes at all, and it is quietly doing a lot of work in his price.
 
 ## The Part Nobody Is Talking About
 
@@ -69,13 +69,13 @@ Read that again in the context of the table above.
 
 A team that just vacated 456 backfield touches handed play-calling to a run game specialist from the Shanahan tree.
 
-That system has been manufacturing usable fantasy running backs for two decades, largely independent of pedigree — that is the entire history of the scheme, from Denver through Cleveland through San Francisco. And the archetype it is built around is a one-cut back with vision and burst who can press a hole and get vertical.
+That system has been manufacturing usable fantasy running backs for two decades, largely independent of pedigree. That is the entire history of the scheme, from Denver through Cleveland through San Francisco. And the archetype it is built around is a one-cut back with vision and burst who can press a hole and get vertical.
 
 Every scouting report on Price says the same things. Outstanding vision beyond the line of scrimmage. Big-time acceleration and long speed. Low center of gravity, good knee bend, patient with clean footwork. Specializes in creating chunk plays.
 
 That is not a coincidence you have to squint at. That is a team drafting for a scheme and then hiring the coach who runs it.
 
-There is continuity here too, which matters. Kubiak and Fleury share the same coaching lineage, so Seattle did not change offensive philosophy — they changed the person calling it. The fit that justified spending pick 32 on Price in April is intact.
+There is continuity here too, which matters. Kubiak and Fleury share the same coaching lineage, so Seattle did not change offensive philosophy. They changed the person calling it. The fit that justified spending pick 32 on Price in April is intact.
 
 **The honest risk: Fleury has never called plays.** Not in the NFL, not in college, not anywhere. That is a real unknown, and it is part of why a first-round back on the defending champion is available in the sixth round.
 
@@ -102,7 +102,7 @@ Since 2016, fourteen running backs have been taken in the first round. Thirteen 
 
 *Half-PPR points per game among all running backs, minimum six games. Data: nflverse.*
 
-Five of thirteen finished as top-12 backs per game. Eleven of thirteen finished top-24. The two who didn't — Penny and Michel — were both 2018 picks who walked into backfields they had to share, and one of them was hurt. That's the whole bear case in one row of a table: the workload, not the talent.
+Five of thirteen finished as top-12 backs per game. Eleven of thirteen finished top-24. The two who didn't, Penny and Michel, were both 2018 picks who walked into backfields they had to share, and one of them was hurt. That's the whole bear case in one row of a table: the workload, not the talent.
 
 Which brings me to the comp I have to acknowledge, because somebody will raise it if I do not: Clyde Edwards-Helaire was also the 32nd pick, and he is the RB23 near the bottom of that list.
 
@@ -114,7 +114,7 @@ The committee argument requires somebody to form a committee with. For the first
 
 I should tell you where the numbers land before I tell you where I do, because they are not the same thing and this site is built on showing both.
 
-The projection model behind the [rankings](/rankings/) starts from Seattle's team totals, gives Price a conservative share of them — I set it lower than I believe, on purpose — and comes out with him as **RB17**, well inside the top 30 overall, before any judgment is applied. That is with no film, no gut, no Fleury argument. Just vacated volume and a share of it.
+The projection model behind the [rankings](/rankings/) starts from Seattle's team totals, gives Price a conservative share of them (I set it lower than I believe, on purpose) and comes out with him as **RB17**, well inside the top 30 overall, before any judgment is applied. That is with no film, no gut, no Fleury argument. Just vacated volume and a share of it.
 
 The market has him RB26. The model has him RB17 on shares alone. Everything below is the case for why the model is still too low.
 
@@ -126,6 +126,6 @@ The market has him RB26. The model has him RB17 on shares alone. Everything belo
 
 Jadarian Price, RB26, and I think that number looks silly by November.
 
-I will grade this in January the same way I grade all of them. [The full record is here](/flag-plant/) — nine years of calls, the ones that hit and the ones that did not. That is the whole point of writing it down before the games are played — an opinion you cannot check is not worth reading.
+I will grade this in January the same way I grade all of them. [The full record is here](/flag-plant/): seven calls over nine years, the ones that hit and the ones that did not. That is the whole point of writing it down before the games are played. An opinion you cannot check is not worth reading.
 
 If I am wrong, the archive will say so.
