@@ -13,31 +13,37 @@ caption: "Kenneth Walker III, the 2022 call, at the Super Bowl LX parade. Washin
 
 The habit started with a running back I couldn't stop watching.
 
-<!-- COSTA: two or three sentences on the 2017 Cook call. What did you see at Florida State that made you sure? Where were you, who did you tell, did anyone push back? The more specific the better — this is the origin story and it should sound like you telling it at a bar. -->
+Ahead of the 2017 season and doing research into players for draft day, stumbled upon the rookies of that class (which there was quite a few). With that, I found Dalvin Cook and decided to watch his highlights from college. You can and should watch them here: https://youtu.be/hz_TN_sC0Ww?si=QHyC3xGIgtZct5aA. 
 
-That was 2017. I was three seasons into running the same league, and I'd noticed something about the way people talk about rookies in August: everybody has a list, and nobody has a name. Sleeper lists are safe. You can put eight guys on one, hit on two, and call it a good year. A single name is different. If you say one player, out loud, before he's taken a snap, you're either right or you're not, and everybody remembers which.
+I was immediately blown away. I could see how this player would be a surefire star in the league. He was elusive. Fast. Acceleration and long speed. Making people miss, but still had power. I was enamored and was ready to draft him at all costs. And I did, almost every season he was on the Vikings. It was a mixed bag of results with some major injuries, but ultimately, he was one of the best running backs in the NFL for that stretch.
 
-So I started saying one name. I've done it every year since, with one gap, and I've never gone back and softened a call after the fact. What follows is the whole record, including the ones I'd rather not talk about.
+That was 2017 season. After that, I was motivated in having that same find each season. So I started watching all rookie running back tape after the draft. I've done it every year since, and I've never gone back and softened a call after the fact. I won't force a pick, so there are a couple picks with no calls. The point of this is also finding players and seeing a trait in them that is not consensus. I love Leonard Fournette's tape out of college also. But that was agreed upon by everyone, he was the fourth overall pick, expected to be a star.
 
 ## The Rule
 
-One rookie. Called before Week 1. Usually a running back, because that's the position where a rookie can walk into a full workload and where my eye is best. The call comes from film first — something I see in how a player moves that I don't think the consensus has priced — and then from situation. It does not come from a spreadsheet, and this is the one place on this site where it isn't supposed to.
+One rookie. Called before Week 1. Usually a running back, because where my eye is best. The call comes from film first — something I see in how a player moves that I don't think the consensus has priced — and then from situation. It does not come from a spreadsheet, and this is the one place on this site where it isn't supposed to.
 
-Graded in January. Hit, push, or miss. No partial credit for "well, if he'd stayed healthy."
+Graded in January. Hit, push, or miss. No partial credit for "well, if he'd stayed healthy." There are cases where they do develop into that player I have seen though, which is also rewarding. Sometimes a rookie's situation isn't always perfect from the start. 
+
+## The Eye
+
+I cannot put exactly from pen to paper what it is that I see that gives me the feeling about a player. Truly some of it is a gut feeling from the eye test. 
+
+Some of the traits are common from what I described in Dalvin. Fast, and can accelerate. Lateral shiftiness: I like players who can change direction easily, and then maintain that speed to the second level. Long speed: a player needs to break off chunk plays, and finish those splash plays. Evasiveness: I like a player that can break tackles, this extends plays and leads to big plays. 
+
+This is obvious, and a lot of players have many of these traits. For the players I am describing, something different speaks to me though. And that is the piece I cannot explain.
 
 ## The Record
 
 ### 2017 — Dalvin Cook, Minnesota
 
-*Also: Leonard Fournette, Jacksonville. The first year I hadn't learned to pick only one yet.*
+**What happened:** Cook opened as the starter, ran for 354 yards in four games, and tore his ACL in Week 4. 
 
-**What happened:** Cook opened as the starter, ran for 354 yards in four games, and tore his ACL in Week 4. Fournette played thirteen games, ran for 1,040 yards and 9 touchdowns, caught 36 passes, and was the sixth-best back in half-PPR points per game.
-
-**Grade:** Cook, *incomplete* — the read was right and the season ended before it could prove anything, which is the risk with every one of these. Fournette, *hit*. <!-- COSTA: confirm grades -->
+**Grade:** Cook, *incomplete* — the read was right and the season ended before it could prove anything, which is the risk with every one of these.
 
 ### 2018 — No Call
 
-<!-- COSTA: why no call in 2018? Barkley was the obvious one — did you sit it out because it wasn't a call, or did life get in the way? One honest sentence. If you did make a call that year and it's not in your notes, say so and I'll add it. -->
+Saquon was obviously a generational talent from the start, and I loved his tape. None of the other backs stood out to me, and ultimately that was the right call.
 
 ### 2019 — David Montgomery, Chicago
 
@@ -49,7 +55,7 @@ Graded in January. Hit, push, or miss. No partial credit for "well, if he'd stay
 
 **What happened:** A college receiver converted to running back, going in the double-digit rounds. 795 rushing yards and 11 touchdowns in 14 games, plus 36 catches. The 15th-best back in half-PPR points per game, RB12 in total, as a rookie who'd been a wideout eight months earlier.
 
-**Grade:** *Hit.* This is the one that made me trust the process. Nobody had him. The film said the ball-carrier instincts were already there; the situation said Washington had nobody else. Both were right.
+**Grade:** *Hit.* This is the one that made me trust the process. Nobody had him. I was ahead of the beat reports and buzz through camp, when I saw something special. The film said the ball-carrier instincts were already there; the situation said Washington had nobody else that could do what he could. Both were right.
 
 ### 2021 — Javonte Williams, Denver
 
@@ -69,11 +75,9 @@ Graded in January. Hit, push, or miss. No partial credit for "well, if he'd stay
 
 **Grade:** *Hit.* The easiest one to defend in hindsight, which is exactly why it's worth remembering that in August 2023 the consensus had him well behind Bijan Robinson and worried about the Montgomery split. The split happened. It didn't matter.
 
-### 2024 — Brock Bowers, Las Vegas
+### 2024 — No Call
 
-**What happened:** The first year I planted a flag on a tight end. 112 catches — a rookie record at any position — for 1,194 yards and 5 touchdowns, on a bad team with a rotating quarterback. The TE1 in half-PPR points; only George Kittle, in two fewer games, scored more per game.
-
-**Grade:** *Hit.* I broke my own "usually a running back" rule because the film didn't look like any tight end I'd watched. If there's a call on this list I'd point to as the reason to trust the eye over the position, it's this one.
+This was an overall sparse running back class led by Jonathan Brooks who I did like, but not at the same level as the rest of these players. 
 
 ### 2025 — TreVeyon Henderson, New England
 
