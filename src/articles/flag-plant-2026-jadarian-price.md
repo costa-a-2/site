@@ -7,7 +7,7 @@ kicker: "2026 · On the Record"
 date: 2026-09-09
 readtime: "9 min"
 datelineCity: "SEATTLE"
-lede: "Every year since 2017 I have picked one rookie and committed to him in writing before the season starts. Not a sleeper list, not a tiered ranking with hedges built in. One name, published before any evidence exists, graded honestly when the year is over."
+lede: "Every year since 2017 I have picked one rookie and committed to him before the season starts. Not a sleeper list, not a tiered ranking with hedges built in. One name, before any evidence exists, graded honestly when the year is over."
 image: "/assets/img/price-hero.jpg"
 imageAlt: "Jadarian Price carrying the ball"
 caption: "Jadarian Price at the 2023 Sun Bowl. U.S. Army photo by Spc. David Poleski, public domain."
@@ -16,8 +16,6 @@ caption: "Jadarian Price at the 2023 Sun Bowl. U.S. Army photo by Spc. David Pol
 This year it is Jadarian Price.
 
 He is the last pick of the first round, he is the Week 1 starter for the defending Super Bowl champions, and he is being drafted as the 26th running back off the board.
-
-That last sentence is the entire reason we are here.
 
 ## What Is Actually Open in Seattle
 
@@ -35,29 +33,29 @@ Two hundred and fifty-two touches gone permanently. Another two hundred and four
 
 And this is not a small pie. **No team in the NFL gave its running backs more carries than Seattle last season, and no team gave its running backs more red zone carries either.** The volume is already there. It has been there. It just needs somebody to take it.
 
-The goal-line detail is the one I keep coming back to. Charbonnet's twelve rushing touchdowns led the team and made him the first Seattle player since Marshawn Lynch in 2014 to reach double digits. That role currently has no incumbent.
+The goal-line detail is the one I keep coming back to. Charbonnet's twelve rushing touchdowns led the team and made him the first Seattle player since Marshawn Lynch in 2014 to reach double digits. That role currently has no incumbent to start the season.
 
 ## The Walker Comparison
 
-This is the cleanest way I can make the argument.
+This is the cleanest way I can make the argument. He is after all, a former flag plant of mine himself so it is fitting.
 
 Kenneth Walker ran for 1,027 yards in this exact offense last season. He played all seventeen games. He finished **RB22 in total half-PPR points and RB29 in points per game**, averaging 10.4.
 
-A thousand-yard rusher on the eventual Super Bowl champion, and he was barely a startable fantasy asset.
+A thousand-yard rusher on the eventual Super Bowl champion, and he was at times a questionable fantasy asset.
 
 Why? Because he split everything. He shared passing-game work with Charbonnet, and in games where Charbonnet was active, Walker saw only 34.8% of the running back red zone rushing work. He was not being failed by the offense. He was being failed by the arithmetic of a two-man committee.
 
-Price does not have to split. Not in September, and I do not think in November either.
+Price does not have to split to start. Not in September, and I do not think in November either.
 
 ## So Why Is He Cheap?
 
-Three reasons, and all three are legitimate. I want to name them properly rather than wave at them.
+Three reasons, and all three are legitimate.
 
-**One: Charbonnet comes back.** PUP means four games minimum, so realistically Week 5 or later, coming off a reconstructed knee. This is the objection everybody makes and it is the weakest of the three.
+**One: Charbonnet comes back.** PUP means four games minimum, so realistically Week 5 or later, coming off a reconstructed knee. This is the objection everybody makes.
 
-**Two: Price has only 113 college carries.** He split the Notre Dame backfield with Jeremiyah Love, who went third overall to Arizona. Nobody has seen Price carry a real workload, at any level, ever. This is the objection almost nobody makes and it is by far the strongest.
+**Two: Price has only 113 college carries.** He split the Notre Dame backfield with Jeremiyah Love, who went third overall to Arizona. Nobody has seen Price carry a real workload, at any level, ever.
 
-**Three: there is an Achilles tear in his history and he is 203 pounds.** Evaluators flagged both: durability concerns lingering from the injury, and a lighter frame that raises questions about a bell-cow workload. This is the objection nobody makes at all, and it is quietly doing a lot of work in his price.
+**Three: there is an Achilles tear in his history and he is 203 pounds.** Evaluators flagged both: durability concerns lingering from the injury, and a lighter frame that raises questions about a bell-cow workload.
 
 ## The Part Nobody Is Talking About
 
@@ -120,12 +118,14 @@ The market has him RB26. The model has him RB17 on shares alone. Everything belo
 
 ## The Film
 
-*[Costa's film read goes here — the specific thing you see on tape that 113 carries cannot show, and why you believe it holds up at a larger workload.]*
+As I have described before, it all starts with Film. And this was also where I started with Price. Like Dalvin, I quickly knew this was my guy this year. 
+
+What I saw: the speed. He has such an ability for breakaway chunk plays, and has the long speed to finish them off. He is elusive, and strong. He can break tackles and his ability to move east-west, change gears and finish a play are some of the same things I saw in guys like Dalvin and Gibbs that make me see Price in a similar light. 
+
+Check out his highlights here: https://youtu.be/fCB0ZqNXpRo?si=59ZPnK0qY4WjKjzn
 
 ## The Call
 
 Jadarian Price, RB26, and I think that number looks silly by November.
 
 I will grade this in January the same way I grade all of them. [The full record is here](/flag-plant/): seven calls over nine years, the ones that hit and the ones that did not. That is the whole point of writing it down before the games are played. An opinion you cannot check is not worth reading.
-
-If I am wrong, the archive will say so.
