@@ -69,6 +69,20 @@
       {% endfor %}
     </div>
     {% endif %}
+    {% if week.ifHealthy and week.ifHealthy.length %}
+    <div class="box" id="if-healthy">
+      <span class="sec">If Healthy</span>
+      <p class="summary">Held down or off the board while out. Where each would slot the week he's back: a band, not a rank.</p>
+      <div class="classified">
+        {% for p in week.ifHealthy %}
+        <div class="row" style="align-items:flex-start">
+          <div><b><a href="/players/{{ p.player | slugify }}/">{{ p.player }}</a> <span class="badge">{{ p.pos }} &middot; {{ p.team }}</span></b>{% if p.note %}<div class="summary" style="margin-top:2px">{{ p.note }}</div>{% endif %}</div>
+          <span class="m">would slot {{ p.band }}</span>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
     {% if week.fellOff and week.fellOff.length %}
     <div style="border-top:2px solid var(--ink);margin-top:26px;padding:18px 0 6px" id="fell-off">
       <span class="sec">Fell Off the Board</span>

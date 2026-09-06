@@ -120,12 +120,15 @@ function withMovement(weeks) {
     const fellOff = prev ? prev.players.filter(p => !onBoard.has(p.player))
       .map(p => ({ player: p.player, pos: p.pos, team: p.team, prevRank: p.rank, headshot: p.headshot || HEADSHOTS[keyOf(p.player)] || null }))
       .sort((a, b) => a.prevRank - b.prevRank) : [];
+    // If Healthy: players carrying a band typed on the board ("55–65") — a band for the week he's back, never a rank
+    const ifHealthy = players.filter(p => p.bandIfHealthy && String(p.bandIfHealthy).trim())
+      .map(p => ({ player: p.player, pos: p.pos, team: p.team, rank: p.rank, band: String(p.bandIfHealthy).trim(), note: p.note || "", risk: p.risk || "" }));
     // OTS is 0 for everyone preseason; the column hides until a real trend exists (Week 3+)
     const hasOts = players.some(p => typeof p.ots === "number" && p.ots !== 0);
     const seoDescription = wk.isPreseason
       ? `Half-PPR ${wk.season} preseason fantasy football rankings: the top ${players.length} players for the rest of the season, tiered at value cliffs, with movement from last week shown once the season starts.`
       : `Half-PPR rest-of-season fantasy football rankings for Week ${wk.week}, ${wk.season}: the top ${players.length} players, tiered at value cliffs, with movement from last week shown.`;
-    return { ...wk, players, tierSummary, cusp, fellOff, hasOts, seoDescription, prevLabel: prev ? prev.label : null,
+    return { ...wk, players, tierSummary, cusp, fellOff, ifHealthy, hasOts, seoDescription, prevLabel: prev ? prev.label : null,
       isLatest: i === weeks.length - 1, firstEdition: prev === null || wk.firstEditionFlag,
       risers: movers.filter(p => p.change > 0).slice(0, 5),
       fallers: movers.filter(p => p.change < 0).slice(0, 5),
