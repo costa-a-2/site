@@ -13,25 +13,25 @@ caption: "Kenneth Walker III, the 2022 call, at the Super Bowl LX parade. Washin
 
 The habit started with a running back I couldn't stop watching.
 
-Ahead of the 2017 season, doing research into players for draft day, I stumbled upon the rookies of that class (and there were quite a few). With that, I found Dalvin Cook and decided to watch his highlights from college. You can and should [watch them here](https://youtu.be/hz_TN_sC0Ww). 
+Ahead of the 2017 season, doing research into players for draft day, I stumbled upon the rookies of that class (and there were quite a few). That's how I found Dalvin Cook, and I decided to watch his college highlights. You can and should [watch them here](https://youtu.be/hz_TN_sC0Ww).
 
-I was immediately blown away. I could see how this player would be a surefire star in the league. He was elusive. Fast. Acceleration and long speed. Making people miss, but still had power. I was enamored and was ready to draft him at all costs. And I did, almost every season he was on the Vikings. It was a mixed bag of results with some major injuries, but ultimately, he was one of the best running backs in the NFL for that stretch.
+I was immediately blown away. I could see how this player would be a surefire star in the league. He was elusive. Fast. Acceleration and long speed. Made people miss, but still had power. I was enamored and ready to draft him at all costs. And I did, almost every season he was on the Vikings. It was a mixed bag of results with some major injuries, but ultimately he was one of the best running backs in the NFL for that stretch.
 
-That was the 2017 season. After that, I was motivated to have that same find every season. So I started watching all rookie running back tape after the draft. I've done it every year since, and I've never gone back and softened a call after the fact. I won't force a pick, so there are a couple picks with no calls. The point of this is also finding players and seeing a trait in them that is not consensus. I love Leonard Fournette's tape out of college also. But that was agreed upon by everyone, he was the fourth overall pick, expected to be a star.
+That was the 2017 season. After that, I was motivated to have that same find every season. So I started watching all rookie running back tape after the draft. I've done it every year since, and I've never gone back and softened a call after the fact. I won't force a pick, so there are a couple of years with no call. The point is also to find a player and see a trait in him that isn't consensus. I loved Leonard Fournette's tape out of college too, but everyone agreed on that one — he was the fourth overall pick, expected to be a star.
 
 ## The Rule
 
-One rookie. Called before Week 1. Usually a running back, because where my eye is best. The call comes from film first — something I see in how a player moves that I don't think the consensus has priced — and then from situation. It does not come from a spreadsheet, and this is the one place on this site where it isn't supposed to.
+One rookie. Called before Week 1. Usually a running back, because that's where my eye is best. The call comes from film first — something I see in how a player moves that I don't think the consensus has priced — and then from situation. It does not come from a spreadsheet, and this is the one place on this site where it isn't supposed to.
 
-Graded in January. Hit, push, or miss. No partial credit for "well, if he'd stayed healthy." There are cases where they do develop into that player I have seen though, which is also rewarding. Sometimes a rookie's situation isn't always perfect from the start. 
+Graded in January. Hit, push, or miss. No partial credit for "well, if he'd stayed healthy." There are cases where a player does develop into what I saw, just later, which is its own kind of rewarding. A rookie's situation isn't always perfect from the start.
 
 ## The Eye
 
-I cannot put exactly from pen to paper what it is that I see that gives me the feeling about a player. Truly some of it is a gut feeling from the eye test. 
+I can't put exactly to paper what it is I see that gives me the feeling about a player. Some of it is truly a gut feeling from the eye test.
 
-Some of the traits are common from what I described in Dalvin. Fast, and can accelerate. Lateral shiftiness: I like players who can change direction easily, and then maintain that speed to the second level. Long speed: a player needs to break off chunk plays, and finish those splash plays. Evasiveness: I like a player that can break tackles, this extends plays and leads to big plays. 
+Some of the traits are the ones I described in Dalvin. Fast, and can accelerate. Lateral shiftiness: I like players who can change direction easily and then keep that speed to the second level. Long speed: a player needs to break off chunk plays and finish the splash plays. Evasiveness: I like a player who can break tackles, because that extends plays and leads to big ones.
 
-This is obvious, and a lot of players have many of these traits. For the players I am describing, something different speaks to me though. And that is the piece I cannot explain.
+That's obvious, and a lot of players have many of these traits. For the players I'm describing, something different speaks to me. That's the piece I can't explain.
 
 ## The Record
 
@@ -77,7 +77,7 @@ Saquon was obviously a generational talent from the start, and I loved his tape.
 
 ### 2024 — No Call
 
-This was an overall sparse running back class led by Jonathan Brooks who I did like, but not at the same level as the rest of these players. 
+A sparse running back class overall, led by Jonathon Brooks, who I did like — but not at the level of the rest of the players on this page.
 
 ### 2025 — TreVeyon Henderson, New England
 
