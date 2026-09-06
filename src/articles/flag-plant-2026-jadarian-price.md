@@ -57,6 +57,8 @@ Three reasons, and all three are fair. I would rather name them than wave at the
 
 **Three: there is an Achilles tear in his history and he is 203 pounds.** Evaluators flagged both: durability concerns lingering from the injury, and a lighter frame that raises questions about a bell-cow workload.
 
+**And one more, quietly: he did not play a preseason snap.** Lower-body soreness cost him a week of camp and Seattle kept him in street clothes for all three exhibition games. Reports since have him at full go and running with the starters, but the first time anyone sees him carry the ball in an NFL uniform will be Week 1. That's part of the price too.
+
 ## The Gibson Comp
 
 This one feels familiar, and I want to say why before somebody else does.
