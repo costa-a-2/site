@@ -134,7 +134,7 @@ What I saw: the speed. He has a real knack for breakaway chunk plays, and the lo
 
 See for yourself. These are his college highlights, and the traits above are all in the first minute.
 
-<figure class="video"><iframe src="https://www.youtube-nocookie.com/embed/fCB0ZqNXpRo" title="Jadarian Price highlights" loading="lazy" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen></iframe><figcaption>Jadarian Price, Notre Dame highlights.</figcaption></figure>
+{% youtube "fCB0ZqNXpRo", "Jadarian Price, Notre Dame highlights." %}
 
 ## The Call
 

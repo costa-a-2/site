@@ -15,7 +15,7 @@ The habit started with a running back I couldn't stop watching.
 
 Ahead of the 2017 season, doing research into players for draft day, I stumbled upon the rookies of that class (and there were quite a few). That's how I found Dalvin Cook, and I decided to watch his college highlights. You can and should watch them too.
 
-<figure class="video"><iframe src="https://www.youtube-nocookie.com/embed/hz_TN_sC0Ww" title="Dalvin Cook highlights" loading="lazy" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen></iframe><figcaption>Dalvin Cook, Florida State highlights.</figcaption></figure>
+{% youtube "hz_TN_sC0Ww", "Dalvin Cook, Florida State highlights." %}
 
 I was immediately blown away. I could see how this player would be a surefire star in the league. He was elusive. Fast. Acceleration and long speed. Made people miss, but still had power. I was enamored and ready to draft him at all costs. And I did, almost every season he was on the Vikings. It was a mixed bag of results with some major injuries, but ultimately he was one of the best running backs in the NFL for that stretch.
 
@@ -53,7 +53,7 @@ Saquon was obviously a generational talent from the start, and I loved his tape.
 
 ### 2019 — David Montgomery, Chicago
 
-<figure class="video"><iframe src="https://www.youtube-nocookie.com/embed/PUJY4BkDLvY" title="David Montgomery, Iowa State highlights" loading="lazy" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen></iframe><figcaption>David Montgomery, Iowa State highlights.</figcaption></figure>
+{% youtube "PUJY4BkDLvY", "David Montgomery, Iowa State highlights." %}
 
 **What happened:** 242 carries, 889 yards, 6 touchdowns, 25 catches. Started from Week 1 and held the job all year, but the Bears' offense was a slog and the ceiling never showed up. Finished RB25 in half-PPR points, 32nd per game.
 
@@ -63,7 +63,7 @@ Saquon was obviously a generational talent from the start, and I loved his tape.
 
 ### 2020 — Antonio Gibson, Washington
 
-<figure class="video"><iframe src="https://www.youtube-nocookie.com/embed/ZU8dfjXf9QE" title="Antonio Gibson, Memphis highlights" loading="lazy" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen></iframe><figcaption>Antonio Gibson, Memphis highlights.</figcaption></figure>
+{% youtube "ZU8dfjXf9QE", "Antonio Gibson, Memphis highlights." %}
 
 **What happened:** A college receiver converted to running back, going in the double-digit rounds. 795 rushing yards and 11 touchdowns in 14 games, plus 36 catches. The 16th-best back in half-PPR points per game, RB12 in total, as a rookie who'd been a wideout eight months earlier.
 
@@ -73,7 +73,7 @@ Saquon was obviously a generational talent from the start, and I loved his tape.
 
 ### 2021 — Javonte Williams, Denver
 
-<figure class="video"><iframe src="https://www.youtube-nocookie.com/embed/JE65d6M9OY0" title="Javonte Williams, North Carolina highlights" loading="lazy" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen></iframe><figcaption>Javonte Williams, North Carolina highlights.</figcaption></figure>
+{% youtube "JE65d6M9OY0", "Javonte Williams, North Carolina highlights." %}
 
 **What happened:** 903 rushing yards, 4 rushing touchdowns, 43 catches for 316 yards and 3 more scores. Every bit as good as I thought on tape, and stuck in a near-even split with Melvin Gordon all season. Finished RB17 in half-PPR points, 27th per game.
 
@@ -83,7 +83,7 @@ Saquon was obviously a generational talent from the start, and I loved his tape.
 
 ### 2022 — Kenneth Walker III, Seattle
 
-<figure class="video"><iframe src="https://www.youtube-nocookie.com/embed/ZGWotQ4GuGI" title="Kenneth Walker III, Michigan State highlights" loading="lazy" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen></iframe><figcaption>Kenneth Walker III, Michigan State highlights.</figcaption></figure>
+{% youtube "ZGWotQ4GuGI", "Kenneth Walker III, Michigan State highlights." %}
 
 **What happened:** Opened the year behind Rashaad Penny, took over in Week 5 after Penny's injury, and ran for 1,050 yards and 9 touchdowns in 15 games, the 15th-best back in half-PPR points per game. Second in Offensive Rookie of the Year voting.
 
@@ -93,7 +93,7 @@ Saquon was obviously a generational talent from the start, and I loved his tape.
 
 ### 2023 — Jahmyr Gibbs, Detroit
 
-<figure class="video"><iframe src="https://www.youtube-nocookie.com/embed/Xb3pBgjoIo8" title="Jahmyr Gibbs, Alabama highlights" loading="lazy" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen></iframe><figcaption>Jahmyr Gibbs, Alabama highlights.</figcaption></figure>
+{% youtube "Xb3pBgjoIo8", "Jahmyr Gibbs, Alabama highlights." %}
 
 **What happened:** 945 rushing yards, 10 rushing touchdowns, 52 catches for 316 yards and another score, in a rotation with David Montgomery. RB10 in half-PPR points and 11th per game, in a season where he never had the backfield to himself.
 
@@ -107,7 +107,7 @@ A sparse running back class overall, led by Jonathon Brooks, who I did like, but
 
 ### 2025 — TreVeyon Henderson, New England
 
-<figure class="video"><iframe src="https://www.youtube-nocookie.com/embed/POpRSIInnls" title="TreVeyon Henderson, Ohio State highlights" loading="lazy" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen></iframe><figcaption>TreVeyon Henderson, Ohio State highlights.</figcaption></figure>
+{% youtube "POpRSIInnls", "TreVeyon Henderson, Ohio State highlights." %}
 
 **What happened:** 180 carries for 911 yards and 9 rushing touchdowns, 35 catches for 221 yards, all 17 games. The Patriots went to the Super Bowl. Henderson split the backfield close to evenly with Rhamondre Stevenson all year and finished as the 24th back in half-PPR points per game, RB19 in total.
 

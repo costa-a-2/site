@@ -83,6 +83,18 @@ module.exports = function (eleventyConfig) {
     return out;
   });
 
+  // ── Shortcodes ────────────────────────────────────────────
+  // {% youtube "VIDEO_ID", "Caption." %} → the privacy-enhanced embed in a 16:9 figure (figure.video
+  // in style.css). The iframe title is the caption without its trailing period.
+  const attr = (s) => String(s == null ? "" : s).replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;");
+  const text = (s) => String(s == null ? "" : s).replace(/&/g, "&amp;").replace(/</g, "&lt;");
+  eleventyConfig.addShortcode("youtube", (id, caption = "") => {
+    const vid = String(id || "").trim();
+    if (!/^[A-Za-z0-9_-]{6,}$/.test(vid)) throw new Error(`youtube shortcode: "${id}" is not a YouTube video id`);
+    const title = String(caption).trim().replace(/\.\s*$/, "");
+    return `<figure class="video"><iframe src="https://www.youtube-nocookie.com/embed/${vid}" title="${attr(title)}" loading="lazy" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen></iframe><figcaption>${text(caption)}</figcaption></figure>`;
+  });
+
   // ── Collections ───────────────────────────────────────────
   eleventyConfig.addCollection("articles", (api) =>
     api.getFilteredByGlob("src/articles/*.md").reverse());
