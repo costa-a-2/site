@@ -2,45 +2,45 @@
   "methodology": [
     {
       "q": "What is half-PPR scoring?",
-      "a": "Half-PPR gives a player half a point for every catch on top of his yards and touchdowns: 0.1 points per rushing or receiving yard, 6 per touchdown and 0.5 per reception, and for quarterbacks 0.04 per passing yard, 4 per passing touchdown and minus 2 per interception. Every rank on this site is built on that scoring, so a full-PPR or standard league will value pass-catching backs and possession receivers a little differently."
+      "a": "Half a point for every catch, on top of the usual yards and touchdowns. So 0.1 per rushing or receiving yard, 6 per touchdown, 0.5 per reception; for quarterbacks it's 0.04 per passing yard, 4 per passing touchdown and minus 2 per pick. Every rank on this site is built on that scoring. If your league is full PPR or standard, pass-catching backs and possession receivers will sit a little higher or lower for you, and that's fine, the order mostly holds."
     },
     {
       "q": "What does rest of season mean?",
-      "a": "Rest-of-season rankings order players by how many points per game they are projected to score from this week through the end of the regular season, not just this Sunday. That is the question you actually face in a trade or a waiver claim: not who scores the most this week, but who helps the most from here on."
+      "a": "It means I'm ranking who helps you most from this week through the end of the regular season, not just this Sunday. That's the question you're actually answering when you make a trade or put in a waiver claim. Weekly rankings are great for setting a lineup. These are for building a team."
     },
     {
       "q": "What does the change column compare against?",
-      "a": "The change column is the difference between a player's rank in this edition and his rank in the previous one: Week 1 against the preseason baseline, then each week against the week before. It is computed by comparing the two published files and is never typed by hand, so it cannot be adjusted after the fact. The preseason edition is the baseline, so its change column shows a dash."
+      "a": "Last week's file. Week 1 compares against the preseason baseline, and every week after that compares against the week before. The number is computed from the two published files, never typed, so I can't quietly nudge it later to look smarter (tempting as that'll be some weeks). The preseason edition is the baseline, so its change column is a dash."
     },
     {
       "q": "What is the Role Clarity Score?",
-      "a": "The Role Clarity Score, or RCS, measures a running back's share of the touches across early downs, passing downs, the red zone and the two-minute drill, on a scale of 0 to 100. A back who is on the field in all four situations is a different asset from one who only sees early downs, even when their carry counts match, and the score labels him accordingly: Workhorse, Feature Back, Role Player or Specialist. It scales his projected rushing touchdowns, because goal-line trust is what the label really measures."
+      "a": "It's my running back metric, and it asks a simple question: what kind of back does the team think it has? It measures his share of the work across early downs, passing downs, the red zone and the two-minute drill, on a 0 to 100 scale. A back who's on the field in all four situations is a different asset from one who only sees early downs, even if their carry counts look the same, and the score labels him accordingly: Workhorse, Feature Back, Role Player or Specialist. It scales his projected rushing touchdowns, because goal-line trust is really what the label is measuring."
     },
     {
       "q": "Why is there a model rank and a board rank?",
-      "a": "The model rank is where the projection puts a player from team totals and his share of them alone. The board rank is where the editor put him after moving the players he disagreed with, with a written reason for any move of more than a few spots. Both numbers publish, so every override is visible as the gap between two columns rather than hidden inside one."
+      "a": "Because I want you to see where I overrode the math. The model rank is where the projection put him on team totals and his share of them alone. The board rank is where I put him after moving the players I saw differently, with a written reason for anything more than a few spots. Both numbers publish on every row. When they match, I trusted the projection. When they don't, the gap between the two columns is me, and the note says why."
     },
     {
       "q": "How often do the rankings update?",
-      "a": "Once a week during the season, on Tuesday morning at 7 ET, in time for waivers. Each edition is dated and kept at its own permanent address, the previous file stays exactly where it was, and the archive lists every one back to the preseason baseline."
+      "a": "Once a week during the season, Tuesday morning, in time for waivers. Each edition gets its own dated page that never changes, the previous week's file stays exactly where it was, and the archive lists every one back to the preseason baseline. If something big happens midweek I'll say so on X, but the rankings themselves move on Tuesdays."
     },
     {
       "q": "What stays private?",
-      "a": "The inputs are public: every metric is built from play-by-play and roster data anyone can download, and this page says what each one measures. The weights are not: how much each metric moves a stat, the regression targets, and how much the metrics are trusted in September versus November. That is the difference between saying what the model looks at and handing over the model."
+      "a": "The weights. Every input is public: the metrics are built from play-by-play and roster data anyone can download, and this page tells you what each one measures. What I keep is how much each metric moves a stat, the regression targets, and how much I trust the metrics in September versus November. That's the difference between telling you what the model looks at and handing you the model. The first is what makes a ranking worth trusting; the second is what makes it worth copying."
     }
   ],
   "flagPlant": [
     {
       "q": "What is the Flag Plant?",
-      "a": "One rookie running back, called before Week 1 every year since 2017, on film and instinct rather than on the model. The call is published on the record before any game is played and is never edited afterward, so it can be checked against what actually happened."
+      "a": "One rookie running back, picked before Week 1, every year since 2017. It's the one call on this site that doesn't come from the model. It comes from watching tape and seeing something I don't think the consensus has priced yet. I publish it before a snap is played and I never edit it afterward, so you can check it against what actually happened."
     },
     {
       "q": "How is the Flag Plant graded?",
-      "a": "In January, as a hit, a push or a miss, against what the call actually claimed about the player's role and finish rather than his talent. There is no partial credit for what would have happened with better health, and the grade goes on the record next to the call."
+      "a": "In January, honestly, as a hit, a push or a miss. I grade the call against what I actually claimed about the player's role and finish, not against whether he turned out to be talented. No partial credit for \"well, if he'd stayed healthy.\" The grade goes on the record next to the call, and the misses stay up with the hits."
     },
     {
       "q": "What is the Flag Plant record?",
-      "a": "Seven calls over nine seasons, with two years sat out: three hits, three pushes and one incomplete, by the editor's own grading. The 2026 call, Jadarian Price, is on the record and ungraded until January. Every call, what happened to each and the grade it earned is in the history article."
+      "a": "Seven calls over nine seasons, with two years I sat out because nobody stood out. By my own grading: three hits, three pushes and one incomplete. The 2026 call is Jadarian Price, and it stays ungraded until January like the rest. Every call, what happened to each one, and the grade it earned is in the history article, with the college tape."
     }
   ]
 }
