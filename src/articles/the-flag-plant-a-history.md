@@ -39,6 +39,8 @@ That's obvious, and a lot of players have many of these traits. For the players 
 
 ### 2017 — Dalvin Cook, Minnesota
 
+*The tape is up top, in the origin story.*
+
 **What happened:** Cook opened as the starter, ran for 354 yards in four games, and tore his ACL in Week 4. 
 
 **Grade:** Cook, *incomplete*. The read was right and the season ended before it could prove anything, which is the risk with every one of these.
@@ -51,6 +53,8 @@ Saquon was obviously a generational talent from the start, and I loved his tape.
 
 ### 2019 — David Montgomery, Chicago
 
+<figure class="video"><iframe src="https://www.youtube-nocookie.com/embed/PUJY4BkDLvY" title="David Montgomery, Iowa State highlights" loading="lazy" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen></iframe><figcaption>David Montgomery, Iowa State highlights.</figcaption></figure>
+
 **What happened:** 242 carries, 889 yards, 6 touchdowns, 25 catches. Started from Week 1 and held the job all year, but the Bears' offense was a slog and the ceiling never showed up. Finished RB25 in half-PPR points, 32nd per game.
 
 **Grade:** *Push.* He was exactly the player I thought he was in an offense that couldn't use him. The volume was there; the points weren't. I've thought about this one a lot, because it's the year I learned the environment matters as much as the back.
@@ -58,6 +62,8 @@ Saquon was obviously a generational talent from the start, and I loved his tape.
 **Since then:** One year later, RB4: 15.9 a game in the same Bears uniform, once the offense got out of its own way. Then five straight top-24 seasons, two of them top-13, including the Detroit years. The player I saw showed up. He just needed a better room.
 
 ### 2020 — Antonio Gibson, Washington
+
+<figure class="video"><iframe src="https://www.youtube-nocookie.com/embed/ZU8dfjXf9QE" title="Antonio Gibson, Memphis highlights" loading="lazy" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen></iframe><figcaption>Antonio Gibson, Memphis highlights.</figcaption></figure>
 
 **What happened:** A college receiver converted to running back, going in the double-digit rounds. 795 rushing yards and 11 touchdowns in 14 games, plus 36 catches. The 16th-best back in half-PPR points per game, RB12 in total, as a rookie who'd been a wideout eight months earlier.
 
@@ -67,6 +73,8 @@ Saquon was obviously a generational talent from the start, and I loved his tape.
 
 ### 2021 — Javonte Williams, Denver
 
+<figure class="video"><iframe src="https://www.youtube-nocookie.com/embed/JE65d6M9OY0" title="Javonte Williams, North Carolina highlights" loading="lazy" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen></iframe><figcaption>Javonte Williams, North Carolina highlights.</figcaption></figure>
+
 **What happened:** 903 rushing yards, 4 rushing touchdowns, 43 catches for 316 yards and 3 more scores. Every bit as good as I thought on tape, and stuck in a near-even split with Melvin Gordon all season. Finished RB17 in half-PPR points, 27th per game.
 
 **Grade:** *Push.* The talent evaluation was correct. The workload call was not. I underweighted how much Denver would keep leaning on Gordon, and the split capped a back who should have been top-10.
@@ -75,6 +83,8 @@ Saquon was obviously a generational talent from the start, and I loved his tape.
 
 ### 2022 — Kenneth Walker III, Seattle
 
+<figure class="video"><iframe src="https://www.youtube-nocookie.com/embed/ZGWotQ4GuGI" title="Kenneth Walker III, Michigan State highlights" loading="lazy" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen></iframe><figcaption>Kenneth Walker III, Michigan State highlights.</figcaption></figure>
+
 **What happened:** Opened the year behind Rashaad Penny, took over in Week 5 after Penny's injury, and ran for 1,050 yards and 9 touchdowns in 15 games, the 15th-best back in half-PPR points per game. Second in Offensive Rookie of the Year voting.
 
 **Grade:** *Hit.* The first month was ugly and there were texts. Then the job opened and he was exactly who the film said he was. This one taught me to hold the call through a slow start, which is relevant to this year.
@@ -82,6 +92,8 @@ Saquon was obviously a generational talent from the start, and I loved his tape.
 **Since then:** Three more top-24 seasons and never a top-12. The film was right that he'd be a starter; the ceiling turned out to be a timeshare, first with Charbonnet and then with an offense that spread the work. Solid. Not the star. A hit that I'd grade a little lower with hindsight.
 
 ### 2023 — Jahmyr Gibbs, Detroit
+
+<figure class="video"><iframe src="https://www.youtube-nocookie.com/embed/Xb3pBgjoIo8" title="Jahmyr Gibbs, Alabama highlights" loading="lazy" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen></iframe><figcaption>Jahmyr Gibbs, Alabama highlights.</figcaption></figure>
 
 **What happened:** 945 rushing yards, 10 rushing touchdowns, 52 catches for 316 yards and another score, in a rotation with David Montgomery. RB10 in half-PPR points and 11th per game, in a season where he never had the backfield to himself.
 
@@ -94,6 +106,8 @@ Saquon was obviously a generational talent from the start, and I loved his tape.
 A sparse running back class overall, led by Jonathon Brooks, who I did like, but not at the level of the rest of the players on this page.
 
 ### 2025 — TreVeyon Henderson, New England
+
+<figure class="video"><iframe src="https://www.youtube-nocookie.com/embed/POpRSIInnls" title="TreVeyon Henderson, Ohio State highlights" loading="lazy" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen></iframe><figcaption>TreVeyon Henderson, Ohio State highlights.</figcaption></figure>
 
 **What happened:** 180 carries for 911 yards and 9 rushing touchdowns, 35 catches for 221 yards, all 17 games. The Patriots went to the Super Bowl. Henderson split the backfield close to evenly with Rhamondre Stevenson all year and finished as the 24th back in half-PPR points per game, RB19 in total.
 

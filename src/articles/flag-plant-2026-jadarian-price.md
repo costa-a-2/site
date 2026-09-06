@@ -57,6 +57,16 @@ Three reasons, and all three are fair. I would rather name them than wave at the
 
 **Three: there is an Achilles tear in his history and he is 203 pounds.** Evaluators flagged both: durability concerns lingering from the injury, and a lighter frame that raises questions about a bell-cow workload.
 
+## The Gibson Comp
+
+This one feels familiar, and I want to say why before somebody else does.
+
+In 2020 my call was Antonio Gibson. A college wide receiver Memphis had started handing the ball to, electric with it, and with a college carry count so small that nobody could tell you what he was. The unknown pushed him down the NFL draft board to the third round, and then fantasy forgot about him entirely. He went in the double-digit rounds. He finished as the RB12.
+
+Price is the same shape of player at a higher price point. Fewer college carries than anyone is comfortable with, an obvious trait on tape that the carry count cannot show, and a market that treats "we have not seen it yet" as "it is not there." With Gibson, the situation was a Washington backfield with nobody else. With Price, it is a champion's backfield with nobody else for a month and a run game coordinator calling plays.
+
+I was early on Gibson because I trusted the trait over the sample. That is exactly the bet here, and the record says it has paid off more often than not.
+
 ## The Part Nobody Is Talking About
 
 Klint Kubiak left Seattle to become head coach of the Las Vegas Raiders. The Seahawks replaced him with **Brian Fleury**.
