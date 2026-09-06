@@ -112,10 +112,9 @@
     {% include "partials/receipts.njk" %}
     <div style="margin-top:22px"><span class="sec">The Metrics</span></div>
     <div style="font-size:13.5px;line-height:1.9;margin-top:8px">
-      <div style="display:flex;justify-content:space-between;border-bottom:1px solid var(--faint)"><b>OTS</b><span style="color:var(--muted)">Opportunity trend</span></div>
-      <div style="display:flex;justify-content:space-between;border-bottom:1px solid var(--faint)"><b>RCS</b><span style="color:var(--muted)">Role clarity</span></div>
-      <div style="display:flex;justify-content:space-between;border-bottom:1px solid var(--faint)"><b>SFS</b><span style="color:var(--muted)">Scheme fit</span></div>
-      <div style="display:flex;justify-content:space-between"><b>PGHI</b><span style="color:var(--muted)">Passing health</span></div>
+      {% for m in metrics %}
+      <div style="display:flex;justify-content:space-between{% if not loop.last %};border-bottom:1px solid var(--faint){% endif %}"><b><a href="/methodology/#{{ m.key | lower }}" title="{{ m.definition }}" style="color:inherit;text-decoration:none">{{ m.key }}</a></b><span style="color:var(--muted)">{{ m.short }}</span></div>
+      {% endfor %}
     </div>
   </aside>
 </div>

@@ -1,0 +1,38 @@
+[
+  {
+    "key": "OTS",
+    "name": "Opportunity Trend Score",
+    "short": "Opportunity trend",
+    "appliesTo": "All skill positions",
+    "scales": "scales volume",
+    "definition": "The recent trend in a player's share of his team's opportunity, normalized across the league; it scales projected volume.",
+    "detail": "Opportunity means targets for receivers and tight ends, carries plus targets for running backs. A rising OTS means the role is growing before the box score shows it. OTS scales projected volume, and it works at every skill position, which makes it the spine of the system."
+  },
+  {
+    "key": "RCS",
+    "name": "Role Clarity Score",
+    "short": "Role clarity",
+    "appliesTo": "Running backs",
+    "scales": "scales rushing TDs",
+    "definition": "A running back's share of the touches across early downs, passing downs, the red zone and the two-minute drill, scored 0 to 100; it scales projected rushing touchdowns.",
+    "detail": "Volume metrics tell you how much a back is used. RCS tells you what kind of back the team thinks it has. A back who owns early downs but disappears on third down is a different asset from one who stays on the field in all four situations. The score is labeled Workhorse, Feature Back, Role Player or Specialist, and it scales projected rushing touchdowns because goal-line trust is what the label is really measuring."
+  },
+  {
+    "key": "SFS",
+    "name": "Scheme Fit Score",
+    "short": "Scheme fit",
+    "appliesTo": "Receivers",
+    "scales": "scales receiving yards",
+    "definition": "How a receiver's own profile, his share of air yards, depth of target and yards after the catch, fits the tendencies of the offense he plays in; it scales projected receiving yards.",
+    "detail": "Receivers and tight ends. It matters most after a coordinator change or a trade, which is exactly when rankings move the furthest and explanations are thinnest. SFS scales projected receiving yards."
+  },
+  {
+    "key": "PGHI",
+    "name": "Passing Game Health Index",
+    "short": "Passing health",
+    "appliesTo": "Quarterbacks",
+    "scales": "scales passing TDs",
+    "definition": "A composite of a quarterback's passing environment: pass rate over expectation, the protection trend, whether the weapons are on the field and how fast the offense plays; it scales projected passing touchdowns.",
+    "detail": "Quarterbacks. It answers whether things are getting better or worse for the quarterback before his stat line reflects it. PGHI scales projected passing touchdowns."
+  }
+]

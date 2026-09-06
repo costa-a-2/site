@@ -1,8 +1,12 @@
 ---
 layout: layouts/base.njk
 permalink: /methodology/
+pageType: methodology
 title: Methodology
 description: "How The Weekly Rank builds its rankings: what goes in, what the metrics measure, and what stays private."
+published: 2026-09-03
+eleventyComputed:
+  dateModified: "{{ updated or gitdates.methodology }}"
 ---
 <div style="text-align:center;padding:32px 0 22px">
   <div class="kick" style="margin-bottom:10px">How This Works</div>
@@ -10,6 +14,7 @@ description: "How The Weekly Rank builds its rankings: what goes in, what the me
   <p class="standfirst" style="margin-top:14px;max-width:640px;margin-left:auto;margin-right:auto">
     The inputs are public. The weights are not. Here is everything in between.
   </p>
+  <div class="updated-line" style="margin-top:10px">Updated {{ dateModified | date("long") }}</div>
 </div>
 <div class="r-hair" style="margin-bottom:26px"></div>
 
@@ -27,17 +32,11 @@ description: "How The Weekly Rank builds its rankings: what goes in, what the me
     <h2>What the Metrics Do</h2>
     <p>Four proprietary metrics carry the football rankings. None of them touches the rank directly. Each one multiplies a specific stat, which is a deliberate constraint: because every metric acts on a named input, every rank change traces back to a number, and the number traces back to a reason. That is the sentence in the movers sidebar every week.</p>
 
-    <h3>OTS — Opportunity Trend Score</h3>
-    <p>The recent trend in a player's share of team opportunity, normalized across the league. Opportunity means targets for receivers and tight ends, carries plus targets for running backs. A rising OTS means the role is growing before the box score shows it. OTS scales projected volume, and it works at every skill position, which makes it the spine of the system.</p>
-
-    <h3>RCS — Role Clarity Score</h3>
-    <p>Running backs only. Volume metrics tell you how much a back is used. RCS tells you what kind of back the team thinks it has, by measuring his share across the situations that matter: early downs, passing downs, the red zone, and the two-minute drill. A back who owns early downs but disappears on third down is a different asset from one who stays on the field in all four. RCS is scored 0–100 and labeled Workhorse, Feature Back, Role Player or Specialist. It scales projected rushing touchdowns, because goal-line trust is what the label is really measuring.</p>
-
-    <h3>SFS — Scheme Fit Score</h3>
-    <p>Receivers and tight ends. Compares a player's own profile (his share of air yards, his depth of target, what he does after the catch) against the tendencies of the offense he plays in. It matters most after a coordinator change or a trade, which is exactly when rankings move the furthest and explanations are thinnest. SFS scales projected receiving yards.</p>
-
-    <h3>PGHI — Passing Game Health Index</h3>
-    <p>Quarterbacks. A composite of the passing environment: how often the offense throws relative to expectation, how the protection is trending, whether the weapons are on the field, and how fast the offense plays. It answers whether things are getting better or worse for the quarterback before his stat line reflects it. PGHI scales projected passing touchdowns.</p>
+    {# the four metrics, from src/_data/metrics.json — the same definitions the DefinedTermSet, the rankings footer and the rail use #}
+    {% for m in metrics %}
+    <h3 id="{{ m.key | lower }}">{{ m.key }} &mdash; {{ m.name }}</h3>
+    <p><strong>{{ m.definition }}</strong> {{ m.detail }}</p>
+    {% endfor %}
 
     <h2>What Stays Private</h2>
     <p>The inputs above are public. Every one of them is built from play-by-play and roster data that anyone can download. What is not public is how they are weighted: the coefficients, the regression targets, how much each metric is trusted in September versus November. That is the work, and it stays on this side of the page.</p>
@@ -50,15 +49,17 @@ description: "How The Weekly Rank builds its rankings: what goes in, what the me
     <h2>Tiers and Formats</h2>
     <p>Tiers are drawn where the points-per-game cliffs actually are, not at even intervals. The gap between tiers is the useful information; the tier number is just a label.</p>
     <p>Rankings default to <strong>half-PPR redraft</strong>. Superflex, dynasty and points-league variants are planned.</p>
+
+    {% set faqItems = faq.methodology %}
+    {% include "partials/faq.njk" %}
   </div>
 
   <aside class="rail">
     <div class="sec">At a Glance</div>
     <div style="font-size:13.5px;line-height:1.75">
-      <div style="padding:7px 0;border-bottom:1px solid var(--faint)"><b>OTS</b><br><span style="color:var(--muted)">All skill positions &middot; scales volume</span></div>
-      <div style="padding:7px 0;border-bottom:1px solid var(--faint)"><b>RCS</b><br><span style="color:var(--muted)">Running backs &middot; scales rushing TDs</span></div>
-      <div style="padding:7px 0;border-bottom:1px solid var(--faint)"><b>SFS</b><br><span style="color:var(--muted)">Receivers &middot; scales receiving yards</span></div>
-      <div style="padding:7px 0"><b>PGHI</b><br><span style="color:var(--muted)">Quarterbacks &middot; scales passing TDs</span></div>
+      {% for m in metrics %}
+      <div style="padding:7px 0{% if not loop.last %};border-bottom:1px solid var(--faint){% endif %}"><b>{{ m.key }}</b><br><span style="color:var(--muted)">{{ m.appliesTo }} &middot; {{ m.scales }}</span></div>
+      {% endfor %}
     </div>
 
     <div class="sec" style="margin-top:24px">The Chain</div>

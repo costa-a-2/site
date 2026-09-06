@@ -3,7 +3,9 @@ module.exports = function (eleventyConfig) {
 
   // ── Filters ───────────────────────────────────────────────
   eleventyConfig.addFilter("date", (value, fmt) => {
-    const d = value instanceof Date ? value : new Date(value + "T12:00:00");
+    // a Date, a YYYY-MM-DD (read at noon so the day never shifts), or a full ISO timestamp
+    const d = value instanceof Date ? value : new Date(/T/.test(String(value)) ? String(value) : value + "T12:00:00");
+    if (isNaN(d)) return "";
     const months = ["January","February","March","April","May","June",
                     "July","August","September","October","November","December"];
     if (fmt === "short") return `${months[d.getMonth()].slice(0,3)} ${d.getDate()}`;
@@ -63,6 +65,16 @@ module.exports = function (eleventyConfig) {
     const labels = eds.map((e, i) => `<text x="${x(i).toFixed(0)}" y="${h - 2}" font-size="9" font-family="Cinzel, serif" letter-spacing="1.5" text-anchor="middle" fill="#6b6355">${(e.isPreseason ? "PRE" : e.label.replace(/^Week /, "WK ")).toUpperCase()}</text>`).join("");
     return `<svg class="bigspark" viewBox="0 0 ${w} ${h}" role="img" aria-label="Rank by edition">${n > 1 ? `<polyline points="${pts}" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>` : ""}${dots}${nums}${labels}</svg>`;
   });
+
+  // ISO 8601 for feeds and structured data, from a Date or a YYYY-MM-DD string
+  eleventyConfig.addFilter("isoDate", (v) => {
+    if (!v) return "";
+    const d = v instanceof Date ? v : new Date(/^\d{4}-\d{2}-\d{2}$/.test(String(v)) ? String(v) + "T12:00:00Z" : v);
+    return isNaN(d) ? "" : d.toISOString();
+  });
+  // root-relative hrefs and srcs → absolute, for feed readers
+  eleventyConfig.addFilter("absoluteUrls", (html, base) =>
+    String(html || "").replace(/(href|src)="\/(?!\/)/g, `$1="${String(base || "").replace(/\/$/, "")}/`));
 
   eleventyConfig.addFilter("time", (iso) => {
     if (!iso) return "";

@@ -1,8 +1,11 @@
 ---
 layout: layouts/base.njk
 permalink: /flag-plant/
+pageType: flagplant
 title: The Flag Plant
 description: One rookie call every year, made on film before the season and graded honestly afterward.
+eleventyComputed:
+  dateModified: "{{ updated or gitdates.flagPlant }}"
 ---
 <div style="text-align:center;padding:32px 0 22px">
   <div class="kick" style="margin-bottom:10px">An Annual Column</div>
@@ -22,6 +25,9 @@ description: One rookie call every year, made on film before the season and grad
     <p><a href="/articles/flag-plant-2026-jadarian-price/"><strong>Jadarian Price, Seattle.</strong></a> A first-round pick starting Week 1 for the champions, going as the 26th running back off the board. The case, the risks, and the film read are in the article.</p>
     <h2>The Record</h2>
     <p>Seven calls over nine seasons, with two years I sat out. By my own grading, three hits, three pushes, one incomplete. The full accounting, what happened to each one and what the misses taught me, is <a href="/articles/the-flag-plant-a-history/">here</a>.</p>
+
+    {% set faqItems = faq.flagPlant %}
+    {% include "partials/faq.njk" %}
   </div>
 
   <aside class="rail">

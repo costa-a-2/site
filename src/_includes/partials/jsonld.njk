@@ -19,7 +19,24 @@
 </script>
 {%- elif pageType == "article" %}
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":{{ canonicalUrl | dump | safe }}},"headline":{{ title | dump | safe }},"description":{{ (description or standfirst or summary or "") | dump | safe }},"image":[{{ ogAbs | dump | safe }}],"datePublished":{{ (date | date) | dump | safe }},"dateModified":{{ ((updated or date) | date) | dump | safe }},"author":{"@type":"Person","@id":{{ personId | dump | safe }},"name":{{ site.author | dump | safe }},"url":{{ aboutUrl | dump | safe }}},"publisher":{"@type":"Organization","@id":{{ orgId | dump | safe }},"name":{{ site.name | dump | safe }},"logo":{"@type":"ImageObject","url":{{ logoAbs | dump | safe }}}}{% if section %},"articleSection":{{ section | dump | safe }}{% endif %}}
+{"@context":"https://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":{{ canonicalUrl | dump | safe }}},"headline":{{ title | dump | safe }},"description":{{ (description or standfirst or summary or "") | dump | safe }},"image":[{{ ogAbs | dump | safe }}],"datePublished":{{ (date | date) | dump | safe }},"dateModified":{{ ((updated or date) | date) | dump | safe }},"author":{"@type":"Person","@id":{{ personId | dump | safe }},"name":{{ site.author | dump | safe }},"url":{{ aboutUrl | dump | safe }}},"publisher":{"@type":"Organization","@id":{{ orgId | dump | safe }},"name":{{ site.name | dump | safe }},"logo":{"@type":"ImageObject","url":{{ logoAbs | dump | safe }}}}{% if section %},"articleSection":{{ section | dump | safe }}{% endif %},"speakable":{"@type":"SpeakableSpecification","cssSelector":[".standfirst",".prose > p:first-of-type"]}}
+</script>
+{%- elif pageType == "methodology" %}
+{#- one graph: the page, the article on it, the Questions section, and the four metrics as defined terms -#}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+ {"@type":"WebPage","@id":{{ (canonicalUrl ~ "#webpage") | dump | safe }},"url":{{ canonicalUrl | dump | safe }},"name":{{ title | dump | safe }},"description":{{ description | dump | safe }},"isPartOf":{"@id":{{ (site.url ~ "/#website") | dump | safe }}},"dateModified":{{ (dateModified | isoDate) | dump | safe }},"author":{"@id":{{ personId | dump | safe }}}},
+ {"@type":"Article","@id":{{ (canonicalUrl ~ "#article") | dump | safe }},"mainEntityOfPage":{"@id":{{ (canonicalUrl ~ "#webpage") | dump | safe }}},"headline":{{ title | dump | safe }},"description":{{ description | dump | safe }},"image":[{{ ogAbs | dump | safe }}],{% if published %}"datePublished":{{ (published | date) | dump | safe }},{% endif %}"dateModified":{{ (dateModified | isoDate) | dump | safe }},"author":{"@type":"Person","@id":{{ personId | dump | safe }},"name":{{ site.author | dump | safe }},"url":{{ aboutUrl | dump | safe }}},"publisher":{"@type":"Organization","@id":{{ orgId | dump | safe }},"name":{{ site.name | dump | safe }},"logo":{"@type":"ImageObject","url":{{ logoAbs | dump | safe }}}},"speakable":{"@type":"SpeakableSpecification","cssSelector":[".standfirst",".prose > p:first-of-type"]}},
+ {"@type":"FAQPage","@id":{{ (canonicalUrl ~ "#questions") | dump | safe }},"url":{{ (canonicalUrl ~ "#questions") | dump | safe }},"mainEntity":[{% for f in faq.methodology %}{"@type":"Question","name":{{ f.q | dump | safe }},"acceptedAnswer":{"@type":"Answer","text":{{ f.a | dump | safe }}}}{% if not loop.last %},{% endif %}{% endfor %}]},
+ {"@type":"DefinedTermSet","@id":{{ (canonicalUrl ~ "#metrics") | dump | safe }},"name":{{ (site.name ~ " metrics") | dump | safe }},"url":{{ (canonicalUrl ~ "#ots") | dump | safe }},"hasDefinedTerm":[{% for m in metrics %}{"@type":"DefinedTerm","@id":{{ (canonicalUrl ~ "#" ~ (m.key | lower)) | dump | safe }},"name":{{ m.name | dump | safe }},"termCode":{{ m.key | dump | safe }},"description":{{ m.definition | dump | safe }},"inDefinedTermSet":{"@id":{{ (canonicalUrl ~ "#metrics") | dump | safe }}}}{% if not loop.last %},{% endif %}{% endfor %}]}
+]}
+</script>
+{%- elif pageType == "flagplant" %}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+ {"@type":"WebPage","@id":{{ (canonicalUrl ~ "#webpage") | dump | safe }},"url":{{ canonicalUrl | dump | safe }},"name":{{ title | dump | safe }},"description":{{ description | dump | safe }},"isPartOf":{"@id":{{ (site.url ~ "/#website") | dump | safe }}},"dateModified":{{ (dateModified | isoDate) | dump | safe }},"author":{"@type":"Person","@id":{{ personId | dump | safe }},"name":{{ site.author | dump | safe }},"url":{{ aboutUrl | dump | safe }}}},
+ {"@type":"FAQPage","@id":{{ (canonicalUrl ~ "#questions") | dump | safe }},"url":{{ (canonicalUrl ~ "#questions") | dump | safe }},"mainEntity":[{% for f in faq.flagPlant %}{"@type":"Question","name":{{ f.q | dump | safe }},"acceptedAnswer":{"@type":"Answer","text":{{ f.a | dump | safe }}}}{% if not loop.last %},{% endif %}{% endfor %}]}
+]}
 </script>
 {%- elif pageType == "person" %}
 <script type="application/ld+json">

@@ -13,6 +13,9 @@ layout: layouts/base.njk
       <img class="mug" src="{{ site.authorMug or '/assets/img/costa.jpg' }}" alt="" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'mug'}))">
       <div><div class="who">{{ site.author }}</div><div class="role">Editor &middot; {{ site.handle }}</div></div>
     </div>
+    {%- if updated and (updated | date) != (date | date) %}
+    <div class="updated-line">Updated {{ updated | date("long") }}</div>
+    {%- endif %}
   </div>
 
   {% if image %}<figure><img src="{{ image }}" alt="{{ imageAlt }}"><figcaption>{{ caption }}</figcaption></figure>{% endif %}

@@ -83,7 +83,7 @@ eleventyComputed:
     {% if p.signal %}{% set sg = p.signal %}
     <div class="box"><span class="sec">Signals</span>
       <div class="classified" style="margin-top:10px">
-        <div class="row"><b>{{ sg.groupLabel or sg.group }}</b><span class="m">Model {{ sg.modelRank }} &middot; ADP {{ sg.adp | round }} &middot; gap {% if sg.gap > 0 %}+{% endif %}{{ sg.gap }}{% if sg.metric %} &middot; {{ sg.metric | upper }} {{ sg.value }} ({{ sg.strength }}){% endif %}</span></div>
+        <div class="row"><b>{{ sg.groupLabel or sg.group }}</b><span class="m">Model {{ sg.modelRank }} &middot; ADP {{ sg.adp | round }} &middot; gap {% if sg.gap > 0 %}+{% endif %}{{ sg.gap }}{% if sg.metric %}{% for m in metrics %}{% if m.key == (sg.metric | upper) %} &middot; <a href="/methodology/#{{ m.key | lower }}" title="{{ m.definition }}" style="color:inherit;text-decoration:none">{{ m.key }}</a> {{ sg.value }} ({{ sg.strength }}){% endif %}{% endfor %}{% endif %}</span></div>
         {% if sg.note %}<p class="summary" style="margin-top:8px">{{ sg.note }}</p>{% endif %}
       </div>
       <div class="tbl-foot"><a href="/signals/" style="border-bottom:1px solid var(--rule)">All of this week's signals</a></div>

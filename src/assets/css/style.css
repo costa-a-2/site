@@ -275,3 +275,8 @@ table.rank .c-player a:hover,.ladder .row b a:hover,.players-index a:hover,.hist
 /* team filter: a select that sits with the position buttons */
 .filters select{background:transparent;color:var(--muted);border:1px solid var(--rule);padding:6px 10px;font-family:var(--display);font-weight:700;font-size:9.5px;letter-spacing:2px;text-transform:uppercase;cursor:pointer;margin-left:6px}
 .filters select:focus{outline:none;border-color:var(--ink);color:var(--ink)}
+
+/* updated line under a byline or a page standfirst; the Questions section */
+.updated-line{font-family:var(--display);font-size:8.5px;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);margin-top:8px}
+.prose h2#questions{margin-top:36px}
+.prose h3 + p{margin-top:6px}

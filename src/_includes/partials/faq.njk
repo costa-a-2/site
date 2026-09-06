@@ -1,0 +1,6 @@
+{# A "Questions" section: each answer stands alone in plain language. Set `faqItems` (an array from faq.json) before including. The same array feeds the page's FAQPage JSON-LD. #}
+<h2 id="questions">Questions</h2>
+{% for f in faqItems %}
+<h3>{{ f.q }}</h3>
+<p>{{ f.a }}</p>
+{% endfor %}

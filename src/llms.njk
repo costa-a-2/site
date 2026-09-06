@@ -1,0 +1,26 @@
+---
+permalink: /llms.txt
+eleventyExcludeFromCollections: true
+---
+# {{ site.name }}
+
+> Weekly rest-of-season fantasy football rankings in half-PPR, with a change column computed against the previous edition (never typed), the model's rank beside the editor's rank, a written reason for every large move, and a permanent dated archive. Edited by {{ site.author }}.
+
+## Rankings
+
+- [Latest]({{ site.url }}/rankings/): the current rest-of-season top {{ rankings.latestFootball.count if rankings.latestFootball else 150 }}, tiers, movement, notes.
+{%- for wk in rankings.football | reverse %}
+- [{{ wk.label }} {{ wk.season }}]({{ site.url }}{{ wk.url }}): {{ wk.count }} players, {{ wk.published }}.
+{%- endfor %}
+- [Signals]({{ site.url }}/signals/): where a metric and the market disagree with the model.
+- [Players]({{ site.url }}/players/): a page per ranked player, every edition.
+
+## How it works
+
+- [Methodology]({{ site.url }}/methodology/): how a rank is made, the four metrics, what stays private, a Questions section.
+- [The Flag Plant]({{ site.url }}/flag-plant/): one rookie call a year, made before the season, graded after.
+
+## Articles
+{%- for a in collections.articles %}
+- [{{ a.data.title }}]({{ site.url }}{{ a.url }}): {{ (a.data.summary or a.data.standfirst) | truncate(90) }}
+{%- endfor %}
