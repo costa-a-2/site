@@ -271,3 +271,7 @@ table.rank .c-player a:hover,.ladder .row b a:hover,.players-index a:hover,.hist
 .players-index li .m{color:var(--muted);font-size:12px;margin-left:6px;white-space:nowrap}
 @media (max-width:860px){.pp-head{grid-template-columns:1fr}.line{grid-template-columns:repeat(3,1fr)}.pp-num{grid-template-columns:repeat(2,1fr)}.players-index{grid-template-columns:1fr 1fr}}
 @media (max-width:560px){.share-grid{grid-template-columns:1fr}.players-index{grid-template-columns:1fr}}
+
+/* team filter: a select that sits with the position buttons */
+.filters select{background:transparent;color:var(--muted);border:1px solid var(--rule);padding:6px 10px;font-family:var(--display);font-weight:700;font-size:9.5px;letter-spacing:2px;text-transform:uppercase;cursor:pointer;margin-left:6px}
+.filters select:focus{outline:none;border-color:var(--ink);color:var(--ink)}
