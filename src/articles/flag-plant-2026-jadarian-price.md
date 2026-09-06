@@ -41,7 +41,7 @@ The goal-line detail is the one I keep coming back to. Charbonnet's twelve rushi
 
 This is the cleanest way I can make the argument.
 
-Kenneth Walker ran for 1,027 yards in this exact offense last season. He played all seventeen games. He finished **RB22 in total PPR points and RB28 in points per game**, averaging 11.3.
+Kenneth Walker ran for 1,027 yards in this exact offense last season. He played all seventeen games. He finished **RB22 in total half-PPR points and RB29 in points per game**, averaging 10.4.
 
 A thousand-yard rusher on the eventual Super Bowl champion, and he was barely a startable fantasy asset.
 

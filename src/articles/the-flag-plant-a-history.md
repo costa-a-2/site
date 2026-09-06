@@ -41,6 +41,8 @@ That's obvious, and a lot of players have many of these traits. For the players 
 
 **Grade:** Cook, *incomplete* — the read was right and the season ended before it could prove anything, which is the risk with every one of these.
 
+**Since then:** This is the one that stings least, because the read was right by a mile. Two years later he was the RB5. The year after that, RB3 in total and the RB1 in points per game — 22.6 a week. Four top-15 seasons in a row before the wheels came off. Incomplete as a rookie call. Not incomplete as a read.
+
 ### 2018 — No Call
 
 Saquon was obviously a generational talent from the start, and I loved his tape. None of the other backs stood out to me, and ultimately that was the right call.
@@ -51,11 +53,15 @@ Saquon was obviously a generational talent from the start, and I loved his tape.
 
 **Grade:** *Push.* He was exactly the player I thought he was in an offense that couldn't use him. The volume was there; the points weren't. I've thought about this one a lot, because it's the year I learned the environment matters as much as the back.
 
+**Since then:** One year later, RB4 — 15.9 a game in the same Bears uniform, once the offense got out of its own way. Then five straight top-24 seasons, two of them top-13, including the Detroit years. The player I saw showed up. He just needed a better room.
+
 ### 2020 — Antonio Gibson, Washington
 
 **What happened:** A college receiver converted to running back, going in the double-digit rounds. 795 rushing yards and 11 touchdowns in 14 games, plus 36 catches. The 16th-best back in half-PPR points per game, RB12 in total, as a rookie who'd been a wideout eight months earlier.
 
 **Grade:** *Hit.* This is the one that made me trust the process. Nobody had him. I was ahead of the beat reports and buzz through camp, when I saw something special. The film said the ball-carrier instincts were already there; the situation said Washington had nobody else that could do what he could. Both were right.
+
+**Since then:** RB10 the next year, then the role shrank as Washington moved on, and by 2024 he was a change-of-pace back in New England. Two top-12 seasons out of the gate is the hit. It didn't become a career, and I'd rather say that than pretend.
 
 ### 2021 — Javonte Williams, Denver
 
@@ -63,17 +69,23 @@ Saquon was obviously a generational talent from the start, and I loved his tape.
 
 **Grade:** *Push.* The talent evaluation was correct. The workload call was not. I underweighted how much Denver would keep leaning on Gordon, and the split capped a back who should have been top-10.
 
+**Since then:** The knee in 2022 took a year and a half. Then last season, finally, the one I called: RB11, 14.1 a game, in Dallas. Five years late and on a different team, but it was the same back on tape. This is the clearest case on this page of right player, wrong year.
+
 ### 2022 — Kenneth Walker III, Seattle
 
 **What happened:** Opened the year behind Rashaad Penny, took over in Week 5 after Penny's injury, and ran for 1,050 yards and 9 touchdowns in 15 games — the 15th-best back in half-PPR points per game. Second in Offensive Rookie of the Year voting.
 
 **Grade:** *Hit.* The first month was ugly and there were texts. Then the job opened and he was exactly who the film said he was. This one taught me to hold the call through a slow start — which is relevant to this year.
 
+**Since then:** Three more top-24 seasons and never a top-12. The film was right that he'd be a starter; the ceiling turned out to be a timeshare, first with Charbonnet and then with an offense that spread the work. Solid. Not the star. A hit that I'd grade a little lower with hindsight.
+
 ### 2023 — Jahmyr Gibbs, Detroit
 
 **What happened:** 945 rushing yards, 10 rushing touchdowns, 52 catches for 316 yards and another score, in a rotation with David Montgomery. RB10 in half-PPR points and 11th per game, in a season where he never had the backfield to himself.
 
 **Grade:** *Hit.* The easiest one to defend in hindsight, which is exactly why it's worth remembering that in August 2023 the consensus had him well behind Bijan Robinson and worried about the Montgomery split. The split happened. It didn't matter.
+
+**Since then:** RB2 the next year, RB4 last year, nearly 20 points a game both seasons. The only one on this page who became the player I saw and then kept going. If the record has one call I'd frame, it's this one.
 
 ### 2024 — No Call
 
@@ -85,11 +97,15 @@ A sparse running back class overall, led by Jonathon Brooks, who I did like — 
 
 **Grade:** *Push.* Same lesson as Javonte, four years later: I got the player right and the share wrong. Nine rushing touchdowns as a rookie in a committee is a real season. It isn't the season I called.
 
+**Since then:** One season. Ask me in January.
+
 ## What the Record Says
 
 Seven calls over nine years, with two years I sat out. By my grading: three hits, three pushes, one incomplete.
 
 The hits have something in common, and it isn't the film. Gibson, Walker and Gibbs all walked into situations where the volume was either already open or about to be. The pushes — Montgomery, Javonte, Henderson — were all good reads on the player in backfields that stayed shared or offenses that couldn't score. The film has been right more often than not. The share has been the miss.
+
+The other pattern only shows up if you keep watching after the grade. Cook became the RB1 in points per game. Montgomery was the RB4 a year later. Javonte finally had his RB11 season last year, five years after the call, on his third team. Three of the seven have peaked as top-4 backs, and two more as top-11. So the honest version of the record isn't three hits and three pushes. It's that the eye has been right on the player almost every time, and wrong on the year about half the time. That's the part I'm trying to fix with the share.
 
 That's worth saying plainly, because it's the whole shape of this year's call. Seattle vacated 456 touches. The depth behind the rookie is an undrafted back with 25 career carries. The mistake I've made three times is the one this situation makes hardest to make.
 
