@@ -11,6 +11,7 @@ eleventyComputed:
   title: "{{ week.seoTitle }}"
   description: "{{ week.seoDescription }}"
   updatedAt: "{{ week.updatedAt }}"
+  ogImage: "{{ week.ogImage or '' }}"
 ---
 {# one permanent page per edition: /rankings/<season>/preseason/ and /rankings/<season>/week-NN/ #}
 {% set isLatest = week.isLatest %}

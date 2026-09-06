@@ -51,6 +51,8 @@ function loadSport(sport) {
       label: isPre ? "Preseason" : `Week ${weekNum}`,
       // the edition's permanent page; /rankings/ always shows the latest one
       url: `/rankings/${season}/${pathPart}/`,
+      // the edition's own Open Graph card, when brand/make_rankings_card.py has written it
+      ogImage: fs.existsSync(path.join(__dirname, "..", "assets", "img", "og", `${slug}.png`)) ? `/assets/img/og/${slug}.png` : null,
       seoTitle: isPre ? `${season} Preseason Fantasy Football Rankings — Rest of Season`
                       : `Week ${weekNum} Fantasy Football Rest-of-Season Rankings (${season})`,
       published: raw.published || null,

@@ -6,6 +6,7 @@ eleventyComputed:
   title: "{{ rankings.latestFootball.seoTitle }}"
   description: "{{ rankings.latestFootball.seoDescription }}"
   updatedAt: "{{ rankings.latestFootball.updatedAt }}"
+  ogImage: "{{ rankings.latestFootball.ogImage or '' }}"
 ---
 {# /rankings/ is always the latest edition; every edition also has its own page (rankings-editions.njk) #}
 {% set week = rankings.latestFootball %}
