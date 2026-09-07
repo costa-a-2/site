@@ -7,9 +7,9 @@ kicker: "2026 · The Favorites"
 date: 2026-09-07
 readtime: "8 min"
 lede: "Every draft season there are a handful of players I look up at the end of August and realize I own everywhere. I did not plan it that way. It just kept happening, pick after pick, because the price never matched what I thought I was getting. These are this year's five."
-image: "/assets/img/huddle.jpg"
-imageAlt: "An offense in the huddle"
-caption: "The huddle. Photo by All-Pro Reels, CC BY-SA 2.0."
+image: "/assets/img/corum-rams.jpg"
+imageAlt: "Blake Corum running out before a Rams preseason game"
+caption: "Blake Corum, Rams at Browns, August 2025. Photo by Erik Drost, CC BY 4.0."
 ---
 
 Jadarian Price is not on this list, and that is on purpose. He is the flag plant, and I have already written more about him than anyone reasonably should. If you want that case, it is [here](/flag-plant/). This is the other list: the guys I like a lot, drafted a lot, and have not made a formal commitment to.
