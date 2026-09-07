@@ -1,0 +1,10 @@
+{# The newsletter signup. Substack hosts the list (theweeklyrank.substack.com): this form hands the
+   address to Substack's subscribe page by GET in a new tab, and the reader confirms there. Our own
+   markup so the design system applies; Substack's embed iframe ignores it. Never POST to Substack's API. #}
+<div class="signup" style="margin-top:10px">
+  <form name="subscribe" action="https://theweeklyrank.substack.com/subscribe" method="GET" target="_blank" rel="noopener">
+    <input type="email" name="email" placeholder="your@email.com" required aria-label="Email address">
+    <button type="submit">Join</button>
+  </form>
+  <p class="summary" style="font-size:12px;color:var(--muted);margin-top:8px">Delivered by Substack. Unsubscribe any time.</p>
+</div>
