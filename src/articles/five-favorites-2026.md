@@ -6,7 +6,6 @@ section: "Preseason"
 kicker: "2026 · The Favorites"
 date: 2026-09-07
 readtime: "8 min"
-datelineCity: "SEATTLE"
 lede: "Every draft season there are a handful of players I look up at the end of August and realize I own everywhere. I did not plan it that way. It just kept happening, pick after pick, because the price never matched what I thought I was getting. These are this year's five."
 image: "/assets/img/huddle.jpg"
 imageAlt: "An offense in the huddle"

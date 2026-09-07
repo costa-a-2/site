@@ -23,7 +23,7 @@ layout: layouts/base.njk
 
   <div class="art-grid" style="display:grid;grid-template-columns:minmax(0,1fr) 270px;gap:36px">
     <div class="prose">
-      {% if datelineCity %}<p class="dropcap"><span class="dateline-inline">{{ datelineCity }} —</span> {{ lede }}</p>{% endif %}
+      {% if lede %}<p class="dropcap">{% if datelineCity %}<span class="dateline-inline">{{ datelineCity }} —</span> {% endif %}{{ lede }}</p>{% endif %}
       {{ content | safe }}
     </div>
     <aside style="border-left:1px solid var(--rule);padding-left:22px">
