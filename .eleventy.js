@@ -120,6 +120,16 @@ module.exports = function (eleventyConfig) {
     return `<figure class="video"><iframe src="https://www.youtube-nocookie.com/embed/${vid}" title="${attr(title)}" loading="lazy" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen></iframe><figcaption>${text(caption)}</figcaption></figure>`;
   });
 
+  // {% xpost "https://x.com/user/status/ID", "Caption." %} → an embedded X post (the official
+  // widget: blockquote + widgets.js, loaded once per page by the layout). Renders as a plain link
+  // until the script runs, so nothing breaks without it. The post's own video plays inside it.
+  eleventyConfig.addShortcode("xpost", (url, caption = "") => {
+    const m = String(url || "").match(/^https?:\/\/(?:x|twitter)\.com\/([A-Za-z0-9_]+)\/status\/(\d+)/);
+    if (!m) throw new Error(`xpost shortcode: "${url}" is not an X post URL`);
+    const clean = `https://twitter.com/${m[1]}/status/${m[2]}`;
+    return `<figure class="xpost"><blockquote class="twitter-tweet" data-dnt="true" data-theme="light"><a href="${clean}">A post by @${m[1]}</a></blockquote>${caption ? `<figcaption>${text(caption)}</figcaption>` : ""}</figure>`;
+  });
+
   // ── Collections ───────────────────────────────────────────
   eleventyConfig.addCollection("articles", (api) =>
     api.getFilteredByGlob("src/articles/*.md").reverse());

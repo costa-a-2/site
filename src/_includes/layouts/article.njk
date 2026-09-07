@@ -40,4 +40,5 @@ layout: layouts/base.njk
     </aside>
   </div>
 </article>
+{% if content and "twitter-tweet" in content %}<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>{% endif %}
 <style>@media (max-width:860px){.art-grid{grid-template-columns:1fr !important;gap:22px !important}.art-grid aside{border-left:none !important;border-top:1px solid var(--ink);padding-left:0 !important;padding-top:20px}}</style>
