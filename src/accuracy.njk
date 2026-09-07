@@ -12,9 +12,38 @@ description: Every call the board made, graded Hit, Push or Miss the following w
   </p>
 </div>
 
-{% if rankings.receipts and rankings.receipts.length %}
-<div class="dateline"><span>Season {{ rankings.receipts[0].season }}</span><span>{{ rankings.receiptsTally.calls }} calls graded</span><span>{{ rankings.receiptsTally.hit }} hit &middot; {{ rankings.receiptsTally.push }} push &middot; {{ rankings.receiptsTally.miss }} miss</span></div>
+{% set hasWeeks = rankings.receipts and rankings.receipts.length %}
+{% set hasRecord = rankings.onRecord and rankings.onRecord.calls.length %}
+{% if hasWeeks or hasRecord %}
+<div class="dateline"><span>Season {{ rankings.onRecord.season if hasRecord else rankings.receipts[0].season }}</span><span>{{ rankings.receiptsTally.calls }} calls graded</span><span>{{ rankings.receiptsTally.hit }} hit &middot; {{ rankings.receiptsTally.push }} push &middot; {{ rankings.receiptsTally.miss }} miss</span></div>
 <div class="r-light"></div>
+{% endif %}
+
+{% if hasRecord %}
+{# season-long calls: written down before the season, "open" until they settle, graded by hand; open calls stay out of the tally #}
+<div class="box">
+  <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap"><span class="sec">On the Record</span><span class="kick">{{ rankings.onRecord.open }} open &middot; {{ rankings.onRecord.settled }} settled</span></div>
+  <div class="tbl-wrap receipt">
+    <table class="rank record">
+      <thead><tr><th>Player</th><th>The call</th><th>How it gets graded</th><th>Where it stands</th><th></th></tr></thead>
+      <tbody>
+      {% for c in rankings.onRecord.calls %}
+      <tr>
+        <td class="c-player">{% if c.player in rankings.playerNames %}<a href="/players/{{ c.player | slugify }}/">{{ c.player }}</a>{% else %}{{ c.player }}{% endif %}</td>
+        <td class="c-call">{{ c.call }}{% if c.source %} <a class="m" href="{{ c.source }}">the case</a>{% endif %}</td>
+        <td class="c-rule">{{ c.rule }}</td>
+        <td class="c-standing">{{ c.standing }}</td>
+        <td><span class="g {{ c.grade }}">{{ c.grade }}</span></td>
+      </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  <div class="tbl-foot">Written down before the season and graded when they settle. An open call does not count in the tally. "Where it stands" is updated by hand on Mondays.</div>
+</div>
+{% endif %}
+
+{% if hasWeeks %}
 {% for w in rankings.receipts %}
 <div class="box">
   <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap"><span class="sec">{{ w.label }}</span><span class="kick">{{ w.line }}</span></div>

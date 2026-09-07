@@ -162,11 +162,33 @@ function loadReceipts(sport) {
     return { ...w, tally: { ...tally }, line: `Season: ${tally.hit} hit · ${tally.push} push · ${tally.miss} miss` };
   });
 }
+// ── on the record: data/football/receipts/2026-season.json → season-long calls, "open" until they settle ──
+function loadSeasonCalls(sport) {
+  const dir = path.join(DATA_DIR, sport, "receipts");
+  if (!fs.existsSync(dir)) return null;
+  const files = fs.readdirSync(dir).filter(f => /^\d{4}-season\.json$/.test(f)).sort();
+  if (!files.length) return null;
+  const f = files[files.length - 1], raw = loadJSON(path.join(dir, f), {});
+  const calls = (Array.isArray(raw.calls) ? raw.calls : []).filter(c => c && c.player).map(c => {
+    const g = String(c.grade || "open").toLowerCase();
+    return { player: String(c.player), call: String(c.call || ""), rule: String(c.rule || ""), standing: String(c.standing || ""),
+      made: c.made ? String(c.made) : "", source: c.source ? String(c.source) : "", grade: GRADES.includes(g) ? g : "open" };
+  });
+  const settled = calls.filter(c => c.grade !== "open").length;
+  return { season: typeof raw.season === "number" ? raw.season : parseInt(f.slice(0, 4), 10), calls, settled, open: calls.length - settled };
+}
+// the season tally: every graded weekly call plus the season-long calls that have settled; open ones never count
+function seasonTally(receipts, onRecord) {
+  const t = receipts.length ? { ...receipts[receipts.length - 1].tally } : { hit: 0, push: 0, miss: 0, calls: 0 };
+  (onRecord ? onRecord.calls : []).forEach(c => { if (c.grade !== "open") { t[c.grade] += 1; t.calls += 1; } });
+  return t;
+}
 function withReceipts(weeks, receipts) {
   return weeks.map(wk => ({ ...wk, receipts: receipts.find(r => r.week === wk.week && r.season === wk.season) || null }));
 }
 
 const receipts = loadReceipts("football");
+const onRecord = loadSeasonCalls("football");
 const football = withReceipts(withMovement(loadSport("football")), receipts);
 const basketball = withMovement(loadSport("basketball"));
 
@@ -222,4 +244,4 @@ module.exports = { football, basketball,
   latestFootball: football[football.length - 1] || null,
   latestBasketball: basketball[basketball.length - 1] || null,
   players, playerNames: players.map(p => p.player),
-  receipts, receiptsTally: receipts.length ? receipts[receipts.length - 1].tally : { hit: 0, push: 0, miss: 0, calls: 0 } };
+  receipts, onRecord, receiptsTally: seasonTally(receipts, onRecord) };
