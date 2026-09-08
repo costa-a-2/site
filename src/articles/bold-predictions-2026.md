@@ -12,11 +12,11 @@ imageAlt: "Kenneth Walker III with the Lombardi Trophy"
 caption: "Kenneth Walker III, the 2022 call, at the Super Bowl LX parade. Washington National Guard photo, public domain."
 ---
 
-Bold takes are meant to be bold. In these bold takes, my goal is that you will not see many things that have been written elsewhere. While somewhat outlandish, these bold takes are meant to show the confidence in some ceiling places about players I like this year. 
+Bold takes are supposed to be bold, so the goal here is three things you will not find written anywhere else. They are a little outlandish on purpose. Each one is me putting real confidence behind the ceiling of a player I like this year.
 
 They go in the Receipts starting the first Monday of the season, so every week you'll see exactly where each one stands. I fully expect that to be uncomfortable at least once. That's kind of the point. (Draft positions below are FantasyPros consensus ADP as of September 6.)
 
-## 1. The Rookie Outscores his Predecessor
+## 1. The Rookie Outscores His Predecessor
 
 **The call.** Jadarian Price finishes 2026 with more half-PPR points than Kenneth Walker.
 
@@ -26,27 +26,33 @@ They go in the Receipts starting the first Monday of the season, so every week y
 
 I wrote the whole case in [the flag plant](/flag-plant/), so the short version: 456 vacated backfield touches, a run-game coordinator now calling the plays, and a first-round pick starting Week 1. I'm betting on the touches. The new zip code is the hedge.
 
+{% xpost "https://x.com/NDFootball/status/1974602351957963054", "Price, 49 yards to the house. Clip via @NDFootball." %}
+
 **How it gets graded.** Total half-PPR points, Weeks 1 through 17. No games-played adjustment. If one of them gets hurt, that's part of the call.
 
 ## 2. Mr. Irrelevant Reminds Everyone Who He Is (Again)
 
-**The call.** Brock Purdy averages more half-PPR points per game than Daniels in 2026.
+**The call.** Brock Purdy averages more half-PPR points per game than Jayden Daniels in 2026.
 
 **Why it's bold.** Daniels is going around pick 71, the fifth quarterback off the board. Purdy is going around 112, the 14th. The market has decided one of these guys is a sixth-round starter and the other is a tenth-round backup plan. I have them a lot closer than that (Daniels 61st on my board, Purdy 85th, and the model has Purdy even lower at 107), and I still think the cheaper one wins.
 
 **Why I believe it.** Start with what Purdy is when he's on the field. Last year he threw for 2,167 yards, 20 touchdowns and 10 picks, ran for 147 yards and three more scores, and averaged 19.7 half-PPR points a game, which was sixth among quarterbacks who played at least six games. That followed 18.5 a game in 2023 (QB7) and 17.8 in 2024 (QB10). He only played nine games last year because of a turf toe, and he was still a top-six quarterback per game. Career 8.6 yards an attempt in Shanahan's offense, plus ten rushing touchdowns over the last three seasons, which is the part people miss: he's not a runner, but he scores at the goal line. Ricky Pearsall is out for the year, and that hurts. Evans, McCaffrey and Kittle are all back, and that helps more. My note on the board just says "value if healthy," and I think that's the whole sentence.
 
+{% xpost "https://x.com/NFL/status/2003314038093263026", "Purdy's five-touchdown game against the Colts, December 2025. Clip via @NFL." %}
+
 Now Daniels. Seven games last year: 1,262 passing yards, eight touchdowns, three picks, 58 carries for 278 yards and two scores, 16.3 half-PPR points a game, QB17. That's a long way from his rookie year, when he averaged 20.9 (QB6) across all 17. He's a phenomenal player and the rushing floor is real. What gives me pause is everything around him: a receiver room that got older instead of better (Diggs and McLaurin are both past 30), a run game I don't trust, and a new pass-heavy scheme that, by design, takes some of his rushing upside off the table.
 
 **How it gets graded.** Half-PPR points per game, Weeks 1 through 17, ten-game minimum for each. Per game rather than total, because the argument is about who's better when he plays, not who stays upright.
 
-## 3. Talent Rises Above The Jets Offensive Woes
+## 3. Talent Rises Above the Jets' Offensive Woes
 
 **The call.** From Week 9 on, Kenyon Sadiq is a top-8 tight end in half-PPR points per game, and he out-produces Mason Taylor over that stretch.
 
 **Why it's bold.** He missed most of training camp and all of the preseason. Mason Taylor is the every-down tight end in New York to start the year, and the Jets have said so out loud. So the rookie opens the season as a part-timer, on a team that just spent a first-round pick on him one year after spending a second on Taylor (which, for what it's worth, almost nobody does).
 
 **Why I believe it.** Two reasons, and the first is the player. Sixteenth overall pick out of Oregon, second-team All-American, led FBS tight ends with eight touchdowns last year, set a school record for the position with 51 catches. Geno Smith has thrown to good tight ends before. And Garrett Wilson is going to draw the coverage.
+
+{% xpost "https://x.com/NFL/status/2035008466994307424", "Sadiq at Oregon. Clip via @NFL." %}
 
 The second reason is that we just watched this exact thing happen. Colston Loveland was a part-timer for half of his rookie year in Chicago, and then from Week 9 on he was a top-four tight end by any measure: ten games, 47 catches for 597 yards and six touchdowns, 11.9 half-PPR a game, second only to Trey McBride in total points over that stretch. Over the Bears' last four games he averaged eight targets, and 11.5 over the last two. Rookie tight ends don't arrive in September. They arrive in November, once the offense trusts them, and when they arrive it tends to happen all at once.
 
