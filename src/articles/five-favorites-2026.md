@@ -16,7 +16,7 @@ Jadarian Price is not on this list, and that is on purpose. He is the flag plant
 
 I graded each one the same way I grade everything, which is four questions. What has he actually produced? How good is he, separate from the numbers? What does the situation around him look like this year? And what does it cost to get him?
 
-The rankings I refer to are [the preseason board](/rankings/2026/preseason/). Draft cost is the ADP the site carries, which is a Sleeper-based proxy, so treat it as "roughly where he goes," not gospel.
+The rankings I refer to are [the preseason board](/rankings/2026/preseason/). Draft cost is FantasyPros consensus ADP as of September 6, so treat it as "roughly where he goes," not gospel.
 
 ## 1. Jaylen Waddle, WR, Denver
 
@@ -28,7 +28,7 @@ The rankings I refer to are [the preseason board](/rankings/2026/preseason/). Dr
 
 **Situation.** Denver paid a first-round pick and a third for him in March (the teams also swapped fourths). Teams do not do that for a complementary piece. He walks into an offense that won 14 games, held the top seed in the conference, and only missed the Super Bowl because Bo Nix broke his ankle at the end of the divisional round. Payton wanted one more thing for Nix, and this was it. Sutton is still there, so it is not a monopoly, but I would rather share with Sutton in Denver than be the only option in Miami.
 
-**Price.** ADP 42, going as roughly the 21st receiver. I have him 30th overall and WR18, and my note on the board is not subtle ("Denver breakout offense; expect him to crush"). The model is more cautious at 38, mostly because it has not seen him in this offense yet and defaults to last year's share. That is the gap I am buying. There is a Stefon Diggs kind of upside here, and the elements are all there: a proven player getting out from behind another top-tier receiver (Thielen then, Tyreek now), an ascending young quarterback, a big investment and a good coach.
+**Price.** ADP 47, the 20th receiver off the board. I have him 30th overall and WR18, and my note on the board is not subtle ("Denver breakout offense; expect him to crush"). The model is more cautious at 38, mostly because it has not seen him in this offense yet and defaults to last year's share. That is the gap I am buying. There is a Stefon Diggs kind of upside here, and the elements are all there: a proven player getting out from behind another top-tier receiver (Thielen then, Tyreek now), an ascending young quarterback, a big investment and a good coach.
 
 ## 2. Garrett Wilson, WR, New York Jets
 
@@ -40,7 +40,7 @@ The rankings I refer to are [the preseason board](/rankings/2026/preseason/). Dr
 
 **Situation.** Geno Smith is the quarterback now, and the camp reports have been almost boring in how consistent they are: Geno finds Wilson, Wilson catches it. The Jets also spent real draft capital on pass catchers (Omar Cooper Jr. at receiver, Kenyon Sadiq at tight end, whom I will get to on Tuesday), which is the one honest reason to think his share dips a little. I think the trade is worth it. A slightly smaller share of a much better offense is a raise. The other thing to say out loud is that his 2025 ended in Week 10, so part of what you are buying is a full season from a player who did not get one. I am fine with that at this price.
 
-**Price.** ADP 38. I have him 28th, WR14, and I put a bold call right in the note: top-15 receiver, Jets offense takes a step. The model has him 32nd. So I am a touch ahead of both the market and my own math, and I am comfortable there. Four years of volume without a quarterback is a long time to wait. I think this is the year the waiting pays.
+**Price.** ADP 36. I have him 28th, WR14, and I put a bold call right in the note: top-15 receiver, Jets offense takes a step. The model has him 32nd. So I am a touch ahead of both the market and my own math, and I am comfortable there. Four years of volume without a quarterback is a long time to wait. I think this is the year the waiting pays.
 
 ## 3. Parker Washington, WR, Jacksonville
 
@@ -64,7 +64,7 @@ The rankings I refer to are [the preseason board](/rankings/2026/preseason/). Dr
 
 **Situation.** McVay's offense, which is the single most reliable fantasy environment in the league, and a schedule that PFF flagged as one of the three softest for a running back. The expectation is a near-even split with Williams keeping passing downs and the goal line. I am not going to pretend that is a great role. It is a good role in a great offense at a price where a good role is all you need, and if anything happens to Williams it becomes the best role in football. And with one of the most talked-about defenses in the league on the other side of the ball, this is an offense that could score early and then run it with a lead.
 
-**Price.** ADP 68 for Corum, 13 for Williams. Same offense, same split, 55 picks apart. I have Corum 62nd and Williams 41st, and the model likes Corum even more (50th). My note on him says "breakout projection; near-even split with Kyren." I will take that at a sixth-round price every time.
+**Price.** ADP 76 for Corum, 21 for Williams. Same offense, same split, 55 picks apart. I have Corum 62nd and Williams 41st, and the model likes Corum even more (50th). My note on him says "breakout projection; near-even split with Kyren." I will take that at a seventh-round price every time.
 
 ## 5. Jordan Addison, WR, Minnesota
 
@@ -76,7 +76,7 @@ The rankings I refer to are [the preseason board](/rankings/2026/preseason/). Dr
 
 **Situation.** Kyler Murray is the quarterback. You can argue about how good Kyler is at this point, and people do. What you cannot argue is that he is a massive upgrade on last year's rotation, and that Jefferson is going to draw the coverage. Addison is the second option on an offense that just went from unwatchable to competent, and second options in that spot tend to eat.
 
-**Price.** ADP 99. That is a ninth-round pick for a receiver with two good seasons on his resume and a new quarterback. I have him 79th, WR32, Low risk. The model has him 70th. This is the cheapest player on the list and the one I am least worried about.
+**Price.** ADP 102. That is a ninth-round pick for a receiver with two good seasons on his resume and a new quarterback. I have him 79th, WR32, Low risk. The model has him 70th. This is the cheapest player on the list and the one I am least worried about.
 
 ## Honorable Mention: Jordyn Tyson, WR, New Orleans
 
