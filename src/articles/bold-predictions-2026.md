@@ -7,9 +7,9 @@ kicker: "2026 · On the Record"
 date: 2026-09-08
 readtime: "6 min"
 lede: "Here is my problem with most bold predictions: you can never tell if they hit. So these three each come with a rule for how they get graded, and they go on the Accuracy page next to whatever the model thought, updated every Monday until January."
-image: "/assets/img/walker-parade.jpg"
-imageAlt: "Kenneth Walker III with the Lombardi Trophy"
-caption: "Kenneth Walker III, the 2022 call, at the Super Bowl LX parade. Washington National Guard photo, public domain."
+image: "/assets/img/sadiq-media-days.jpg"
+imageAlt: "Kenyon Sadiq at Big Ten media days"
+caption: "Kenyon Sadiq at Big Ten media days, July 2025. Photo by Bobak Ha'Eri, CC BY 3.0."
 ---
 
 Bold takes are supposed to be bold, so the goal here is three things you will not find written anywhere else. They are a little outlandish on purpose. Each one is me putting real confidence behind the ceiling of a player I like this year.
