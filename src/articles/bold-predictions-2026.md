@@ -22,7 +22,7 @@ They go in the Receipts starting the first Monday of the season, so every week y
 
 **Why it's bold.** Walker is the reigning champion's running back, except now he's Kansas City's running back, going 19th in drafts and sitting 12th on my own board. Price is the rookie who took his spot in Seattle, going 64th, sitting 41st on my board. So I'm saying the guy I rank 29 spots lower ends up outscoring the guy I rank higher.
 
-**Why I believe it anyway.** Walker played all 17 games last year: 221 carries for 1,027 yards and five touchdowns, 31 catches for 282 yards, 176.4 half-PPR points, 10.4 a game. All of that came in Seattle, in the offense that gave its backs more carries and more red-zone carries than anyone in the league. Seattle kept the offense and swapped out the runner. Walker took the talent to Kansas City; the volume stayed home. Now, Walker is going to be a focal point so he is going to be great. This is no slight to him. Maybe there is a hint of the injury fatigue with Walker, and I can see how young talent rises above. this is more so an indictment of the ceiling case I see for Price.
+**Why I believe it anyway.** Walker played all 17 games last year: 221 carries for 1,027 yards and five touchdowns, 31 catches for 282 yards, 176.4 half-PPR points, 10.4 a game. All of that came in Seattle, in the offense that gave its backs more carries and more red-zone carries than anyone in the league. Seattle kept the offense and swapped out the runner. Walker took the talent to Kansas City; the volume stayed home. Now, Walker is going to be a focal point in Kansas City, so he is going to be great, and none of this is a slight to him. Maybe there is a hint of injury fatigue on his side, and I can see how young talent rises above that. Mostly, though, this is a statement about the ceiling I see for Price.
 
 I wrote the whole case in [the flag plant](/flag-plant/), so the short version: 456 vacated backfield touches, a run-game coordinator now calling the plays, and a first-round pick starting Week 1. I'm betting on the touches. The new zip code is the hedge.
 
@@ -52,7 +52,7 @@ Now Daniels. Seven games last year: 1,262 passing yards, eight touchdowns, three
 
 **Why I believe it.** Two reasons, and the first is the player. Sixteenth overall pick out of Oregon, second-team All-American, led FBS tight ends with eight touchdowns last year, set a school record for the position with 51 catches. Geno Smith has thrown to good tight ends before. And Garrett Wilson is going to draw the coverage.
 
-{% xpost "https://x.com/NFL/status/2035008466994307424", "Sadiq at Oregon. Clip via @NFL." %}
+{% xpost "https://x.com/SleeperNFL/status/2094997962602758562", "Kenyon Sadiq. Clip via @SleeperNFL." %}
 
 The second reason is that we just watched this exact thing happen. Colston Loveland was a part-timer for half of his rookie year in Chicago, and then from Week 9 on he was a top-four tight end by any measure: ten games, 47 catches for 597 yards and six touchdowns, 11.9 half-PPR a game, second only to Trey McBride in total points over that stretch. Over the Bears' last four games he averaged eight targets, and 11.5 over the last two. Rookie tight ends don't arrive in September. They arrive in November, once the offense trusts them, and when they arrive it tends to happen all at once.
 
