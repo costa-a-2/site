@@ -1,12 +1,12 @@
 ---
-title: "Three Bold Predictions, Written Down So I Can't Take Them Back"
+title: "Three Bold Predictions for 2026"
 standfirst: "A rookie outscores the champion he replaced. A fifth-round quarterback outscores a second-round one. And a tight end who missed all of camp is the best one on his team by Thanksgiving. I think all three happen."
 summary: "Price over Walker, Purdy over Daniels, and Kenyon Sadiq as this year's second-half tight end. Each one has a number behind it and a rule for grading it, and all three go in the Receipts every Monday until January."
 section: "Preseason"
 kicker: "2026 · On the Record"
 date: 2026-09-08
 readtime: "6 min"
-lede: "Here is my problem with most bold predictions: you can never tell if they hit. So these three each come with a rule for how they get graded, and they go on the Accuracy page next to whatever the model thought, where they will sit all season whether I like how they look or not."
+lede: "Here is my problem with most bold predictions: you can never tell if they hit. So these three each come with a rule for how they get graded, and they go on the Accuracy page next to whatever the model thought, updated every Monday until January."
 image: "/assets/img/walker-parade.jpg"
 imageAlt: "Kenneth Walker III with the Lombardi Trophy"
 caption: "Kenneth Walker III, the 2022 call, at the Super Bowl LX parade. Washington National Guard photo, public domain."
