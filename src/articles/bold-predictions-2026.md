@@ -12,23 +12,25 @@ imageAlt: "Kenneth Walker III with the Lombardi Trophy"
 caption: "Kenneth Walker III, the 2022 call, at the Super Bowl LX parade. Washington National Guard photo, public domain."
 ---
 
-I have one rule for hot takes, and it is the same rule as everything else on this site: if you can't grade it, it isn't a take, it's a vibe. So these three are specific on purpose. Each one names two players or a finish, each one has a number I can point to, and each one has the grading rule written right next to it, so nobody (me included) gets to argue in January about what "right" was supposed to mean.
+Bold takes are meant to be bold. In these bold takes, my goal is that you will not see many things that have been written elsewhere. While somewhat outlandish, these bold takes are meant to show the confidence in some ceiling places about players I like this year. 
 
-They also go in the Receipts starting the first Monday of the season, so every week you'll see exactly where each one stands. I fully expect that to be uncomfortable at least once. That's kind of the point. (Draft positions below are FantasyPros consensus ADP as of September 6.)
+They go in the Receipts starting the first Monday of the season, so every week you'll see exactly where each one stands. I fully expect that to be uncomfortable at least once. That's kind of the point. (Draft positions below are FantasyPros consensus ADP as of September 6.)
 
-## 1. Jadarian Price Outscores Kenneth Walker III
+## 1. The Rookie Outscores his Predecessor
 
-**The call.** Price finishes 2026 with more half-PPR points than Walker.
+**The call.** Jadarian Price finishes 2026 with more half-PPR points than Kenneth Walker.
 
-**Why it's bold.** Walker is the reigning champion's running back, except now he's Kansas City's running back, going 19th in drafts and sitting 12th on my own board. Price is the rookie who took his spot in Seattle, going 64th, sitting 41st on my board. So I'm saying the guy I rank 29 spots lower ends up outscoring the guy I rank higher. Which is a bold call by any definition, and also a quiet admission that my board is a little hedged.
+**Why it's bold.** Walker is the reigning champion's running back, except now he's Kansas City's running back, going 19th in drafts and sitting 12th on my own board. Price is the rookie who took his spot in Seattle, going 64th, sitting 41st on my board. So I'm saying the guy I rank 29 spots lower ends up outscoring the guy I rank higher.
 
-**Why I believe it anyway.** Walker played all 17 games last year: 221 carries for 1,027 yards and five touchdowns, 31 catches for 282 yards, 176.4 half-PPR points, 10.4 a game. All of that came in Seattle, in the offense that gave its backs more carries and more red-zone carries than anyone in the league. Seattle kept the offense and swapped out the runner. Walker took the talent to Kansas City; the volume stayed home. I wrote the whole case in [the flag plant](/flag-plant/), so the short version: 456 vacated backfield touches, a run-game coordinator now calling the plays, and a first-round pick starting Week 1. I'm betting on the touches. The new zip code is the hedge.
+**Why I believe it anyway.** Walker played all 17 games last year: 221 carries for 1,027 yards and five touchdowns, 31 catches for 282 yards, 176.4 half-PPR points, 10.4 a game. All of that came in Seattle, in the offense that gave its backs more carries and more red-zone carries than anyone in the league. Seattle kept the offense and swapped out the runner. Walker took the talent to Kansas City; the volume stayed home. Now, Walker is going to be a focal point so he is going to be great. This is no slight to him. Maybe there is a hint of the injury fatigue with Walker, and I can see how young talent rises above. this is more so an indictment of the ceiling case I see for Price.
+
+I wrote the whole case in [the flag plant](/flag-plant/), so the short version: 456 vacated backfield touches, a run-game coordinator now calling the plays, and a first-round pick starting Week 1. I'm betting on the touches. The new zip code is the hedge.
 
 **How it gets graded.** Total half-PPR points, Weeks 1 through 17. No games-played adjustment. If one of them gets hurt, that's part of the call.
 
-## 2. Brock Purdy Outscores Jayden Daniels
+## 2. Mr. Irrelevant Reminds Everyone Who He Is (Again)
 
-**The call.** Purdy averages more half-PPR points per game than Daniels in 2026.
+**The call.** Brock Purdy averages more half-PPR points per game than Daniels in 2026.
 
 **Why it's bold.** Daniels is going around pick 71, the fifth quarterback off the board. Purdy is going around 112, the 14th. The market has decided one of these guys is a sixth-round starter and the other is a tenth-round backup plan. I have them a lot closer than that (Daniels 61st on my board, Purdy 85th, and the model has Purdy even lower at 107), and I still think the cheaper one wins.
 
@@ -38,9 +40,9 @@ Now Daniels. Seven games last year: 1,262 passing yards, eight touchdowns, three
 
 **How it gets graded.** Half-PPR points per game, Weeks 1 through 17, ten-game minimum for each. Per game rather than total, because the argument is about who's better when he plays, not who stays upright.
 
-## 3. Kenyon Sadiq Is This Year's Second-Half Tight End
+## 3. Talent Rises Above The Jets Offensive Woes
 
-**The call.** From Week 9 on, Sadiq is a top-8 tight end in half-PPR points per game, and he out-produces Mason Taylor over that stretch.
+**The call.** From Week 9 on, Kenyon Sadiq is a top-8 tight end in half-PPR points per game, and he out-produces Mason Taylor over that stretch.
 
 **Why it's bold.** He missed most of training camp and all of the preseason. Mason Taylor is the every-down tight end in New York to start the year, and the Jets have said so out loud. So the rookie opens the season as a part-timer, on a team that just spent a first-round pick on him one year after spending a second on Taylor (which, for what it's worth, almost nobody does).
 
