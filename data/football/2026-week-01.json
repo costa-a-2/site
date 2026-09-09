@@ -5561,7 +5561,7 @@
       "metric": "pghi",
       "value": 64.5,
       "strength": "strong",
-      "note": ""
+      "note": "Coming off an MVP season and the model loves this offense, rightfully so. He is older, though, and I'm baking in some regression the model isn't."
     },
     {
       "player": "Bo Nix",
@@ -5575,7 +5575,7 @@
       "metric": "pghi",
       "value": 64.8,
       "strength": "strong",
-      "note": ""
+      "note": "One of my favorite quarterbacks this season. Back-to-back QB6 finishes, and now Waddle arrives as the field-stretcher this offense needed most. Sean Payton is the coach. I'm not sure why more people aren't excited about a third-year breakout on a team with Super Bowl aspirations."
     },
     {
       "player": "C.J. Stroud",
@@ -5603,7 +5603,7 @@
       "metric": "pghi",
       "value": 63.2,
       "strength": "strong",
-      "note": ""
+      "note": "I trust Liam Coen. Lawrence won't run as much as he did last year, and that's fine. Look at the weapons: Brian Thomas Jr., Parker Washington, Jakobi Meyers, Brenton Strange, and Travis Hunter when they need him."
     },
     {
       "player": "Bucky Irving",
@@ -5645,7 +5645,7 @@
       "metric": "rcs",
       "value": 24.7,
       "strength": "weak",
-      "note": ""
+      "note": "Tuten is a talented, explosive back. I can see Chris Rodriguez stealing valuable touches, which is what the model is assuming, but when a backfield is in question I would rather draft the back with the upside. Second-year back, and I'm taking the swing."
     },
     {
       "player": "Chris Rodriguez Jr.",
@@ -5673,7 +5673,7 @@
       "metric": "rcs",
       "value": 43.7,
       "strength": "weak",
-      "note": ""
+      "note": "A muddied backfield, and that is exactly where I want to take shots. Everyone wrote off Dobbins, everyone loves Jonah Coleman. Harvey probably has the best role of the three: the passing work and a nose for the end zone, in his second year in the offense. In an ambiguous backfield, he's my bet."
     },
     {
       "player": "J.K. Dobbins",
@@ -5687,7 +5687,7 @@
       "metric": "rcs",
       "value": 46.3,
       "strength": "weak",
-      "note": ""
+      "note": "Same backfield, same question. Dobbins should lead it until the injury bug bites, and it may end up a three-way split. The injury history is why I'm below the market, not the talent."
     },
     {
       "player": "David Montgomery",
@@ -5701,7 +5701,7 @@
       "metric": "rcs",
       "value": 38.9,
       "strength": "weak",
-      "note": ""
+      "note": "I love Montgomery, but the model and everyone else expect a split with Woody Marks, and if that's the split, the ADP is a little rich. I still think he has real talent left in what should be a surprising Houston offense, and with Higgins out for the year they may need to run it a bit more."
     },
     {
       "player": "Jacory Croskey-Merritt",
@@ -5743,7 +5743,7 @@
       "metric": "rcs",
       "value": 60.4,
       "strength": "strong",
-      "note": ""
+      "note": "The model is not a fan of the Houston run game as a whole, and I think that's a bit harsh. There's a flexible back here with upside if Montgomery gets hurt, so I landed between the ADP and the model."
     },
     {
       "player": "Blake Corum",
@@ -5757,7 +5757,7 @@
       "metric": "rcs",
       "value": 23.8,
       "strength": "weak",
-      "note": ""
+      "note": "I love Corum this season: great offense, real talent. I'm a bit behind the model because there are other players I'll take ahead of him while Kyren has the lead. But there's a chance last year's breakout can't be stopped and the model is right to be this bullish."
     },
     {
       "player": "Kyren Williams",
@@ -5771,7 +5771,7 @@
       "metric": "rcs",
       "value": 68.2,
       "strength": "strong",
-      "note": ""
+      "note": "The other side of the Corum story. The model and I both see a more even split, with Kyren still starting, and that puts us well behind the ADP. Corum is the better value, and I'm probably not drafting Kyren where he goes."
     },
     {
       "player": "Patrick Mahomes",
@@ -5785,7 +5785,7 @@
       "metric": "pghi",
       "value": 63.6,
       "strength": "strong",
-      "note": ""
+      "note": "The model is cautious: Kenneth Walker arrives, and it regresses the rushing after the ACL. I don't think it matters. Bieniemy is back, and the run game should open this offense up in a way it hasn't since Kareem Hunt was in his prime."
     },
     {
       "player": "Alvin Kamara",
@@ -5813,7 +5813,7 @@
       "metric": "rcs",
       "value": 45.4,
       "strength": "weak",
-      "note": ""
+      "note": "Largely forgotten, which is perplexing. Aaron Jones is older and has been dinged up, and Minnesota is moving to the zone run scheme Mason thrived in with San Francisco. As the offense improves he should be a solid starter in a strange running back dead zone this year."
     },
     {
       "player": "Ashton Jeanty",
@@ -5827,7 +5827,7 @@
       "metric": "rcs",
       "value": 71.4,
       "strength": "strong",
-      "note": ""
+      "note": "The model is factoring in a bigger role for Mike Washington. Jeanty looks healthy, so we ride. He has the talent to take the league by storm; the question is whether the Raiders offense lets him."
     },
     {
       "player": "Kyler Murray",
