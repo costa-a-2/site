@@ -183,12 +183,39 @@ function seasonTally(receipts, onRecord) {
   (onRecord ? onRecord.calls : []).forEach(c => { if (c.grade !== "open") { t[c.grade] += 1; t.calls += 1; } });
   return t;
 }
+// ── the plays: data/football/plays/2026.json → play of the day, survivor, DFS; every entry open until graded ──
+function loadPlays(sport) {
+  const dir = path.join(DATA_DIR, sport, "plays");
+  if (!fs.existsSync(dir)) return null;
+  const files = fs.readdirSync(dir).filter(f => /^\d{4}\.json$/.test(f)).sort();
+  if (!files.length) return null;
+  const f = files[files.length - 1], raw = loadJSON(path.join(dir, f), {});
+  const grade = g => { const x = String(g || "open").toLowerCase(); return GRADES.includes(x) ? x : "open"; };
+  const tally = rows => { const t = { hit: 0, push: 0, miss: 0, open: 0 }; rows.forEach(r => { t[r.grade] += 1; }); t.graded = t.hit + t.push + t.miss; return t; };
+  const props = (Array.isArray(raw.props) ? raw.props : []).filter(x => x && x.player).map(x => ({
+    date: String(x.date || ""), game: String(x.game || ""), player: String(x.player), pos: String(x.pos || ""), team: String(x.team || ""),
+    call: String(x.call || ""), line: String(x.line || ""), why: String(x.why || ""), result: String(x.result || ""),
+    post: x.post ? String(x.post) : "", grade: grade(x.grade)
+  })).sort((a, b) => b.date.localeCompare(a.date));
+  const survivor = (Array.isArray(raw.survivor) ? raw.survivor : []).filter(x => x && x.pick).map(x => ({
+    week: Number(x.week) || 0, pick: String(x.pick), opponent: String(x.opponent || ""), why: String(x.why || ""),
+    result: String(x.result || ""), grade: grade(x.grade)
+  })).sort((a, b) => b.week - a.week);
+  const dfs = (Array.isArray(raw.dfs) ? raw.dfs : []).filter(x => x && x.slate).map(x => ({
+    date: String(x.date || ""), slate: String(x.slate), site: String(x.site || ""), lineup: Array.isArray(x.lineup) ? x.lineup.map(String) : [],
+    score: typeof x.score === "number" ? x.score : null, note: String(x.note || ""), result: String(x.result || ""), grade: grade(x.grade)
+  })).sort((a, b) => b.date.localeCompare(a.date));
+  return { season: typeof raw.season === "number" ? raw.season : parseInt(f.slice(0, 4), 10), props, survivor, dfs,
+    tally: { props: tally(props), survivor: tally(survivor), dfs: tally(dfs) } };
+}
+
 function withReceipts(weeks, receipts) {
   return weeks.map(wk => ({ ...wk, receipts: receipts.find(r => r.week === wk.week && r.season === wk.season) || null }));
 }
 
 const receipts = loadReceipts("football");
 const onRecord = loadSeasonCalls("football");
+const plays = loadPlays("football");
 const football = withReceipts(withMovement(loadSport("football")), receipts);
 const basketball = withMovement(loadSport("basketball"));
 
@@ -244,4 +271,4 @@ module.exports = { football, basketball,
   latestFootball: football[football.length - 1] || null,
   latestBasketball: basketball[basketball.length - 1] || null,
   players, playerNames: players.map(p => p.player),
-  receipts, onRecord, receiptsTally: seasonTally(receipts, onRecord) };
+  receipts, onRecord, receiptsTally: seasonTally(receipts, onRecord), plays };
