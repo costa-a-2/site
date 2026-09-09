@@ -72,6 +72,8 @@ function loadSport(sport) {
 const keyOf = name => String(name || "").toLowerCase().replace(/[^a-z0-9 ]/g, "").replace(/\s+(jr|sr|ii|iii|iv)$/, "").trim();
 
 // the four signal groups in order, labels from the file's signalsMeta when it carries them
+const SIGNAL_BOARD_MAX = 120;   // a signal on a player ranked below this is bench noise
+const SIGNAL_PAGE_MAX = 12;     // the page is a short list, not a census
 const SIGNAL_GROUPS = [["backs-over", "Metric backs model over market"], ["backs-under", "Metric backs model under market"],
                        ["disagree", "Metric and shares disagree"], ["share-only", "Share-driven gap, no metric"]];
 function groupSignals(wk, players) {
@@ -84,8 +86,17 @@ function groupSignals(wk, players) {
     return { ...s, onPage: !!p, finalRank: (typeof s.finalRank === "number") ? s.finalRank : (p ? p.rank : null),
              headshot: (p && p.headshot) || HEADSHOTS[keyOf(s.player)] || null };
   });
+  // The page shows only signals worth a reader's time (Sept 9): a metric has to be behind it and say something
+  // (strong or weak, never neutral), the player has to be on the published board inside SIGNAL_BOARD_MAX, and
+  // the page carries at most SIGNAL_PAGE_MAX, largest gaps first. "share-only" gaps are a rank difference the
+  // rankings table already shows, so they stay in the data file (player pages still show them) but off /signals/.
+  const shown = signals
+    .filter(s => s.group !== "share-only" && (s.strength === "strong" || s.strength === "weak"))
+    .filter(s => typeof s.finalRank === "number" && s.finalRank <= SIGNAL_BOARD_MAX)
+    .sort((a, b) => Math.abs(b.gap || 0) - Math.abs(a.gap || 0))
+    .slice(0, SIGNAL_PAGE_MAX);
   return [...labels.keys()].map(id => ({ id, label: labels.get(id),
-    items: signals.filter(s => s.group === id).sort((a, b) => Math.abs(b.gap || 0) - Math.abs(a.gap || 0)) }))
+    items: shown.filter(s => s.group === id).sort((a, b) => Math.abs(b.gap || 0) - Math.abs(a.gap || 0)) }))
     .filter(g => g.items.length);
 }
 
