@@ -1,0 +1,14 @@
+{#
+  The Plays strip for the homepage: today's play, the survivor pick, the daily fantasy slate, the record.
+  Reads rankings.plays; renders nothing until the season file has an entry. Same furniture as the week strip.
+#}
+{% set p = rankings.plays %}
+{% if p and (p.props.length or p.survivor.length or p.dfs.length) %}
+{% set prop = p.props[0] %}{% set surv = p.survivor[0] %}{% set slate = p.dfs[0] %}
+<div class="week-strip plays-strip" aria-label="The Plays">
+  <div><span class="d">Play</span>{% if prop %}<span class="n">{{ prop.player }}</span><span class="s">{{ prop.call | lower }}{% if prop.grade != "open" %} &middot; <span class="g {{ prop.grade }}">{{ prop.grade }}</span>{% endif %}</span>{% else %}<span class="s">none yet</span>{% endif %}</div>
+  <div><span class="d">Survivor</span>{% if surv %}<span class="n">{{ surv.pick }}</span><span class="s">Week {{ surv.week }}{% if surv.opponent %} vs {{ surv.opponent }}{% endif %}{% if surv.grade != "open" %} &middot; <span class="g {{ surv.grade }}">{{ surv.grade }}</span>{% endif %}</span>{% else %}<span class="s">pick goes up Saturday</span>{% endif %}</div>
+  <div><span class="d">DFS</span>{% if slate %}<span class="n">{{ slate.slate }}</span><span class="s">{% if slate.lineup.length %}{{ slate.lineup.length }} players{% endif %}{% if slate.grade != "open" %} &middot; <span class="g {{ slate.grade }}">{{ slate.grade }}</span>{% endif %}</span>{% else %}<span class="s">favorites for the weekend slate</span>{% endif %}</div>
+  <div><span class="d">Record</span><span class="n">{{ p.tally.props.hit }}&ndash;{{ p.tally.props.miss }}{% if p.tally.props.push %}&ndash;{{ p.tally.props.push }}{% endif %}</span><span class="s"><a href="/plays/" style="border-bottom:1px solid var(--rule)">every play, graded</a></span></div>
+</div>
+{% endif %}
