@@ -3,6 +3,8 @@ layout: layouts/base.njk
 permalink: /signals/
 title: What the Metrics Say
 description: Where the metrics and the market agree or disagree with the model, and the read on each gap.
+eleventyComputed:
+  ogImage: "{% if rankings.latestFootball %}/assets/img/og/{{ rankings.latestFootball.slug }}_signals.png{% endif %}"
 ---
 {% set week = rankings.latestFootball %}
 {% if week %}
