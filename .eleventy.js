@@ -79,9 +79,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("time", (iso) => {
     if (!iso) return "";
     const d = new Date(iso); if (isNaN(d)) return "";
-    const days = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
-    let hh = d.getHours(), mm = String(d.getMinutes()).padStart(2, "0"); const ap = hh >= 12 ? "PM" : "AM"; hh = hh % 12 || 12;
-    return `${days[d.getDay()]} ${hh}:${mm} ${ap}`;
+    // always Eastern time, whatever clock the build runs on (GitHub Actions is UTC)
+    const s = d.toLocaleString("en-US", { timeZone: "America/New_York", weekday: "short", month: "short", day: "numeric", hour: "numeric", minute: "2-digit" });
+    return s.replace(",", "") + " ET";
   });
 
   eleventyConfig.addFilter("where", (arr, key, val) =>

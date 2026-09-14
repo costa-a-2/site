@@ -2,7 +2,9 @@
   {% set wk = rankings.latestFootball %}
   <div class="ears">
     <span>Vol. I · No. {{ (wk.week + 1) if wk else 1 }}</span>
-    <span>{% if wk and wk.published %}{{ wk.published | date("long") }}{% else %}September 2026{% endif %}</span>
+    {# today's date, like a newspaper's: the build date is the fallback, the reader's clock (in Eastern time) replaces it #}
+    <span class="today" data-build="{{ build.iso }}">{{ build.iso | date("long") }}</span>
+    <script>(function(){var e=document.querySelector('.ears .today');if(!e)return;try{e.textContent=new Date().toLocaleDateString('en-US',{timeZone:'America/New_York',month:'long',day:'numeric',year:'numeric'})}catch(x){}})();</script>
     <span>Gridiron</span>
   </div>
 
