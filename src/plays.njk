@@ -14,7 +14,7 @@ description: The play of the day, the survivor pick and the daily fantasy lineup
 </div>
 
 {% if p %}
-<div class="dateline"><span>Season {{ p.season }}</span><span>Props {{ p.tally.props.hit }}&ndash;{{ p.tally.props.miss }}{% if p.tally.props.push %}&ndash;{{ p.tally.props.push }}{% endif %}{% if p.tally.props.open %} &middot; {{ p.tally.props.open }} open{% endif %}</span><span>Survivor {{ p.tally.survivor.hit }}&ndash;{{ p.tally.survivor.miss }}{% if p.tally.survivor.open %} &middot; {{ p.tally.survivor.open }} open{% endif %}</span></div>
+<div class="dateline"><span>Season {{ p.season }}</span><span>Props {{ p.tally.props.hit }}&ndash;{{ p.tally.props.miss }}{% if p.tally.props.push %}&ndash;{{ p.tally.props.push }}{% endif %}{% if p.tally.props.open %} &middot; {{ p.tally.props.open }} open{% endif %}</span><span>Survivor {{ p.tally.survivor.hit }}&ndash;{{ p.tally.survivor.miss }}{% if p.tally.survivor.open %} &middot; {{ p.tally.survivor.open }} open{% endif %}</span>{% if p.tally.dfs.graded or p.tally.dfs.open %}<span>DFS {{ p.tally.dfs.hit }}&ndash;{{ p.tally.dfs.miss }}{% if p.tally.dfs.open %} &middot; {{ p.tally.dfs.open }} open{% endif %}</span>{% endif %}</div>
 <div class="r-light"></div>
 {% endif %}
 
