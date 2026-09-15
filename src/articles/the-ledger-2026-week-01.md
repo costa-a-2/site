@@ -23,7 +23,7 @@ lede: "Every Monday I write down what the week actually changed on my board, in 
 
 *Price above the board. Loud name, shrinking outlook.*
 
-**De'Von Achane and the Dolphins offense (Achane 20th, the model had him 14th).** That was about as friendly a script as Miami will get, a bad Raiders defense and a game within reach until the fourth quarter, and it produced 11 carries for 36 yards and 13 points. Malik Willis started for Tua and it looked like it. The schedule gets harder from here and I don't expect this team to be in many games late, which is the whole reason I had Achane below consensus in August. Talent isn't the question. If someone in your league still prices him as a top-12 back, take the value.
+**De'Von Achane and the Dolphins offense (Achane 20th, the model had him 14th).** That was about as friendly a script as Miami will get, a bad Raiders defense and a game within reach until the fourth quarter, and it produced 11 carries for 36 yards and 13 points. Malik Willis started and it looked like it. The schedule gets harder from here and I don't expect this team to be in many games late, which is the whole reason I had Achane below consensus in August. Talent isn't the question. If someone in your league still prices him as a top-12 back, take the value.
 
 **Drake London and the Falcons pass catchers (London 29th).** There will be better days than 4 targets for 29 yards. But the quarterbacks between now and Penix's return are Cooper Rush, Tua, and a rookie in Jack Strand, and the Falcons threw 22 passes total. Bijan caught 8 of them. I had London 29th against a draft position in the teens because I see a WR2 on volume without a ceiling, and Sunday was that player. Sell to the manager who still calls him a WR1.
 
