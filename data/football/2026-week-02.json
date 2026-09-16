@@ -1,7 +1,7 @@
 {
-  "published": "2026-09-15",
+  "published": "2026-09-16",
   "format": "Half-PPR",
-  "updatedAt": "2026-09-15T21:41:23.222Z",
+  "updatedAt": "2026-09-16T01:38:30.209Z",
   "players": [
     {
       "rank": 1,
@@ -1560,43 +1560,6 @@
     {
       "rank": 43,
       "finalRank": 43,
-      "modelRank": 33,
-      "player": "Rashee Rice",
-      "pos": "WR",
-      "team": "KC",
-      "tier": 5,
-      "tierName": "Potential stars, with questions",
-      "ppg": 11.7,
-      "vorp": 3.23,
-      "posRank": 16,
-      "ots": 0,
-      "adp": 34,
-      "note": "Middle-tier WR2, not the WR5 the volume implied. I am afraid to be wrong.",
-      "risk": "Medium",
-      "stats": {
-        "games": 17,
-        "carries": 0,
-        "rushYds": 0,
-        "rushTD": 0,
-        "targets": 136.4,
-        "rec": 87.1,
-        "recYds": 1055.9,
-        "recTD": 8.3,
-        "passAtt": 0,
-        "passYds": 0,
-        "passTD": 0,
-        "int": 0,
-        "teamRushAtt": 474.2,
-        "teamTargets": 505.3,
-        "teamPassAtt": 534.7,
-        "carryShare": 0,
-        "targetShare": 0.27,
-        "passAttShare": 0
-      }
-    },
-    {
-      "rank": 44,
-      "finalRank": 44,
       "modelRank": 26,
       "player": "Drake London",
       "pos": "WR",
@@ -1632,8 +1595,8 @@
       }
     },
     {
-      "rank": 45,
-      "finalRank": 45,
+      "rank": 44,
+      "finalRank": 44,
       "modelRank": 46,
       "player": "Colston Loveland",
       "pos": "TE",
@@ -1669,8 +1632,8 @@
       }
     },
     {
-      "rank": 46,
-      "finalRank": 46,
+      "rank": 45,
+      "finalRank": 45,
       "modelRank": 16,
       "player": "A.J. Brown",
       "pos": "WR",
@@ -1706,8 +1669,8 @@
       }
     },
     {
-      "rank": 47,
-      "finalRank": 47,
+      "rank": 46,
+      "finalRank": 46,
       "modelRank": 44,
       "player": "Luther Burden III",
       "pos": "WR",
@@ -1743,8 +1706,8 @@
       }
     },
     {
-      "rank": 48,
-      "finalRank": 48,
+      "rank": 47,
+      "finalRank": 47,
       "modelRank": 41,
       "player": "Davante Adams",
       "pos": "WR",
@@ -1776,6 +1739,43 @@
         "teamPassAtt": 560.7,
         "carryShare": 0,
         "targetShare": 0.238,
+        "passAttShare": 0
+      }
+    },
+    {
+      "rank": 48,
+      "finalRank": 48,
+      "modelRank": 122,
+      "player": "Isaiah Likely",
+      "pos": "TE",
+      "team": "NYG",
+      "tier": 6,
+      "tierName": "starters I am very content with",
+      "ppg": 7.5,
+      "vorp": -1.28,
+      "posRank": 18,
+      "ots": 0,
+      "adp": 103,
+      "note": "8 of 29 targets, both touchdowns, in his first game as Dart's tight end. One game, but the red-zone role is the part that lasts.",
+      "risk": "Low",
+      "stats": {
+        "games": 17,
+        "carries": 0,
+        "rushYds": 0,
+        "rushTD": 0,
+        "targets": 91.8,
+        "rec": 66.5,
+        "recYds": 697.8,
+        "recTD": 4,
+        "passAtt": 0,
+        "passYds": 0,
+        "passTD": 0,
+        "int": 0,
+        "teamRushAtt": 488.8,
+        "teamTargets": 509.7,
+        "teamPassAtt": 533.9,
+        "carryShare": 0,
+        "targetShare": 0.18,
         "passAttShare": 0
       }
     },
@@ -1930,6 +1930,43 @@
     {
       "rank": 53,
       "finalRank": 53,
+      "modelRank": 33,
+      "player": "Rashee Rice",
+      "pos": "WR",
+      "team": "KC",
+      "tier": 6,
+      "tierName": "starters I am very content with",
+      "ppg": 11.7,
+      "vorp": 3.23,
+      "posRank": 16,
+      "ots": 0,
+      "adp": 34,
+      "note": "Middle-tier WR2, not the WR5 the volume implied. I am afraid to be wrong.",
+      "risk": "Medium",
+      "stats": {
+        "games": 17,
+        "carries": 0,
+        "rushYds": 0,
+        "rushTD": 0,
+        "targets": 136.4,
+        "rec": 87.1,
+        "recYds": 1055.9,
+        "recTD": 8.3,
+        "passAtt": 0,
+        "passYds": 0,
+        "passTD": 0,
+        "int": 0,
+        "teamRushAtt": 474.2,
+        "teamTargets": 505.3,
+        "teamPassAtt": 534.7,
+        "carryShare": 0,
+        "targetShare": 0.27,
+        "passAttShare": 0
+      }
+    },
+    {
+      "rank": 54,
+      "finalRank": 54,
       "modelRank": 40,
       "player": "Cam Skattebo",
       "pos": "RB",
@@ -1965,8 +2002,8 @@
       }
     },
     {
-      "rank": 54,
-      "finalRank": 54,
+      "rank": 55,
+      "finalRank": 55,
       "modelRank": 61,
       "player": "Drake Maye",
       "pos": "QB",
@@ -2002,8 +2039,8 @@
       }
     },
     {
-      "rank": 55,
-      "finalRank": 55,
+      "rank": 56,
+      "finalRank": 56,
       "modelRank": 58,
       "player": "Travis Etienne",
       "pos": "RB",
@@ -2039,8 +2076,8 @@
       }
     },
     {
-      "rank": 56,
-      "finalRank": 56,
+      "rank": 57,
+      "finalRank": 57,
       "modelRank": 54,
       "player": "Joe Burrow",
       "pos": "QB",
@@ -2076,8 +2113,8 @@
       }
     },
     {
-      "rank": 57,
-      "finalRank": 57,
+      "rank": 58,
+      "finalRank": 58,
       "modelRank": 48,
       "player": "Jalen Hurts",
       "pos": "QB",
@@ -2113,8 +2150,8 @@
       }
     },
     {
-      "rank": 58,
-      "finalRank": 58,
+      "rank": 59,
+      "finalRank": 59,
       "modelRank": 59,
       "player": "Caleb Williams",
       "pos": "QB",
@@ -2146,43 +2183,6 @@
         "carryShare": 0.152,
         "targetShare": 0.004,
         "passAttShare": 0.99
-      }
-    },
-    {
-      "rank": 59,
-      "finalRank": 59,
-      "modelRank": 122,
-      "player": "Isaiah Likely",
-      "pos": "TE",
-      "team": "NYG",
-      "tier": 6,
-      "tierName": "starters I am very content with",
-      "ppg": 7.5,
-      "vorp": -1.28,
-      "posRank": 18,
-      "ots": 0,
-      "adp": 103,
-      "note": "8 of 29 targets, both touchdowns, in his first game as Dart's tight end. One game, but the red-zone role is the part that lasts.",
-      "risk": "Low",
-      "stats": {
-        "games": 17,
-        "carries": 0,
-        "rushYds": 0,
-        "rushTD": 0,
-        "targets": 91.8,
-        "rec": 66.5,
-        "recYds": 697.8,
-        "recTD": 4,
-        "passAtt": 0,
-        "passYds": 0,
-        "passTD": 0,
-        "int": 0,
-        "teamRushAtt": 488.8,
-        "teamTargets": 509.7,
-        "teamPassAtt": 533.9,
-        "carryShare": 0,
-        "targetShare": 0.18,
-        "passAttShare": 0
       }
     },
     {
@@ -2520,42 +2520,6 @@
     {
       "rank": 69,
       "finalRank": 69,
-      "modelRank": 66,
-      "player": "Dalton Kincaid",
-      "pos": "TE",
-      "team": "BUF",
-      "tier": 8,
-      "tierName": "ambiguity and Upside.. what wins out?",
-      "ppg": 9.8,
-      "vorp": 1.03,
-      "posRank": 5,
-      "ots": 0,
-      "adp": 100,
-      "risk": "Low",
-      "stats": {
-        "games": 17,
-        "carries": 0,
-        "rushYds": 0,
-        "rushTD": 0,
-        "targets": 92.2,
-        "rec": 69.2,
-        "recYds": 918.7,
-        "recTD": 6.6,
-        "passAtt": 0,
-        "passYds": 0,
-        "passTD": 0,
-        "int": 0,
-        "teamRushAtt": 461.6,
-        "teamTargets": 542.5,
-        "teamPassAtt": 564.1,
-        "carryShare": 0,
-        "targetShare": 0.17,
-        "passAttShare": 0
-      }
-    },
-    {
-      "rank": 70,
-      "finalRank": 70,
       "modelRank": 53,
       "player": "Blake Corum",
       "pos": "RB",
@@ -2591,8 +2555,8 @@
       }
     },
     {
-      "rank": 71,
-      "finalRank": 71,
+      "rank": 70,
+      "finalRank": 70,
       "modelRank": 45,
       "player": "Quinshon Judkins",
       "pos": "RB",
@@ -2628,8 +2592,8 @@
       }
     },
     {
-      "rank": 72,
-      "finalRank": 72,
+      "rank": 71,
+      "finalRank": 71,
       "modelRank": 64,
       "player": "Michael Wilson",
       "pos": "WR",
@@ -2661,6 +2625,43 @@
         "teamPassAtt": 585.5,
         "carryShare": 0,
         "targetShare": 0.22,
+        "passAttShare": 0
+      }
+    },
+    {
+      "rank": 72,
+      "finalRank": 72,
+      "modelRank": 66,
+      "player": "Dalton Kincaid",
+      "pos": "TE",
+      "team": "BUF",
+      "tier": 8,
+      "tierName": "ambiguity and Upside.. what wins out?",
+      "ppg": 9.8,
+      "vorp": 1.03,
+      "posRank": 5,
+      "ots": 0,
+      "adp": 100,
+      "note": "The usage was promising! This is always what we have wanted for him. Let's hope this continues going forward, and we are adjusting as if it will right now.",
+      "risk": "Low",
+      "stats": {
+        "games": 17,
+        "carries": 0,
+        "rushYds": 0,
+        "rushTD": 0,
+        "targets": 92.2,
+        "rec": 69.2,
+        "recYds": 918.7,
+        "recTD": 6.6,
+        "passAtt": 0,
+        "passYds": 0,
+        "passTD": 0,
+        "int": 0,
+        "teamRushAtt": 461.6,
+        "teamTargets": 542.5,
+        "teamPassAtt": 564.1,
+        "carryShare": 0,
+        "targetShare": 0.17,
         "passAttShare": 0
       }
     },
@@ -2778,43 +2779,6 @@
     {
       "rank": 76,
       "finalRank": 76,
-      "modelRank": 78,
-      "player": "Carnell Tate",
-      "pos": "WR",
-      "team": "TEN",
-      "tier": 8,
-      "tierName": "ambiguity and Upside.. what wins out?",
-      "ppg": 8.8,
-      "vorp": 0.39,
-      "posRank": 36,
-      "ots": 0,
-      "adp": 73,
-      "note": "Slept on. Titans pass a lot",
-      "risk": "Low",
-      "stats": {
-        "games": 17,
-        "carries": 0,
-        "rushYds": 0,
-        "rushTD": 0,
-        "targets": 124.1,
-        "rec": 72.7,
-        "recYds": 813.6,
-        "recTD": 5.5,
-        "passAtt": 0,
-        "passYds": 0,
-        "passTD": 0,
-        "int": 0,
-        "teamRushAtt": 368.3,
-        "teamTargets": 564.2,
-        "teamPassAtt": 601,
-        "carryShare": 0,
-        "targetShare": 0.22,
-        "passAttShare": 0
-      }
-    },
-    {
-      "rank": 77,
-      "finalRank": 77,
       "modelRank": 99,
       "player": "Jalen Coker",
       "pos": "WR",
@@ -2850,8 +2814,8 @@
       }
     },
     {
-      "rank": 78,
-      "finalRank": 78,
+      "rank": 77,
+      "finalRank": 77,
       "modelRank": 83,
       "player": "Jordan Mason",
       "pos": "RB",
@@ -2887,8 +2851,8 @@
       }
     },
     {
-      "rank": 79,
-      "finalRank": 79,
+      "rank": 78,
+      "finalRank": 78,
       "modelRank": 82,
       "player": "Jaxson Dart",
       "pos": "QB",
@@ -2924,8 +2888,8 @@
       }
     },
     {
-      "rank": 80,
-      "finalRank": 80,
+      "rank": 79,
+      "finalRank": 79,
       "modelRank": 90,
       "player": "Deebo Samuel Sr.",
       "pos": "WR",
@@ -2957,6 +2921,43 @@
         "teamPassAtt": 562.4,
         "carryShare": 0,
         "targetShare": 0.18,
+        "passAttShare": 0
+      }
+    },
+    {
+      "rank": 80,
+      "finalRank": 80,
+      "modelRank": 78,
+      "player": "Carnell Tate",
+      "pos": "WR",
+      "team": "TEN",
+      "tier": 8,
+      "tierName": "ambiguity and Upside.. what wins out?",
+      "ppg": 8.8,
+      "vorp": 0.39,
+      "posRank": 36,
+      "ots": 0,
+      "adp": 73,
+      "note": "Slept on. Titans pass a lot",
+      "risk": "Low",
+      "stats": {
+        "games": 17,
+        "carries": 0,
+        "rushYds": 0,
+        "rushTD": 0,
+        "targets": 124.1,
+        "rec": 72.7,
+        "recYds": 813.6,
+        "recTD": 5.5,
+        "passAtt": 0,
+        "passYds": 0,
+        "passTD": 0,
+        "int": 0,
+        "teamRushAtt": 368.3,
+        "teamTargets": 564.2,
+        "teamPassAtt": 601,
+        "carryShare": 0,
+        "targetShare": 0.22,
         "passAttShare": 0
       }
     },
@@ -5621,7 +5622,7 @@
       "metric": "pghi",
       "value": 75.9,
       "strength": "strong",
-      "note": "42 attempts, 387 yards, and the market has him as a QB2. The model sees a passing offense with no run game; so do I."
+      "note": ""
     },
     {
       "player": "Rhamondre Stevenson",
@@ -5635,7 +5636,7 @@
       "metric": "rcs",
       "value": 67.9,
       "strength": "strong",
-      "note": "Lead back while Henderson is out, 18 carries and 6 targets. The metric backs him; my rank already discounts Henderson's return."
+      "note": ""
     },
     {
       "player": "Jared Goff",
@@ -5649,7 +5650,7 @@
       "metric": "pghi",
       "value": 66,
       "strength": "strong",
-      "note": "39 attempts in a game Detroit won by one. The environment is the argument, and it hasn't changed."
+      "note": ""
     },
     {
       "player": "Bucky Irving",
@@ -5733,7 +5734,7 @@
       "metric": "rcs",
       "value": 15,
       "strength": "weak",
-      "note": "7 carries for 35 in a game Tennessee ran 14 times. The market drafted him as a lead back; the metric and I see a split with Spears in an offense that won't run enough for two."
+      "note": ""
     },
     {
       "player": "J.K. Dobbins",
@@ -5747,7 +5748,7 @@
       "metric": "rcs",
       "value": 16.7,
       "strength": "weak",
-      "note": "Same backfield, same question. Dobbins should lead it until the injury bug bites, and it may end up a three-way split. The injury history is why I'm below the market, not the talent."
+      "note": ""
     },
     {
       "player": "RJ Harvey",
@@ -5761,7 +5762,7 @@
       "metric": "rcs",
       "value": 33.3,
       "strength": "weak",
-      "note": "A muddied backfield, and that is exactly where I want to take shots. Everyone wrote off Dobbins, everyone loves Jonah Coleman. Harvey probably has the best role of the three: the passing work and a nose for the end zone, in his second year in the offense. In an ambiguous backfield, he's my bet."
+      "note": ""
     },
     {
       "player": "Jeremiyah Love",
@@ -5775,7 +5776,7 @@
       "metric": "rcs",
       "value": 23.5,
       "strength": "weak",
-      "note": "Allgeier out-carried him 17 to 11 in his debut off the ankle. I'm still above the model because the talent is the talent, but below where I was until the split reads differently."
+      "note": ""
     },
     {
       "player": "Bhayshul Tuten",
@@ -5789,7 +5790,7 @@
       "metric": "rcs",
       "value": 23.3,
       "strength": "weak",
-      "note": "Tuten is a talented, explosive back. I can see Chris Rodriguez stealing valuable touches, which is what the model is assuming, but when a backfield is in question I would rather draft the back with the upside. Second-year back, and I'm taking the swing."
+      "note": ""
     },
     {
       "player": "Aaron Jones",
@@ -5817,7 +5818,7 @@
       "metric": "rcs",
       "value": 44.3,
       "strength": "weak",
-      "note": "8 carries for 15 with Warren getting the targets. The metric and I both see a 1B."
+      "note": ""
     },
     {
       "player": "Woody Marks",
@@ -5831,7 +5832,7 @@
       "metric": "rcs",
       "value": 43.3,
       "strength": "weak",
-      "note": "The model is not a fan of the Houston run game as a whole, and I think that's a bit harsh. There's a flexible back here with upside if Montgomery gets hurt, so I landed between the ADP and the model."
+      "note": ""
     },
     {
       "player": "Jacory Croskey-Merritt",
@@ -5887,7 +5888,7 @@
       "metric": "rcs",
       "value": 41.7,
       "strength": "weak",
-      "note": "13 carries to Brooks's 7 with Jacobs out. The metric hates the efficiency (2.8 a carry) and I don't disagree; the share is a Jacobs-out share."
+      "note": ""
     },
     {
       "player": "Kaelon Black",
@@ -5915,7 +5916,7 @@
       "metric": "pghi",
       "value": 19.7,
       "strength": "weak",
-      "note": "Coming off an MVP season and the model loves this offense, rightfully so. He is older, though, and I'm baking in some regression the model isn't."
+      "note": ""
     },
     {
       "player": "Caleb Williams",
@@ -5923,7 +5924,7 @@
       "team": "CHI",
       "group": "disagree",
       "modelRank": 59,
-      "finalRank": 58,
+      "finalRank": 59,
       "adp": 86,
       "gap": 27,
       "metric": "pghi",
@@ -5937,7 +5938,7 @@
       "team": "LAR",
       "group": "disagree",
       "modelRank": 53,
-      "finalRank": 70,
+      "finalRank": 69,
       "adp": 76,
       "gap": 23,
       "metric": "rcs",
@@ -5965,7 +5966,7 @@
       "team": "NYG",
       "group": "disagree",
       "modelRank": 82,
-      "finalRank": 79,
+      "finalRank": 78,
       "adp": 94,
       "gap": 12,
       "metric": "pghi",
@@ -6133,7 +6134,7 @@
       "team": "SF",
       "group": "share-only",
       "modelRank": 90,
-      "finalRank": 80,
+      "finalRank": 79,
       "adp": 145,
       "gap": 55,
       "metric": null,
@@ -6189,7 +6190,7 @@
       "team": "CAR",
       "group": "share-only",
       "modelRank": 99,
-      "finalRank": 77,
+      "finalRank": 76,
       "adp": 143,
       "gap": 44,
       "metric": null,
@@ -6301,7 +6302,7 @@
       "team": "BUF",
       "group": "share-only",
       "modelRank": 66,
-      "finalRank": 69,
+      "finalRank": 72,
       "adp": 100,
       "gap": 34,
       "metric": null,
@@ -6427,7 +6428,7 @@
       "team": "PHI",
       "group": "share-only",
       "modelRank": 48,
-      "finalRank": 57,
+      "finalRank": 58,
       "adp": 74,
       "gap": 26,
       "metric": null,
@@ -6441,7 +6442,7 @@
       "team": "NO",
       "group": "share-only",
       "modelRank": 58,
-      "finalRank": 55,
+      "finalRank": 56,
       "adp": 32,
       "gap": -26,
       "metric": "rcs",
@@ -6567,7 +6568,7 @@
       "team": "NYG",
       "group": "share-only",
       "modelRank": 122,
-      "finalRank": 59,
+      "finalRank": 48,
       "adp": 103,
       "gap": -19,
       "metric": null,
