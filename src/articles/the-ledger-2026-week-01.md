@@ -60,7 +60,7 @@ lede: "Every Monday I write down what the week actually changed on my board, and
 
 **Also add, if you have the spot:** Caleb Douglas, WR MIA (121st, from 142nd). I just told you to sell the Dolphins and I meant it, which is exactly why he matters: a team that trails all year throws all year, and 94 yards in a debut is the most by a receiver in a first game since Puka. Volatile, but real.
 
-**Also watching:** Dontayvion Wicks (4 targets, 73 yards and a score in Philadelphia, 143rd on my board) and Kenyon Sadiq (three catches and a rushing score in his debut, on my cusp list).
+**Also watching:** Dontayvion Wicks (4 targets, 73 yards and a score in Philadelphia, 143rd on my board), Kenyon Sadiq (three catches and a rushing score in his debut, on my cusp list), and Emmett Johnson, who was the clear backup to Kenneth Walker on Monday night: 8 carries for 24 and 2 catches for 44 yards on a night Walker had the ball 26 times. Walker has a lengthy injury history, and Johnson is on my cusp list because of it. One injury from a lot of work in a very good offense.
 
 ---
 
