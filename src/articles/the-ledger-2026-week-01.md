@@ -54,6 +54,8 @@ lede: "Every Monday I write down what the week actually changed on my board, in 
 
 **Add Tyler Shough, QB NO (135th).** 56 attempts, 410 yards, three touchdowns and a comeback in Detroit. Olave went 10 for 182 on 13 targets, Devaughn Vele caught 7 for 69 and a score, Juwan Johnson scored too, and Kamara didn't play. When Kamara and Tyson are back this could be wheels up. Add Shough in superflex and two-QB leagues now; add Vele anywhere while Tyson is out.
 
+**Above the line, and if he's on your wire, fix that: Jalen Coker, WR CAR (117th last week, 76th on Tuesday's board).** He's over 50% rostered, so he doesn't qualify for this column, and he's the best add on it anyway. 9 of Carolina's 34 targets for 138 yards and two scores, with Bryce Young throwing for 361. The boot on Monday was precautionary by his account, and I'd still read the Wednesday report before I spent a top waiver claim on him. I moved him 41 spots, the third-biggest rise on the board this week.
+
 **Drop Rashid Shaheed, WR SEA (140th, about 46% rostered).** Three targets, one catch for 4 yards, with Kupp still ahead of him in the pecking order and Darnold out for a few weeks. I'd rather take a swing on any of the names above.
 
 **Also add, if you have the spot:** Caleb Douglas, WR MIA (142nd). I just told you to sell the Dolphins and I meant it, which is why he matters: a team that trails all year throws all year, and 94 yards in a debut is the most by a receiver since Puka. Volatile, but real.
