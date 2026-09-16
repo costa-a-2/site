@@ -6,9 +6,9 @@ section: "The Ledger"
 kicker: "Week 1 · The Ledger"
 date: 2026-09-15
 readtime: "6 min"
-image: "/assets/img/ledger-2026-week-01.png"
-imageAlt: "The Ledger, Week 1: four columns, Buy, Sell, Hold and The Wire, one name and one number per line"
-caption: "The Week 1 Ledger at a glance. Buy, Sell, Hold, and The Wire; the full reasoning is below."
+image: "/assets/img/hampton-herbert-2025.jpg"
+imageAlt: "Justin Herbert and Omarion Hampton of the Los Angeles Chargers on the field against the Washington Commanders, October 2025"
+caption: "Justin Herbert and Omarion Hampton, Commanders at Chargers, October 2025. Hampton is this week's Hold. Photo by Joe Glorioso / All-Pro Reels, CC BY-SA 4.0."
 lede: "Every Monday I write down what the week actually changed on my board, in four columns. Buy means the price is below where I have him. Sell means the reverse. Hold is a loud box score that didn't move the role. The Wire is who to add and who to let go, for players under 50% rostered on Yahoo, which reacts faster than the other platforms. The number next to each name is the one that made the call, and the rank in parentheses is where he sits on my board today. Tuesday's rankings show every move."
 ---
 
