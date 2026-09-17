@@ -5622,7 +5622,7 @@
       "metric": "pghi",
       "value": 75.9,
       "strength": "strong",
-      "note": ""
+      "note": "42 attempts, 387 yards, and the market has him as a QB2. The model sees a passing offense with no run game; so do I."
     },
     {
       "player": "Rhamondre Stevenson",
@@ -5636,7 +5636,7 @@
       "metric": "rcs",
       "value": 67.9,
       "strength": "strong",
-      "note": ""
+      "note": "Lead back while Henderson is out, 18 carries and 6 targets. The metric backs him; my rank already discounts Henderson's return."
     },
     {
       "player": "Jared Goff",
@@ -5650,7 +5650,7 @@
       "metric": "pghi",
       "value": 66,
       "strength": "strong",
-      "note": ""
+      "note": "39 attempts in a game Detroit won by one. The environment is the argument, and it hasn't changed."
     },
     {
       "player": "Bucky Irving",
@@ -5734,7 +5734,7 @@
       "metric": "rcs",
       "value": 15,
       "strength": "weak",
-      "note": ""
+      "note": "7 carries for 35 in a game Tennessee ran 14 times. The market drafted him as a lead back; the metric and I see a split with Spears in an offense that won't run enough for two."
     },
     {
       "player": "J.K. Dobbins",
@@ -5748,7 +5748,7 @@
       "metric": "rcs",
       "value": 16.7,
       "strength": "weak",
-      "note": ""
+      "note": "Same backfield, same question. Dobbins should lead it until the injury bug bites, and it may end up a three-way split. The injury history is why I'm below the market, not the talent."
     },
     {
       "player": "RJ Harvey",
@@ -5762,7 +5762,7 @@
       "metric": "rcs",
       "value": 33.3,
       "strength": "weak",
-      "note": ""
+      "note": "A muddied backfield, and that is exactly where I want to take shots. Everyone wrote off Dobbins, everyone loves Jonah Coleman. Harvey probably has the best role of the three: the passing work and a nose for the end zone, in his second year in the offense. In an ambiguous backfield, he's my bet."
     },
     {
       "player": "Jeremiyah Love",
@@ -5776,7 +5776,7 @@
       "metric": "rcs",
       "value": 23.5,
       "strength": "weak",
-      "note": ""
+      "note": "Allgeier out-carried him 17 to 11 in his debut off the ankle. I'm still above the model because the talent is the talent, but below where I was until the split reads differently."
     },
     {
       "player": "Bhayshul Tuten",
@@ -5790,7 +5790,7 @@
       "metric": "rcs",
       "value": 23.3,
       "strength": "weak",
-      "note": ""
+      "note": "Tuten is a talented, explosive back. I can see Chris Rodriguez stealing valuable touches, which is what the model is assuming, but when a backfield is in question I would rather draft the back with the upside. Second-year back, and I'm taking the swing."
     },
     {
       "player": "Aaron Jones",
@@ -5818,7 +5818,7 @@
       "metric": "rcs",
       "value": 44.3,
       "strength": "weak",
-      "note": ""
+      "note": "8 carries for 15 with Warren getting the targets. The metric and I both see a 1B."
     },
     {
       "player": "Woody Marks",
@@ -5832,7 +5832,7 @@
       "metric": "rcs",
       "value": 43.3,
       "strength": "weak",
-      "note": ""
+      "note": "The model is not a fan of the Houston run game as a whole, and I think that's a bit harsh. There's a flexible back here with upside if Montgomery gets hurt, so I landed between the ADP and the model."
     },
     {
       "player": "Jacory Croskey-Merritt",
@@ -5888,7 +5888,7 @@
       "metric": "rcs",
       "value": 41.7,
       "strength": "weak",
-      "note": ""
+      "note": "13 carries to Brooks's 7 with Jacobs out. The metric hates the efficiency (2.8 a carry) and I don't disagree; the share is a Jacobs-out share."
     },
     {
       "player": "Kaelon Black",
@@ -5916,7 +5916,7 @@
       "metric": "pghi",
       "value": 19.7,
       "strength": "weak",
-      "note": ""
+      "note": "Coming off an MVP season and the model loves this offense, rightfully so. He is older, though, and I'm baking in some regression the model isn't."
     },
     {
       "player": "Caleb Williams",
