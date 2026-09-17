@@ -71,20 +71,31 @@ function loadSport(sport) {
 
 const keyOf = name => String(name || "").toLowerCase().replace(/[^a-z0-9 ]/g, "").replace(/\s+(jr|sr|ii|iii|iv)$/, "").trim();
 
-// the four signal groups in order, labels from the file's signalsMeta when it carries them
+// The Signals page groups by Costa's stance, not by the metric's direction (Sept 16): readers asked whose side
+// he is on, and "market's too high" was wrong for a player he had deliberately ranked near the market. Stance is
+// where his rank sits on the line from the market (ADP) to the model: past 65% of the way to the model is "with
+// the model", under 35% is "disagree with the model", the middle is "in between". The metric's own verdict
+// (backs the model, or argues with the model's shares) stays on the row as text. Same rule in make_signals_card.py.
 const SIGNAL_BOARD_MAX = 120;   // a signal on a player ranked below this is bench noise
 const SIGNAL_PAGE_MAX = 12;     // the page is a short list, not a census
-const SIGNAL_GROUPS = [["backs-over", "Metric backs model over market"], ["backs-under", "Metric backs model under market"],
-                       ["disagree", "Metric and shares disagree"], ["share-only", "Share-driven gap, no metric"]];
+const STANCES = [["market", "I disagree with the model", "My rank sits closer to the market, on purpose."],
+                 ["between", "I'm in between", "Splitting the difference between the model and the market."],
+                 ["model", "I'm with the model", "The market has him wrong, and the model and I agree."]];
+const METRIC_SAYS = { "backs-over": "backs the model", "backs-under": "backs the model", "disagree": "argues with the model's shares", "share-only": "no metric" };
+function stanceOf(s) {
+  const m = s.modelRank, a = s.adp, r = s.finalRank;
+  if (![m, a, r].every(v => typeof v === "number") || m === a) return "between";
+  const t = (a - r) / (a - m);                 // 0 = at the market, 1 = at the model
+  return t >= 0.65 ? "model" : t <= 0.35 ? "market" : "between";
+}
 function groupSignals(wk, players) {
-  const labels = new Map(SIGNAL_GROUPS);
-  ((wk.signalsMeta && wk.signalsMeta.groups) || []).forEach(g => { if (g && g.id && g.label) labels.set(g.id, g.label); });
   const byName = new Map(players.map(p => [p.player, p]));
   const signals = (wk.signals || []).filter(s => s && s.player).map(s => {
     const p = byName.get(s.player) || null;
-    if (p) labels.has(s.group) || labels.set(s.group, s.group);
-    return { ...s, onPage: !!p, finalRank: (typeof s.finalRank === "number") ? s.finalRank : (p ? p.rank : null),
-             headshot: (p && p.headshot) || HEADSHOTS[keyOf(s.player)] || null };
+    const full = { ...s, onPage: !!p, finalRank: (typeof s.finalRank === "number") ? s.finalRank : (p ? p.rank : null),
+                   headshot: (p && p.headshot) || HEADSHOTS[keyOf(s.player)] || null, metricSays: METRIC_SAYS[s.group] || "" };
+    full.stance = stanceOf(full);
+    return full;
   });
   // The page shows only signals worth a reader's time (Sept 9): a metric has to be behind it and say something
   // (strong or weak, never neutral), the player has to be on the published board inside SIGNAL_BOARD_MAX, and
@@ -95,8 +106,8 @@ function groupSignals(wk, players) {
     .filter(s => typeof s.finalRank === "number" && s.finalRank <= SIGNAL_BOARD_MAX)
     .sort((a, b) => Math.abs(b.gap || 0) - Math.abs(a.gap || 0))
     .slice(0, SIGNAL_PAGE_MAX);
-  return [...labels.keys()].map(id => ({ id, label: labels.get(id),
-    items: shown.filter(s => s.group === id).sort((a, b) => Math.abs(b.gap || 0) - Math.abs(a.gap || 0)) }))
+  return STANCES.map(([id, label, sub]) => ({ id, label, sub,
+    items: shown.filter(s => s.stance === id).sort((a, b) => Math.abs(b.gap || 0) - Math.abs(a.gap || 0)) }))
     .filter(g => g.items.length);
 }
 
@@ -262,8 +273,9 @@ function buildPlayers(weeks) {
       .concat((wk.cusp || []).filter(c => c.team === p.team && c.pos === p.pos).map(c => ({ player: c.player, rank: null, share: null, onSite: false })))
       .sort((a, b) => (b.share || 0) - (a.share || 0));
     const sgRaw = (wk.signals || []).find(sg => sg.player === p.player) || null;
-    const sgGroup = sgRaw ? (wk.signalGroups || []).find(g => g.id === sgRaw.group) : null;
-    const signal = sgRaw ? { ...sgRaw, groupLabel: sgGroup ? sgGroup.label : sgRaw.group } : null;
+    const sgStance = sgRaw ? stanceOf({ ...sgRaw, finalRank: (typeof sgRaw.finalRank === "number") ? sgRaw.finalRank : p.rank }) : null;
+    const sgGroup = sgRaw ? STANCES.find(([id]) => id === sgStance) : null;
+    const signal = sgRaw ? { ...sgRaw, groupLabel: sgGroup ? sgGroup[1] : sgRaw.group, metricSays: METRIC_SAYS[sgRaw.group] || "" } : null;
     const mentions = articles.filter(a => a.body.includes(p.player)).sort((a, b) => (a.date < b.date ? 1 : -1))
       .map(({ url, title, summary, date }) => ({ url, title, summary, date }));
     return {
