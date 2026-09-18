@@ -52,6 +52,19 @@
       "result": "",
       "grade": "open",
       "post": ""
+    },
+    {
+      "date": "2026-09-20",
+      "game": "Bengals at Texans",
+      "player": "David Montgomery",
+      "pos": "RB",
+      "team": "HOU",
+      "call": "Over 15.5 rushing attempts",
+      "line": "posted Sunday morning with the line as seen; playable at 15.5 or lower",
+      "why": "20 of Houston's 32 carries in Week 1 and both goal-line scores, with Marks at 9. Houston a 2.5-point home favorite, total 46.5: the neutral script an attempts prop wants. The role is the bet, not the yards.",
+      "result": "",
+      "grade": "open",
+      "post": ""
     }
   ],
   "survivor": [
@@ -62,6 +75,14 @@
       "why": "The contrarian pick on purpose. The Chargers and Jaguars are half of every pool this week; Philadelphia is a 5.5-point home favorite in a division game, about 68% to win, and roughly 3% of entries. Daniels is healthy and Kingsbury is gone, and I trust the Eagles' floor over that offense's first game in a new scheme.",
       "result": "Eagles 24, Commanders 22. Hurts went 14 of 25 for 203 yards and three touchdowns, and Washington's tying two-point try was stuffed with 1:01 left. Alive.",
       "grade": "hit"
+    },
+    {
+      "week": 2,
+      "pick": "LAC",
+      "opponent": "LV",
+      "why": "The safe pick is San Francisco at 85%. Tampa Bay is 78% to win and about 30% of the field; the Chargers are 75% and about 6% (PoolGenius, Sept 15). Three points of win probability for a fifth of the exposure, and if the Bucs lose, a third of the field goes out. McConkey (ribs) did not practice Thursday; eyes open.",
+      "result": "",
+      "grade": "open"
     }
   ],
   "dfs": [
