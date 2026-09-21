@@ -47,11 +47,11 @@
       "pos": "RB",
       "team": "DET",
       "call": "Over 18.5 rushing attempts",
-      "line": "18.5 at DraftKings, Sept 17 morning (opened 18.5); confirm the price on your book",
+      "line": "18.5 (-120) at DraftKings, Sept 17 morning (opened 18.5)",
       "why": "29 of Detroit's 33 carries in Week 1 with Montgomery gone to Houston. A normal Lions game is 24 to 28 rushes, and 80% of that clears the number. After three yardage misses, this week's plays are volume props on roles the board and the box score agree on.",
-      "result": "",
-      "grade": "open",
-      "post": ""
+      "result": "16 carries for 52 yards, plus 6 catches for 61 and a touchdown, in a 41-31 loss. Detroit trailed from the first quarter and finished with 20 rushes to 38 throws; Buffalo ran 36 times. The role held (16 of 20), the script didn't.",
+      "grade": "miss",
+      "post": "https://x.com/theweeklyrank/status/2100605536295080015"
     },
     {
       "date": "2026-09-20",
@@ -60,11 +60,24 @@
       "pos": "RB",
       "team": "HOU",
       "call": "Over 15.5 rushing attempts",
-      "line": "posted Sunday morning with the line as seen; playable at 15.5 or lower",
+      "line": "15.5 (-114) at DraftKings, Sept 19 evening",
       "why": "20 of Houston's 32 carries in Week 1 and both goal-line scores, with Marks at 9. Houston a 2.5-point home favorite, total 46.5: the neutral script an attempts prop wants. The role is the bet, not the yards.",
-      "result": "",
-      "grade": "open",
-      "post": ""
+      "result": "6 carries for 10 yards in a 20-6 loss. Houston ran 18 times and threw 56, and the backfield split went the other way: Marks had 8 carries and 6 targets to Montgomery's 6 and 2. The role was the bet and the role didn't hold once they trailed.",
+      "grade": "miss",
+      "post": "https://x.com/theweeklyrank/status/2101458134900306311"
+    },
+    {
+      "date": "2026-09-20",
+      "game": "Packers at Jets",
+      "player": "Matthew Golden",
+      "pos": "WR",
+      "team": "GB",
+      "call": "Over 3.5 receptions",
+      "line": "3.5 (-152) at FanDuel, Sept 20 morning",
+      "why": "He led the room with 12 targets last week and the book hadn't adjusted yet. The script could get questionable against the Jets, but the offense can keep up enough to keep passing. Posted as a second play Sunday, after Montgomery.",
+      "result": "4 catches on 6 targets for 58 yards in a 20-17 overtime win. Green Bay threw only 29 times and Watson drew 11 of them; the fourth catch cleared it by one.",
+      "grade": "hit",
+      "post": "https://x.com/theweeklyrank/status/2101678046356906403"
     }
   ],
   "survivor": [
@@ -78,11 +91,12 @@
     },
     {
       "week": 2,
-      "pick": "LAC",
-      "opponent": "LV",
-      "why": "The safe pick is San Francisco at 85%. Tampa Bay is 78% to win and about 30% of the field; the Chargers are 75% and about 6% (PoolGenius, Sept 15). Three points of win probability for a fifth of the exposure, and if the Bucs lose, a third of the field goes out. McConkey (ribs) did not practice Thursday; eyes open.",
-      "result": "",
-      "grade": "open"
+      "pick": "SF",
+      "opponent": "MIA",
+      "why": "Posted on X Friday as the 49ers: 85% to win, the last week they project above 80% all season, and yes, a third of the field on them. This week the chalk had the numbers. For the record: this page carried the Chargers (75%, 6% of the field) from Friday until Sunday night, because that was the draft I left before a weekend away; I switched to San Francisco publicly before kickoff because the Chargers' offense without McConkey wasn't worth the risk this early. The Chargers lost 26-14. The switch is the only reason this line says alive, and that gets written down too.",
+      "result": "49ers 35, Dolphins 13. Purdy went 20 of 22 for 287 yards and two scores and ran for a third. Alive. Week 1: Eagles.",
+      "grade": "hit",
+      "post": "https://x.com/theweeklyrank/status/2100986416771547511"
     }
   ],
   "dfs": [
@@ -110,13 +124,14 @@
         "Bucky Irving $6,100",
         "David Montgomery $6,500",
         "Matthew Golden $4,700",
-        "Javonte Williams $6,400",
+        "Jacory Croskey-Merritt $5,500",
         "Antonio Williams $4,400"
       ],
       "score": null,
-      "note": "The five I built around, posted Saturday morning. Irving: 7 targets and the goal line, an 8.5-point home favorite. Montgomery: 62% of Houston's carries and both scores. Golden: 12 targets with Jacobs out. Javonte Williams: 17 touches and two scores in a game Dallas trailed, a 3.5-point home favorite now in the slate's highest total (50.5). Antonio Williams: my call, at the minimum. Salaries DraftKings, Sept 17. The chalk: Bijan Robinson 48% and McCaffrey 26% of the field (Stokastic preview, Sept 17).",
-      "result": "",
-      "grade": "open"
+      "note": "The five I built around, posted Saturday morning. Irving: 7 targets and the goal line, an 8.5-point home favorite. Montgomery: 62% of Houston's carries and both scores. Golden: 12 targets with Jacobs out. Croskey-Merritt: 16 of 32 carries in the slate's highest total (50.5). Williams: my call, at the minimum. Salaries DraftKings, Sept 17. The chalk: Bijan Robinson 48% and McCaffrey 26% of the field (Stokastic preview, Sept 17).",
+      "result": "Irving 17 for 89 and 4 catches for 1, 13.0 DK points, in a 23-19 loss to Cleveland. Golden 4 for 58, 9.8. Croskey-Merritt 12 for 43 and a catch, 5.8. Williams 3 for 24, 5.4. Montgomery 6 for 10 and 2 catches, 4.4, in a game Houston threw 56 times. The five combined for 38.4, three points more than Swift alone last week. The chalk split: Bijan (48% of the field) went 16 for 72 and 3 catches, 11.1, in a 34-3 loss; McCaffrey 10 for 23 with two scores and 4 catches for 43, 22.6.",
+      "grade": "open",
+      "post": "https://x.com/theweeklyrank/status/2101300356147741074"
     }
   ]
 }
