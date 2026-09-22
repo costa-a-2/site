@@ -123,6 +123,8 @@ module.exports = function (eleventyConfig) {
   // {% xpost "https://x.com/user/status/ID", "Caption." %} → an embedded X post (the official
   // widget: blockquote + widgets.js, loaded once per page by the layout). Renders as a plain link
   // until the script runs, so nothing breaks without it. The post's own video plays inside it.
+  // small counts as words for running text: 11 → "Eleven", 25 → "25"
+  eleventyConfig.addFilter("numberWord", n => { const w = ["Zero","One","Two","Three","Four","Five","Six","Seven","Eight","Nine","Ten","Eleven","Twelve","Thirteen","Fourteen","Fifteen","Sixteen","Seventeen","Eighteen","Nineteen","Twenty"]; n = Number(n); return (Number.isInteger(n) && n >= 0 && n <= 20) ? w[n] : String(n); });
   eleventyConfig.addShortcode("xpost", (url, caption = "") => {
     const m = String(url || "").match(/^https?:\/\/(?:x|twitter)\.com\/([A-Za-z0-9_]+)\/status\/(\d+)/);
     if (!m) throw new Error(`xpost shortcode: "${url}" is not an X post URL`);

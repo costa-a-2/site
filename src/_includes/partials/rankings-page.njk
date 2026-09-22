@@ -44,7 +44,7 @@
     {% if week.cusp and week.cusp.length %}
     <div style="border-top:2px solid var(--ink);margin-top:26px;padding:18px 0 6px" id="cusp">
       <span class="sec">On the Cusp</span>
-      <p class="summary" style="margin-top:8px">Ten more I'd have in the conversation, in no order.</p>
+      <p class="summary" style="margin-top:8px">{{ week.cusp.length | numberWord }} more I'd have in the conversation, in no order.</p>
       <div class="tbl-wrap"><table class="rank cusp" id="cuspTable" style="margin-top:10px">
         <thead><tr><th>Player</th><th class="c-pos">Pos</th><th class="c-team">Tm</th><th class="c-risk">Risk</th></tr></thead>
         <tbody>
