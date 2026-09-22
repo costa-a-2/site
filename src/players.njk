@@ -20,11 +20,11 @@ eleventyComputed:
 
 <div class="pp-head">
   <div>
-    <span class="sec">Player &middot; {{ p.pos }} &middot; {{ p.team }}{% if not p.onLatest %} &middot; last ranked {{ p.latestLabel }}{% endif %}</span>
+    <span class="sec">Player &middot; {{ p.pos }} &middot; {{ p.team }}{% if p.ir %} &middot; {{ p.ir.label }}: IR taxi squad{% if p.ir.irRank %}, #{{ p.ir.irRank }} if healthy{% endif %}{% elif not p.onLatest %} &middot; last ranked {{ p.latestLabel }}{% endif %}</span>
     <div style="margin-top:14px">
       {% if p.headshot %}<img class="hs-lg" src="{{ p.headshot }}" alt="">{% else %}<span class="hs-lg"></span>{% endif %}
       <h1 class="hed-xl">{{ p.player }}</h1>
-      <p class="standfirst" style="margin-top:6px">{% if p.note %}{{ p.note }}{% else %}Where the model has him, where the board put him, and every edition in between.{% endif %}</p>
+      <p class="standfirst" style="margin-top:6px">{% if p.ir and p.ir.note %}{{ p.ir.note }}{% elif p.note %}{{ p.note }}{% else %}Where the model has him, where the board put him, and every edition in between.{% endif %}</p>
       <div style="margin-top:8px">
         {% for b in p.badges %}<span class="badge{% if loop.first %} ink{% endif %}">{{ b }}</span>{% endfor %}
         {% if p.tier %}<span class="badge">Tier {{ p.tier }} &middot; {{ p.tierName }}</span>{% endif %}
