@@ -63,9 +63,9 @@
     {% if week.ir and week.ir.length %}
     <div style="border-top:2px solid var(--ink);margin-top:26px;padding:18px 0 6px" id="ir-squad">
       <span class="sec">IR Taxi Squad</span>
-      <p class="summary" style="margin-top:8px">Out for a while, so not ranked this week. The number is where each would slot the week he's back; the note is why.</p>
+      <p class="summary" style="margin-top:8px">Out for a while, so not ranked this week. The number is his rest-of-season rank if healthy, where he slots the week he's back; the note is why.</p>
       <div class="tbl-wrap"><table class="rank cusp" id="irTable" style="margin-top:10px">
-        <thead><tr><th>Player</th><th class="c-pos">Pos</th><th class="c-team">Tm</th><th style="text-align:right;white-space:nowrap">If healthy</th><th style="text-align:right">Was</th><th class="c-risk">Risk</th></tr></thead>
+        <thead><tr><th>Player</th><th class="c-pos">Pos</th><th class="c-team">Tm</th><th style="text-align:right;white-space:nowrap">ROS rank if healthy</th><th style="text-align:right">Was</th><th class="c-risk">Risk</th></tr></thead>
         <tbody>
         {% for p in week.ir %}
           <tr data-pos="{{ p.pos }}" data-team="{{ p.team }}">
