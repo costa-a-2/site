@@ -1608,7 +1608,7 @@
       "posRank": 31,
       "ots": 0,
       "adp": 51,
-      "note": "20 carries, 60 yards, two scores, 62% of Houston's carries. The metric's low on the efficiency; I'm ranking the role and the goal-line work.",
+      "note": "Six carries for 10 in a game Houston trailed and threw 56 times, after 20 for 60 and two scores with every red-zone touch in Week 1. I'm ranking the Week 1 role and the goal line; if Marks out-snaps him in a neutral game, he drops.",
       "risk": "Low",
       "stats": {
         "games": 17,
@@ -3347,7 +3347,7 @@
       "posRank": 42,
       "ots": 0,
       "adp": 81,
-      "note": "10 carries for 100 and a score behind Swift's 18. Risk High because the touches depend on Swift's health and the game script, and Sunday had both.",
+      "note": "Ten carries in each game, 100 yards and a score, then 47, behind Swift's 18 and 16. With Caleb week to week and Keenum in line for Monday night, the carries may go up while the points don't; a flex with a High flag.",
       "risk": "High",
       "stats": {
         "games": 17,
@@ -3458,7 +3458,7 @@
       "posRank": 9,
       "ots": 0,
       "adp": 124,
-      "note": "25 attempts, 155 yards, no touchdowns, and Bennett took three snaps. One bad half; I'm still with the model on the environment, a step lower.",
+      "note": "155 yards and no scores in Week 1 (pressure on 29% of dropbacks), then 327 and four Monday with Nacua out (6%). The model takes the ceiling; I'm a step below it for the age and the weeks the line doesn't hold. QB9 on my board.",
       "risk": "Low",
       "stats": {
         "games": 17,
@@ -3680,7 +3680,7 @@
       "posRank": 45,
       "ots": 0,
       "adp": 78,
-      "note": "8 carries led the backfield to Harvey's 3, in a 15-carry game. The order is Dobbins first; risk High is the injury history.",
+      "note": "First in the order both weeks, then a hamstring in the third quarter Sunday (10 for 36 before it). Payton says he and Harvey both have a chance for the Rams; the High flag is the hamstring, not the order.",
       "risk": "High",
       "stats": {
         "games": 17,
@@ -3827,7 +3827,7 @@
       "posRank": 16,
       "ots": 0,
       "adp": 140,
-      "note": "42 attempts, 387 yards, two scores with no run game. The model likes the volume; I'm holding a step below it until Jacobs is back and the shape settles.",
+      "note": "53 attempts for 312 and two scores Thursday in a game Green Bay ran nine times. The model likes the volume and so do I at a QB2 price; a step below it with Jacobs on the exempt list and the right tackle out for the year.",
       "risk": "Low",
       "stats": {
         "games": 17,
@@ -4307,7 +4307,7 @@
       "posRank": 5,
       "ots": 0,
       "adp": 155,
-      "note": "Concussion on the first drive Week 1, in the protocol. The rank is the protocol, not the player; the model doesn't know he's hurt.",
+      "note": "Cleared the protocol Monday and starts Sunday at Tampa Bay. Holding at 117 until I see a full game in the new offense; the model's 54 is a full season of starter shares, and August's 91st is where I'm working back toward.",
       "risk": "Low",
       "stats": {
         "games": 17,
@@ -5726,7 +5726,7 @@
       "metric": "pghi",
       "value": 76.6,
       "strength": "strong",
-      "note": "Coming off an MVP season and the model loves this offense, rightfully so. He is older, though, and I'm baking in some regression the model isn't."
+      "note": "Two games, two environments: Week 1 scored hostile (19.9, pressure on 29% of dropbacks, 155 yards) and Week 2 scored elite (76.6, pressure on 6%, 327 yards and four scores with Nacua out). The model takes the ceiling of this offense; I'm a step below it on purpose, for the age and the weeks the line doesn't hold. 94 is QB9 on my board, the floor I trust. The market's 124 is drafting the Week 1 version."
     },
     {
       "player": "Jordan Love",
@@ -5740,7 +5740,7 @@
       "metric": "pghi",
       "value": 70.3,
       "strength": "strong",
-      "note": "42 attempts, 387 yards, and the market has him as a QB2. The model sees a passing offense with no run game; so do I."
+      "note": "Fifty-three attempts for 312 and two scores Thursday night, in a game Green Bay ran nine times. The environment score (70.3, pressure on 12.5% of dropbacks in Week 2) says clean pocket and the volume says no run game at all, and both are why the market's 140th is wrong. Two things the metric hasn't priced: Jacobs on the exempt list indefinitely, and the right tackle out for the year. Model 99, me 104; with the model, a step more careful."
     },
     {
       "player": "Baker Mayfield",
@@ -5810,7 +5810,7 @@
       "metric": "rcs",
       "value": 32,
       "strength": "weak",
-      "note": "Same backfield, same question. Dobbins should lead it until the injury bug bites, and it may end up a three-way split. The injury history is why I'm below the market, not the talent."
+      "note": "First in the order both weeks: 8 carries to Harvey's 3 in the opener, then 10 for 36 before he left Sunday in the third quarter with a hamstring, with Harvey already out with his own. Payton says both have a chance for the Rams; Coleman closed the game out (10 for 39 and the score). The model splits Denver three ways and gives Dobbins the worst of it. I have him 100th because when he's on the field he's first, and the High flag is why he isn't higher: the order isn't the risk, the hamstring is."
     },
     {
       "player": "Keaton Mitchell",
@@ -5838,7 +5838,7 @@
       "metric": "rcs",
       "value": 28.5,
       "strength": "weak",
-      "note": ""
+      "note": "Ten carries in each game, 100 yards and a score in the first, 47 in the second, behind Swift's 18 and 16. The model gives him a third of the carries in a bad offense and gets 162nd; the market drafted a role he doesn't have (81st). Now Caleb is week to week, Bagent is in the protocol and Case Keenum is in line for Monday night, so the carries may go up while the points don't. I'm at 91 with a High flag: a guaranteed ten touches in a Ben Johnson offense is worth a flex spot, and not more."
     },
     {
       "player": "Mike Washington Jr.",
@@ -5894,7 +5894,7 @@
       "metric": "rcs",
       "value": 22,
       "strength": "weak",
-      "note": ""
+      "note": "Six carries for 10 in a game Houston trailed and threw 56 times, and the metric read that one game: 22, a specialist's score, after a 56.7 in Week 1 with every red-zone touch. I'm ranking the Week 1 role and the goal line, and the Bengals' front had something to do with Sunday. The line I'll hold myself to: if Marks out-snaps him in a game the Texans aren't chasing, he comes down and I'll say why."
     },
     {
       "player": "Travis Etienne",
@@ -5908,7 +5908,7 @@
       "metric": "rcs",
       "value": 19.2,
       "strength": "weak",
-      "note": ""
+      "note": "Kamara came back and the passing downs left: 9 targets in Week 1, 2 in Week 2, with Kamara at 9 carries and 6 targets. That receiving work was the whole half-PPR case, and the market drafted him 32nd on the Week 1 version of it. The metric scores a specialist now (19.2, no third-down touches). I'm with the model: an RB2 in an even split until the split breaks."
     },
     {
       "player": "Jeremiyah Love",
@@ -5922,7 +5922,7 @@
       "metric": "rcs",
       "value": 38.9,
       "strength": "weak",
-      "note": "Allgeier out-carried him 17 to 11 in his debut off the ankle, and I'm still in. The talent is the talent, this offense is going to be better than we thought, and my projection is that he takes the job from Allgeier and the touches grow from here. The model will catch up when the split does."
+      "note": "The split turned: 9 carries to Allgeier's 5 after 11 to 17 in the opener, in a game Arizona ran 17 times and lost by 24. The metric scores what's still missing, third downs and the two-minute drill (both Allgeier's so far), and that's fair. I came down 12 spots for the ankle and the offense, not the player, and I'm still 37 spots above the model because the job is becoming his."
     },
     {
       "player": "Rico Dowdle",
@@ -5936,7 +5936,7 @@
       "metric": "rcs",
       "value": 9.4,
       "strength": "weak",
-      "note": "8 carries for 15 with Warren getting the targets. The metric and I both see a 1B, and a messy split I'm not a fan of."
+      "note": "The lowest role score on the page: early downs only, and not many of them, before the toe took him out of Sunday's game (7 carries for 22; day to day). Warren has the passing downs. The market drafted a lead back at 65th; the model has him 115th and I have him 114th, and there's nothing to argue about."
     },
     {
       "player": "Jaylen Warren",
@@ -5950,7 +5950,7 @@
       "metric": "rcs",
       "value": 38.5,
       "strength": "weak",
-      "note": ""
+      "note": "The 1A in a committee on an offense that scored 3 points Sunday. The Week 2 phase data: every third-down back touch was his, and there were no red-zone touches to hand out. I'm 14 spots above the model because a back with 48% of the carries and the passing downs starts in most lineups, and starters are scarce; the market's 59th wants a lead back that isn't there. With Dowdle's toe, this week he might be one."
     },
     {
       "player": "Chuba Hubbard",
@@ -5992,7 +5992,7 @@
       "metric": "rcs",
       "value": 37,
       "strength": "weak",
-      "note": "Tuten is a talented, explosive back, and he looked the part in Week 1: 15 carries for 66 and seven forced missed tackles, tied with Gibbs for the second-most of any back (PFF). I can see Chris Rodriguez stealing valuable touches, which is what the model is assuming, but when a backfield is in question I would rather have the back with the upside. Second-year back, and I'm taking the swing."
+      "note": ""
     },
     {
       "player": "Jonah Coleman",
@@ -6076,7 +6076,7 @@
       "metric": "pghi",
       "value": 46.8,
       "strength": "weak",
-      "note": ""
+      "note": "He cleared the protocol Monday and starts Sunday at Tampa Bay. I moved him up 11 and stopped at 117 on purpose: one quarter of football in a new offense, a concussion, and a metric reading (Wentz's 20-attempt game in the rain) that tells me nothing yet. The model has him QB5 on a full season of starter shares. I'll meet it partway once I've seen a full game; August's 91st is where I'm working back toward."
     },
     {
       "player": "MarShawn Lloyd",
@@ -6090,7 +6090,7 @@
       "metric": "rcs",
       "value": 20.3,
       "strength": "weak",
-      "note": "13 carries to Brooks's 7 with Jacobs out. The metric hates the efficiency (2.8 a carry) and I don't disagree; the share is a Jacobs-out share."
+      "note": ""
     },
     {
       "player": "Patrick Mahomes",
@@ -6104,7 +6104,7 @@
       "metric": "pghi",
       "value": 76.5,
       "strength": "strong",
-      "note": ""
+      "note": "The metric and I are on the same side here, and the model is the holdout. Passing Game Health went from neutral (55.9) to elite (76.5) in one week: a pass rate 9.5% over expected, pressure on 8% of dropbacks, 47 attempts for 382 and three scores with Kelce back to 11 targets. The model's touchdown share is still 2025's. It will catch up or it won't; I'm not waiting on it."
     },
     {
       "player": "Kyren Williams",
@@ -6118,7 +6118,7 @@
       "metric": "rcs",
       "value": 74.5,
       "strength": "strong",
-      "note": ""
+      "note": "Twelve carries each for him and Corum, two weeks running, and the model prices that split at 65th. The phase data from Monday says the split lives on first and second down: every red-zone touch and every two-minute touch went to Kyren, and he caught the touchdown. Role Clarity is on my side at 74.5. If Corum starts getting the goal-line work, I'll move him down and say so."
     },
     {
       "player": "Kaelon Black",
@@ -6202,7 +6202,7 @@
       "metric": "rcs",
       "value": 78,
       "strength": "strong",
-      "note": "The model is not a fan of the Houston run game as a whole, and I think that's a bit harsh. There's a flexible back here with upside if Montgomery gets hurt, so I landed between the ADP and the model."
+      "note": ""
     },
     {
       "player": "Malik Washington",
@@ -6258,7 +6258,7 @@
       "metric": null,
       "value": null,
       "strength": "neutral",
-      "note": "A muddied backfield, and that is exactly where I want to take shots. Everyone wrote off Dobbins, everyone loves Jonah Coleman. Harvey probably has the best role of the three: the passing work and a nose for the end zone, in his second year in the offense. In an ambiguous backfield, he's my bet."
+      "note": ""
     },
     {
       "player": "Rachaad White",
@@ -6356,7 +6356,7 @@
       "metric": "rcs",
       "value": 54,
       "strength": "neutral",
-      "note": "7 carries for 35 in a game Tennessee ran 14 times. The market drafted him as a lead back, and I don't like this offense: it isn't going to support a strong run game, they'll be trailing a lot, and it's a split with Spears on top of that. The metric sees the same thing."
+      "note": ""
     },
     {
       "player": "Parker Washington",
@@ -6496,7 +6496,7 @@
       "metric": "pghi",
       "value": 58.3,
       "strength": "neutral",
-      "note": "39 attempts in a game Detroit won by one. The environment is the argument, and it hasn't changed."
+      "note": ""
     },
     {
       "player": "Khalil Shakir",
@@ -6804,7 +6804,7 @@
       "metric": "rcs",
       "value": 54,
       "strength": "neutral",
-      "note": "My model loves Bucky with the role he had last year. The keys to success are here. This is one of the biggest gaps in model vs my feelings. He ends up above ADP and is worth the risk in the end."
+      "note": ""
     },
     {
       "player": "Stefon Diggs",
