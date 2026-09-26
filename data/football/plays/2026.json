@@ -78,6 +78,45 @@
       "result": "4 catches on 6 targets for 58 yards in a 20-17 overtime win. Green Bay threw only 29 times and Watson drew 11 of them; the fourth catch cleared it by one.",
       "grade": "hit",
       "post": "https://x.com/theweeklyrank/status/2101678046356906403"
+    },
+    {
+      "date": "2026-09-27",
+      "game": "Texans at Colts",
+      "player": "Dalton Schultz",
+      "pos": "TE",
+      "team": "HOU",
+      "call": "Over 5.5 receptions",
+      "line": "5.5 at DraftKings, Saturday Sept 26 (confirm the price Sunday morning)",
+      "why": "Collins is out again. The last time that was true Schultz caught 12 of 14 targets for 140; Houston -1.5, so a neutral script, and nobody else in that receiver room has taken the targets. Volume, not yards.",
+      "result": "",
+      "grade": "open",
+      "post": ""
+    },
+    {
+      "date": "2026-09-27",
+      "game": "Raiders at Saints",
+      "player": "Chris Olave",
+      "pos": "WR",
+      "team": "NO",
+      "call": "Over 5.5 receptions",
+      "line": "5.5 at DraftKings, Saturday Sept 26 (opened 6.5; confirm the price Sunday morning)",
+      "why": "13 targets and 10 catches, then 10 and 8. The Saints have played fast (81 plays in Week 1, 61 in Week 2) and Shough is throwing 34 a game. Saints -3 at home, and the line came down a full catch from where it opened.",
+      "result": "",
+      "grade": "open",
+      "post": ""
+    },
+    {
+      "date": "2026-09-27",
+      "game": "Rams at Broncos (Sunday night)",
+      "player": "Terrance Ferguson",
+      "pos": "TE",
+      "team": "LAR",
+      "call": "Over 3.5 receptions",
+      "line": "3.5 at DraftKings, Saturday Sept 26 (confirm the price before kickoff)",
+      "why": "Nacua is doubtful. With Nacua out Monday, Ferguson drew 9 targets and caught 6 for 54 and a score. The obvious play is Adams (8 of 10 for 195 in that game), and I'm going the other way on purpose: Surtain may shadow him and Denver's defense has a week to plan for him. The tight end is where the leftover targets go.",
+      "result": "",
+      "grade": "open",
+      "post": ""
     }
   ],
   "survivor": [
@@ -97,6 +136,15 @@
       "result": "49ers 35, Dolphins 13. Purdy went 20 of 22 for 287 yards and two scores and ran for a third. Alive.",
       "grade": "hit",
       "post": "https://x.com/theweeklyrank/status/2100986416771547511"
+    },
+    {
+      "week": 3,
+      "pick": "KC",
+      "opponent": "MIA",
+      "why": "The safest number on the board by a full tier: -10 at Miami, 81% to win (PoolGenius and RotoWire), 87% on Kalshi, against an 0-2 team starting Malik Willis. Also the most-picked team of the week. Know your pool: in a small one you take the safest team and worry about November later. If you want to go against the field, or bank Kansas City for the Week 11 home game against Arizona, Seattle at Washington (-7.5, about 76%, Mariota starting for Daniels) is the alternative. Lines Saturday afternoon.",
+      "result": "",
+      "grade": "open",
+      "post": ""
     }
   ],
   "dfs": [
