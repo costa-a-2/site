@@ -63,6 +63,7 @@ function loadSport(sport) {
       cusp: Array.isArray(raw.cusp) ? raw.cusp : [],
       // the IR taxi squad: injured players taken off the ranked list on the board, each with the rank he'd hold if healthy
       ir: Array.isArray(raw.ir) ? raw.ir.filter(x => x && x.player) : [],
+      out: Array.isArray(raw.out) ? raw.out.filter(x => x && x.player) : [],
       firstEditionFlag: raw.firstEdition === true,
       // signals: where a metric and the market agree or disagree with the model (rankings_to_json.py)
       signals: Array.isArray(raw.signals) ? raw.signals : [],
@@ -158,9 +159,13 @@ function withMovement(weeks) {
         headshot: x.headshot || HEADSHOTS[keyOf(x.player)] || null }))
       .sort((a, b) => (a.irRank ?? 1e9) - (b.irRank ?? 1e9) || a.player.localeCompare(b.player));
     const onIR = new Set(irSquad.map(x => x.player));
-    // fell off the board: on the previous edition, not on this one and not on the taxi squad (empty on the first edition)
+    // out for the season: off the board with the reason; listed under Fell Off, never as a nameless drop
+    const outList = (wk.out || []).map(x => ({ ...x, why: x.why || "", headshot: x.headshot || HEADSHOTS[keyOf(x.player)] || null }))
+      .sort((a, b) => a.player.localeCompare(b.player));
+    const onOut = new Set(outList.map(x => x.player));
+    // fell off the board: on the previous edition, not on this one, not on the taxi squad and not out for the season (empty on the first edition)
     const onBoard = new Set(players.map(p => p.player));
-    const fellOff = prev ? prev.players.filter(p => !onBoard.has(p.player) && !onIR.has(p.player))
+    const fellOff = prev ? prev.players.filter(p => !onBoard.has(p.player) && !onIR.has(p.player) && !onOut.has(p.player))
       .map(p => ({ player: p.player, pos: p.pos, team: p.team, prevRank: p.rank, headshot: p.headshot || HEADSHOTS[keyOf(p.player)] || null }))
       .sort((a, b) => a.prevRank - b.prevRank) : [];
     // If Healthy: players carrying a band typed on the board ("55–65") — a band for the week he's back, never a rank
@@ -171,7 +176,7 @@ function withMovement(weeks) {
     const seoDescription = wk.isPreseason
       ? `Half-PPR ${wk.season} preseason fantasy football rankings: the top ${players.length} players for the rest of the season, tiered at value cliffs, with movement from last week shown once the season starts.`
       : `Half-PPR rest-of-season fantasy football rankings for Week ${wk.week}, ${wk.season}: the top ${players.length} players, tiered at value cliffs, with movement from last week shown.`;
-    return { ...wk, players, tierSummary, cusp, ir: irSquad, fellOff, ifHealthy, hasOts, seoDescription, prevLabel: prev ? prev.label : null,
+    return { ...wk, players, tierSummary, cusp, ir: irSquad, out: outList, fellOff, ifHealthy, hasOts, seoDescription, prevLabel: prev ? prev.label : null,
       isLatest: i === weeks.length - 1, firstEdition: prev === null || wk.firstEditionFlag,
       risers: movers.filter(p => p.change > 0).slice(0, 5),
       fallers: movers.filter(p => p.change < 0).slice(0, 5),
@@ -287,6 +292,7 @@ function buildPlayers(weeks) {
   return [...byName.values()].map(e => {
     const p = e.last, wk = e.lastWeek, s = p.stats || {};
     const irNow = (latest.ir || []).find(x => x.player === p.player) || null;
+    const outNow = (latest.out || []).find(x => x.player === p.player) || null;
     const [shareKey, totalKey, unit] = SHARE_KEY[p.pos] || [null, null, ""];
     const room = (wk.players.filter(q => q.team === p.team && q.pos === p.pos && q.player !== p.player)
       .map(q => ({ player: q.player, rank: q.rank, share: q.stats ? q.stats[shareKey] : null, onSite: true })))
@@ -306,7 +312,9 @@ function buildPlayers(weeks) {
       headshot: p.headshot || null, stats: p.stats || null, share: shareKey ? s[shareKey] : null, shareTotal: totalKey ? s[totalKey] : null, shareUnit: unit,
       bandIfHealthy: p.bandIfHealthy || "", signal, editions: e.editions, mentions, room,
       // on the latest edition's IR taxi squad: no rank this week, the rank he'd hold if healthy, and the note that goes with it
-      ir: irNow ? { irRank: irNow.irRank ?? null, note: irNow.note || "", risk: irNow.risk || "", label: latest.label } : null
+      ir: irNow ? { irRank: irNow.irRank ?? null, note: irNow.note || "", risk: irNow.risk || "", label: latest.label } : null,
+      // out for the season on the latest edition: the reason, and the edition that said so
+      out: outNow ? { why: outNow.why || "", label: latest.label } : null
     };
   }).sort((a, b) => a.player.localeCompare(b.player));
 }

@@ -104,6 +104,26 @@
       </div>
     </div>
     {% endif %}
+    {% if week.out and week.out.length %}
+    <div style="border-top:2px solid var(--ink);margin-top:26px;padding:18px 0 6px" id="out-for-season">
+      <span class="sec">Out for the Season</span>
+      <p class="summary" style="margin-top:8px">Off the board for good this year, with the reason. Not the taxi squad: nobody here is coming back to a rank.</p>
+      <div class="tbl-wrap"><table class="rank cusp" id="outTable" style="margin-top:10px">
+        <thead><tr><th>Player</th><th class="c-pos">Pos</th><th class="c-team">Tm</th><th>Why</th><th style="text-align:right">Was</th></tr></thead>
+        <tbody>
+        {% for p in week.out %}
+          <tr data-pos="{{ p.pos }}" data-team="{{ p.team }}">
+            <td class="c-player">{% if p.headshot %}<img class="hs" src="{{ p.headshot }}" alt="" loading="lazy">{% else %}<span class="hs"></span>{% endif %}<a href="/players/{{ p.player | slugify }}/">{{ p.player }}</a></td>
+            <td class="c-pos">{{ p.pos }}</td>
+            <td class="c-team">{{ p.team }}</td>
+            <td class="summary" style="font-size:.92em">{{ p.why }}</td>
+            <td class="c-chg is-flat">{% if p.prevRank %}#{{ p.prevRank }}{% else %}—{% endif %}</td>
+          </tr>
+        {% endfor %}
+        </tbody>
+      </table></div>
+    </div>
+    {% endif %}
     {% if week.fellOff and week.fellOff.length %}
     <div style="border-top:2px solid var(--ink);margin-top:26px;padding:18px 0 6px" id="fell-off">
       <span class="sec">Fell Off the Board</span>
@@ -145,7 +165,7 @@ var pos='ALL',team='ALL';
 function apply(){var any=(pos!=='ALL'||team!=='ALL'),n=0;
   t.querySelectorAll('tbody tr').forEach(function(r){if(r.classList.contains('tier-head')){r.style.display=any?'none':'';return}var h=(pos==='ALL'||r.getAttribute('data-pos')===pos)&&(team==='ALL'||r.getAttribute('data-team')===team);r.style.display=h?'':'none';if(h)n++});
   s.textContent=n;
-  ['cuspTable','irTable','fellOffTable'].forEach(function(id){var c=document.getElementById(id);if(c){c.querySelectorAll('tbody tr').forEach(function(r){var h=(pos==='ALL'||r.getAttribute('data-pos')===pos)&&(team==='ALL'||r.getAttribute('data-team')===team);r.style.display=h?'':'none'})}})}
+  ['cuspTable','irTable','outTable','fellOffTable'].forEach(function(id){var c=document.getElementById(id);if(c){c.querySelectorAll('tbody tr').forEach(function(r){var h=(pos==='ALL'||r.getAttribute('data-pos')===pos)&&(team==='ALL'||r.getAttribute('data-team')===team);r.style.display=h?'':'none'})}})}
 b.addEventListener('click',function(e){var x=e.target.closest('button');if(!x)return;b.querySelectorAll('button').forEach(function(y){y.setAttribute('aria-pressed','false')});x.setAttribute('aria-pressed','true');pos=x.getAttribute('data-pos');apply()});
 if(sel){sel.addEventListener('change',function(){team=sel.value;apply()})}})();
 </script>
