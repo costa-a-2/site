@@ -30,7 +30,7 @@ lede: "Every week I write down what the games actually changed on my board, and 
 
 {% xpost "https://x.com/NFL/status/2104281750365184315", "Garrett Wilson against the Lions. Clip via @NFL." %}
 
-**Harold Fannin Jr., TE CLE (108th, from 112th).** 9 targets, 7 for 51 and two scores, after 6 targets and 5 catches the week before. Thirty percent of Cleveland's targets two weeks running is a tight end I'd start, and he plays Thursday night, so you get to see it before everyone else's waiver claims go through.
+**Harold Fannin Jr., TE CLE (108th, from 112th).** 9 targets, 7 for 51 and two scores, after 6 targets and 5 catches the week before. Thirty percent of Cleveland's targets last week, up from 20% the week before, is a tight end I'd start, and he plays Thursday night, so you get to see it before everyone else's waiver claims go through.
 
 {% xpost "https://x.com/NFL/status/2104302676871905679", "Fannin's second touchdown against the Panthers. Clip via @NFL." %}
 
