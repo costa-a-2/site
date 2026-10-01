@@ -82,7 +82,7 @@ lede: "Every week I write down what the games actually changed on my board, and 
 
 **Add Braelon Allen, RB NYJ (119th, from 136th), if Hall is ruled out.** Quad, week to week, and ESPN's reporting is that he likely won't be ready for Chicago. Allen has 10, 5 and 4 carries behind him this year, and for one week at Chicago he'd be the back. That's enough to roster him for the week.
 
-**Drop: Tyler Allgeier (141st)**, 2 carries Sunday, the job is Love's. **Dalton Schultz** once Collins is confirmed. **De'Von Achane** in redraft leagues without an IR spot; the ACL ends his year and the only reason to hold is a dynasty roster. **Rico Dowdle (113th)** unless the toe clears by Thursday, and even then he's the 1B.
+**Drop: Tyler Allgeier (141st)**, 2 carries Sunday, the job is Love's. **De'Von Achane** in redraft leagues without an IR spot; the ACL ends his year and the only reason to hold is a dynasty roster. **Rico Dowdle (113th)** unless the toe clears by Thursday, and even then he's the 1B.
 
 **Also watching:** Konata Mumpfield (on the cusp) had 8 targets, 4 for 93 and a score with Nacua out, and Nacua is hopeful for Sunday, so that was a one-week role; same for Tyler Higbee's 11 targets. Emanuel Wilson (149th) is worth a bench spot in deeper leagues until Price holds onto the ball. And Travis Etienne went on my taxi squad this week: hamstring in the third quarter against the Raiders, "time lost" per Kellen Moore, which has meant weeks. Kamara leads that backfield for now, and I wouldn't chase it.
 
